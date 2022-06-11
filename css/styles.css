@@ -4,6 +4,13 @@ body {
   margin: 0 auto;
 }
 
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: #666;
+}
+
 .warning {
   width: 1600px;
   height: 40px;
@@ -138,10 +145,6 @@ body {
   visibility: hidden;
 }
 
-a {
-  text-decoration: none;
-}
-
 .navigation-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +215,7 @@ a {
 
 .nav-sandwich_bar {
   width: 24px;
-  margin: 128px 0 0 0;
+  margin: 125px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,11 +563,6 @@ a {
             justify-content: space-between;
   }
 
-  .nav-sandwich_icon:hover {
-    cursor: pointer;
-    height: 20px;
-  }
-
   .nav-company_name {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -612,5 +610,11 @@ a {
 
   .nav-sandwich_menu {
     visibility: hidden;
+    color: #889099;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 7px 0 22px 0;
   }
 }
