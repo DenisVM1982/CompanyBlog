@@ -1,0 +1,168 @@
+
+@mixin roboto-normal-apple-14px {
+    color: $apple;
+    font-family: $font-family-roboto;
+    font-size: $font-size-m;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @mixin inter-normal-black-27px {
+    color: $black;
+    font-family: $font-family-inter;
+    font-size: $font-size-xxl;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @mixin roboto-normal-apple-12px {
+    color: $apple;
+    font-family: $font-family-roboto;
+    font-size: $font-size-s;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @mixin roboto-normal-white-12px {
+    color: $white;
+    font-family: $font-family-roboto;
+    font-size: $font-size-s;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @mixin roboto-light-shark-18px {
+    color: $shark;
+    font-family: $font-family-roboto;
+    font-size: $font-size-l;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @mixin roboto-light-shark-24px {
+    color: $shark;
+    font-family: $font-family-roboto;
+    font-size: $font-size-xl;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @mixin roboto-medium-white-14px {
+    color: $white;
+    font-family: $font-family-roboto;
+    font-size: $font-size-m;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @mixin roboto-medium-tuna-14px {
+    color: $tuna;
+    font-family: $font-family-roboto;
+    font-size: $font-size-m;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @mixin roboto-medium-apple-14px {
+    color: $apple;
+    font-family: $font-family-roboto;
+    font-size: $font-size-m;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @mixin roboto-light-shark-32px {
+    color: $shark;
+    font-family: $font-family-roboto;
+    font-size: $font-size-xxxl;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @mixin roboto-light-white-48px {
+    color: $white;
+    font-family: $font-family-roboto;
+    font-size: $font-size-xxxxl;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @mixin roboto-bold-tuna-14px {
+    color: $tuna;
+    font-family: $font-family-roboto;
+    font-size: $font-size-m;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @mixin roboto-normal-oslo-gray-14px {
+    color: $oslo-gray;
+    font-family: $font-family-roboto;
+    font-size: $font-size-m;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @mixin roboto-normal-tuna-14px {
+    color: $tuna;
+    font-family: $font-family-roboto;
+    font-size: $font-size-m;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @mixin roboto-normal-oslo-gray-12px {
+    color: $oslo-gray;
+    font-family: $font-family-roboto;
+    font-size: $font-size-s;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @mixin roboto-light-white-18px {
+    color: $white;
+    font-family: $font-family-roboto;
+    font-size: $font-size-l;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @mixin inter-normal-black-18px {
+    color: $black;
+    font-family: $font-family-inter;
+    font-size: $font-size-l;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  @mixin roboto-bold-pizazz-12px {
+    color: $pizazz;
+    font-family: $font-family-roboto;
+    font-size: $font-size-s;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @mixin roboto-normal-tuna-18px {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323642;
+  }
+
+  @mixin roboto-normal-pizazz-12px {
+    color: $pizazz;
+    font-family: $font-family-roboto;
+    font-size: $font-size-s;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  
+  
