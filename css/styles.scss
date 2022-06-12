@@ -507,6 +507,8 @@ body {
 }
 
 .nav-sandwich_menu {
+    display: flex;
+    flex-direction: column;
     visibility: hidden;
     @include roboto-medium-apple-14px;
     margin: 7px 0 22px 0;
@@ -544,25 +546,25 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 0px 0 60px;
+    margin: 30px 0px 0 31px;
     width: 275px;
 }
 
 .featured_article-img {
     width: 335px;
-    height: 233px;
+    height: 224px;
 }
 
 .feature_article-post {
     @include roboto-light-shark-24px;
     line-height: 34px;
-    margin: 35px 0 0 0;
+    margin: 0px 0 0 0;
 }
 
 .feature_article-data_author-wrapper {
     display: flex;
     flex-direction: row;
-    margin: 41px 0 -46px 0;
+    margin: 19px 0 0px 0;
 }
 
 .feature_article-author {
@@ -578,12 +580,16 @@ article {
     @include roboto-normal-apple-12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin: 15px 0 -16px 0;
+    margin: 17px 0 0px 0;
 }
 
 .feature_artile-comment_counter-wrapper {
-    margin: -20px 0px 19px 5px;
+    margin: 13px 0px 0px 5px;
+}
 
+.feature_article-comment {
+    //background picture
+    background: url("img\icons\comment_mobile.svg")
 }
 
 .feature_article-counter_comments {
