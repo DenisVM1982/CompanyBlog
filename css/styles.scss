@@ -697,7 +697,7 @@ article {
 
 .recent_post3-wrapper {
     margin: 30px 0 0 0;
-    height: 381px;
+    height: 202px;
 }
 
 .recent_post3-image {
@@ -706,6 +706,7 @@ article {
 
 .recent_post3-wrapper2 {
     margin: -49px 0px 0px 41px;
+
 }
 
 .recent_post3-post {
@@ -713,12 +714,13 @@ article {
 }
 
 .recent_post3-data_author-wrapper {
-    margin: 26px 0 0px 0;
+    margin: 13px 0 0px 0px;
 }
 
 .recent_post3-author {
-    margin: 0px 19px 0px 0px;
+    margin: 0px 15px 0px 0px;
     font-weight: 400;
+    letter-spacing: .5px;
 }
 
 .recent_post3-title {
@@ -726,16 +728,117 @@ article {
     font-weight: 500;
 }
 
+.recent_post3-comment_counter-wrapper {
+    margin: 6px 0 0 14px;
+}
+
 .recent_post3-counter_comments {
-    margin: 14px 0 0px 7px;
+    margin: 9px 0 7px 6px;
 }
 
 .recent_post3-line {
-    margin: 0 0 0 0;
+    margin: 7px 0 0 0;
 }
 
 
 // Post 3 end
+
+// Post 4 start
+
+.recent_post4-wrapper {
+    margin: 40px 0 7px 0;
+}
+
+.recent_post4-image {
+    margin: 0px 0 0 0;
+}
+
+.recent_post4-wrapper2 {
+    margin: -49px 0px 0px 41px;
+
+}
+
+.recent_post4-post {
+    margin: 8px 0 0 0;
+}
+
+.recent_post4-data_author-wrapper {
+    margin: 12px 0 0px 0;
+}
+
+.recent_post4-author {
+    margin: 0px 16px 0px 0px;
+    font-weight: 400;
+}
+
+.recent_post4-title {
+    margin: 13px 0 0 0;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+}
+
+.recent_post4-counter_comments {
+    margin: 14px 0 0px 7px;
+}
+
+.recent_post4-line {
+    margin: 7px 0 0 0;
+}
+
+.recent_post4-counter_comments {
+    margin: 1px 0 0 7px;
+}
+
+.recent_post4-line {
+    margin: 42px 0 0 0;
+}
+
+// Post 4 end
+
+// Post 5 start
+
+.recent_post5-wrapper {
+    margin: 30px 0 7px 0;
+}
+
+.recent_post5-image {
+    margin: 0px 0 0 0;
+}
+
+.recent_post5-wrapper2 {
+    margin: -49px 0px 0px 41px;
+
+}
+
+.recent_post5-post {
+    margin: 8px 0 0 0;
+}
+
+.recent_post5-data_author-wrapper {
+    margin: 12px 0 0px 0;
+}
+
+.recent_post5-author {
+    margin: 0px 16px 0px 0px;
+    font-weight: 400;
+}
+
+.recent_post5-title {
+    margin: 13px 0 0 0;
+    font-weight: 500;
+}
+
+.recent_post5-counter_comments {
+    margin: 14px 0 0px 7px;
+}
+
+.recent_post5-line {
+    margin: 7px 0 0 0;
+}
+
+// Post 5 end
+
+
 
 
 // Side_nav_blog start
