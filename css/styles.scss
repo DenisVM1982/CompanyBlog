@@ -502,7 +502,7 @@ article {
 
 .search_recent_posts-wrapper {
     display: grid;
-    grid-template: 1fr 1fr 1fr/66.7% 0.1% 34.2%;
+    grid-template: 1fr/66.7% 0.1% 34.2%;
 }
 
 .search_recent_posts-line {
@@ -510,7 +510,7 @@ article {
     width: 1px;
     background: #EBECED;
     grid-column-start: 2;
-    grid-row-start:1;
+    grid-row-start: 1;
     margin: 40px 0 0 0;
 }
 
@@ -535,8 +535,7 @@ article {
     -ms-flex-align: center;
     align-items: center;
     grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-stop: 2;
+    grid-row-start:1;
     margin: 39px 0 0 58px;
 
 }
@@ -753,7 +752,85 @@ article {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0px 0 0 0px;
 }
+
+.announcements-side_nav_header {
+    @include roboto-light-shark-24px;
+    margin: -4px 0 0 20px;
+}
+
+.announcements-ul {
+    @include roboto-normal-tuna-14px;
+    display: flex;
+    line-height: 22px;
+    justify-content: space-between;
+    margin: 21px 0px 0 6px;
+    display: flex;
+    flex-direction: column;
+    height: 195px;
+    width: 307px;
+    li {
+        display: flex;
+        flex-direction: row;
+    }
+    li>div {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #4CB649;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px 0 -6px;
+    }
+}
+
+.announcements-line {
+    height: 1px;
+    width: 340px;
+    left: 0px;
+    background: #EBECED;
+    margin: 28px 0 0 0;
+}
+
+.side_nav_popular_post {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 8px;
+}
+
+.popular_post-side_nav_header {
+    margin: 0 0 0 0;
+    margin: -2px 0 0 30px;
+}
+
+.popular_post-ul {
+    margin: 31px 0 0 -1px;
+    height: 283px;
+    width: 311px;
+}
+
+.popular_post-line {
+    margin: 9px 0 0 0;
+}
+
+.add_sidebar {
+    margin: 32px 0 0 0;
+    width: 340px;
+}
+
+.tag_cloud {
+    margin: 57px 0 0 0;
+    @include roboto-light-shark-24px;
+
+}
+
+.tag_cloud-img {
+    margin: 18px 39px 0px -12px;
+}
+
+
 
 
 
