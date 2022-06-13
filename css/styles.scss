@@ -534,8 +534,9 @@ article {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-grid-column: 3;
     grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-stop: 2;
     margin: 39px 0 0 58px;
 
 }
@@ -733,6 +734,28 @@ article {
 .recent_post3-line {
     margin: 0 0 0 0;
 }
+
+
+// Post 3 end
+
+
+// Side_nav_blog start
+
+.side_nav_blog-block {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin: 130px 0 0 59px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side_nav-header_announcements-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 
 
 
