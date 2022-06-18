@@ -18,6 +18,3 @@ function displayWindowSize() {
 window.addEventListener("resize", displayWindowSize);
 
 
-
-
-
