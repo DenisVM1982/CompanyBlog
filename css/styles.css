@@ -1035,7 +1035,7 @@ input {
 }
 
 .recent_post5-wrapper {
-  margin: 29px 0px 19px -3px;
+  margin: 27px 0px 15px -1px;
 }
 
 .recent_post5-image {
@@ -1072,6 +1072,10 @@ input {
   margin: 7px 0 0 0;
 }
 
+.recent_post6-wrapper {
+  margin: 36px 0px 15px -1px;
+}
+
 .older_posts-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1082,7 +1086,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: -87px 0 0 259px;
+  margin: 24px 0px 0 259px;
   color: #4cb649;
   font-family: "Roboto";
   font-size: 14px;
@@ -2223,6 +2227,9 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .search_recent_posts-line {
@@ -2400,7 +2407,7 @@ input {
 
   .recent_post3-wrapper {
     margin: 42px 0 0 0;
-    height: 381px;
+    height: 438px;
   }
 
   .recent_post3-image {
@@ -2436,5 +2443,60 @@ input {
 
   .recent_post3-line {
     margin: 0 0 0 0;
+  }
+
+  .recent_post4-wrapper, .recent_post5-wrapper, .recent_post6-wrapper, .recent_post4-line, .recent_post5-line, .recent_post6-line {
+    display: none;
+  }
+
+  .older_posts-button {
+    margin: 58px 0 0 0;
+    width: 313px;
+  }
+
+  .side_nav_blog-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 315px;
+    margin: 0 auto;
+    margin: 59px 0 0 0;
+  }
+
+  .side_nav_announcements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .side_nav-header_announcements-wrapper {
+    margin: 0px 0 0 -5px;
+  }
+
+  .side_nav_popular_post {
+    margin: 70px 0 0 7px;
+  }
+
+  .popular_post-ul {
+    margin: 31px 0 0 -1px;
+    height: 283px;
+    width: 323px;
+  }
+
+  .popular_post-line {
+    margin: 29px 0 0 0;
+  }
+
+  .add_sidebar {
+    margin: 30px 0 0 0;
+    width: 315px;
   }
 }
