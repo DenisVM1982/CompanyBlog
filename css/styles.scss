@@ -30,6 +30,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a:active, a:hover, a:focus {
+        color: $pizazz;
+    }
 }
 
 .warning_block-1 {
@@ -497,12 +500,19 @@ article {
     cursor: pointer;
 }
 
+.team:hover, .team:focus {
+    color: $apple;
+}
 .contact {
     @include roboto-normal-tuna-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
+}
+
+.contact:hover, .contact:focus {
+    color: $apple;
 }
 
 // Tags_block end
@@ -2185,19 +2195,17 @@ footer {
 }
 
 .space {
-    margin: 0 0 0 -8px;
+    margin: 0 0 0 0px;
 }
 
 // Pricing block1 start
 
 .pricing_block1 {
-    margin: 0px 0px 0 1px;
+    position:absolute;
+    top: -70px;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2209,6 +2217,26 @@ footer {
     background: #FFFFFF;
     border: 1px solid #EBECED;
     border-radius: 6px;
+}
+
+.pricing_block1:hover,
+.pricing_block1:focus, .pricing_block1:active {
+    position:absolute;
+    top: -70px;
+    margin: -3px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 340px;
+    width: 315px;
+    background: #FFFFFF;
+    border: 4px solid #FF8D00;
+    border-radius: 4px;
 }
 
 
@@ -2218,13 +2246,14 @@ footer {
 // Pricing block2 start
 
 .pricing_block2 {
-    margin: 0px 0px 0 1px;
+    position: absolute;
+    top: 290px;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2237,6 +2266,31 @@ footer {
     border: 1px solid #EBECED;
     border-radius: 6px;
 }
+
+.pricing_block2:hover,
+.pricing_block2:focus, .pricing_block2:active {
+    position: absolute;
+    top: 290px;
+    margin: -3px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 340px;
+    width: 315px;
+    background: #FFFFFF;
+    border: 4px solid #FF8D00;
+    border-radius: 4px;
+}
+
+
 
 
 
@@ -2245,13 +2299,14 @@ footer {
 // Pricing block3 start
 
 .pricing_block3 {
-    margin: 0px 0px 0 1px;
+    position: absolute;
+    top: 651px;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2264,6 +2319,31 @@ footer {
     border: 1px solid #EBECED;
     border-radius: 6px;
 }
+
+.pricing_block3:hover,
+.pricing_block3:focus, .pricing_block3:active {
+    position: absolute;
+    top: 651px;
+    margin: -3px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 340px;
+    width: 315px;
+    background: #FFFFFF;
+    border: 4px solid #FF8D00;
+    border-radius: 4px;
+}
+
+
 
 
 
