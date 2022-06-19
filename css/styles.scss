@@ -2239,6 +2239,29 @@ footer {
     border-radius: 4px;
 }
 
+.pricing_block1-sign_up:hover, .pricing_block1-sign_up:focus, .pricing_block1-sign_up:active {
+    height: 40px;
+    width: 205px;
+    background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+    border-color: $pizazz;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    margin: 32px -2px 0 0;
+}
 
 
 // Pricing block1 end
@@ -2290,6 +2313,52 @@ footer {
     border-radius: 4px;
 }
 
+.pricing_block2-sign_up:hover, .pricing_block2-sign_up:focus, .pricing_block2-sign_up:active {
+    height: 40px;
+    width: 205px;
+    background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+    border-color: $pizazz;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    margin: 27px 0px 0 0;
+}
+
+// Discount_block start
+
+.discount_block {
+    height: 1700px;
+    width: 375px;
+    border-radius: 0px;
+    background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+    margin: 72px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+// Discount_block end
 
 
 
@@ -2344,9 +2413,169 @@ footer {
 }
 
 
-
-
+.pricing_block3-sign_up:hover, .pricing_block3-sign_up:focus, .pricing_block3-sign_up:active {
+    height: 40px;
+    width: 205px;
+    background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+    border-color: $pizazz;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    margin: 17px -2px 0 0;
+}
 
 // Pricing block3 end
+
+// Ways_to_pay_block start
+
+.ways_to_pay_block {
+    position: absolute;
+    top: 5560px;
+    display: grid;
+    grid-template: 32px 90px 44px 70px/119px 120px 136px;
+    justify-content: center;
+    width: 375px;
+    margin: 0px 0 0 66px;
+}
+
+.ways_to_pay {
+    margin: 0px 0px 0 -34px;
+    grid-column-start:1;
+    grid-column-end:4;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 18px;
+     color: #FFFFFF; 
+     width: 375px;
+}
+
+
+#visa {
+    margin: 0px 0px 0 0px;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+#visa:hover, #mastercard:hover, #pay_pal:hover, #american_express:hover, #bitcoin:hover, #okpay:hover, #amazon_pay:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    
+}
+
+#visa:focus, #mastercard:focus, #pay_pal:focus, #american_express:focus, #bitcoin:focus, #okpay:focus, #amazon_pay:focus {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#mastercard {
+    margin: 0px 0px 0px 12px;
+}
+
+#american_express {
+    margin: 0px 0px 0 -5px;
+}
+
+#pay_pal {
+    margin: 4px 0px 0 -6px;
+}
+
+#bitcoin {
+    margin: 3px 0 0 -1px;
+}
+
+#okpay {
+    margin: 4px 0 0 -8px;
+}
+
+
+#amazon_pay {
+    margin: -4px 0px 0 -14px;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:4;
+    grid-row-end:5;
+}
+
+
+// Ways_to_pay_block end
+
+
+// How_to_pay_block start
+
+.how_to_pay_block {
+    position: fixed;
+    position: absolute;
+    margin: 0px 0 0 2px;
+    top: 5817px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #4cb649;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    width: 455px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    letter-spacing: 0.8px;
+}
+
+.how_to_pay_wrapper1 {
+    margin: -2px 0 2px -5px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.how_to_pay_wrapper2 {
+    margin: 42px 0 0 -6px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #4cb649;
+}
+
+// How_to_pay_block end
 
 }
