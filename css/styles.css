@@ -10,10 +10,13 @@ a:hover,
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #666;
+  color: #323642;
 }
 
 .warning {
+  position: fixed;
+  top: 0;
+  z-index: 10;
   width: 1600px;
   height: 40px;
   background: #22252e;
@@ -159,7 +162,7 @@ a {
       -ms-flex-align: 6px;
           align-items: 6px;
   height: 120px;
-  margin-top: 0px;
+  margin-top: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1266,19 +1269,24 @@ input {
   font-weight: 300;
   font-style: normal;
   letter-spacing: -0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .pricing_block {
-  margin: 45px 0 0 0;
+  position: relative;
+  top: 69px;
+  /* margin: 45px 0 0 0; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  /* align-items: center; */
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 1180px;
 }
 
@@ -1302,6 +1310,28 @@ input {
   background: #FFFFFF;
   border: 1px solid #EBECED;
   border-radius: 6px;
+}
+
+.pricing_block1:hover {
+  margin: -23px -6px 0 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 380px;
+  width: 380px;
+  background: #FFFFFF;
+  border: 4px solid #4CB649;
+  border-radius: 4px;
 }
 
 .pricing_block1-period {
@@ -1409,6 +1439,28 @@ input {
 
 .pricing_block2 {
   margin: 0px 0 0 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 340px;
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid #EBECED;
+  border-radius: 6px;
+}
+
+.pricing_block2:hover {
+  margin: -23px 0 0 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1556,21 +1608,18 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ffffff;
+  color: #4cb649;
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.8px;
   margin: 27px 0px 0 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#4CB649), to(#5DDF5A));
-  background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
   border-radius: 30px;
 }
 
 .pricing_block2-sign_up:hover, .pricing_block2-sign_up:focus {
-  background: -webkit-gradient(linear, left bottom, left top, from(#5DDF5A), to(#4CB649));
-  background: linear-gradient(0deg, #5DDF5A 0%, #4CB649 100%);
+  background: #4cb649;
   color: white;
 }
 
@@ -1594,6 +1643,28 @@ input {
   background: #FFFFFF;
   border: 1px solid #EBECED;
   border-radius: 6px;
+}
+
+.pricing_block3:hover {
+  margin: -23px -6px 0 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 380px;
+  width: 380px;
+  background: #FFFFFF;
+  border: 4px solid #4CB649;
+  border-radius: 4px;
 }
 
 .pricing_block3-period {
@@ -1737,7 +1808,10 @@ input {
 }
 
 .ways_to_pay_block {
-  margin: 28px -11px 0 0;
+  position: absolute;
+  top: 3076px;
+  z-index: 10;
+  margin: 0px -7px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1816,7 +1890,10 @@ input {
 }
 
 .how_to_pay_block {
-  margin: 13px 0 0 4px;
+  position: fixed;
+  position: absolute;
+  margin: 0px 0 0 2px;
+  top: 3187px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1898,6 +1975,10 @@ input {
   margin: 0px -10px 0 27px;
 }
 
+.redeem_gift_card {
+  color: #4cb649;
+}
+
 @media (max-width: 930px) {
   body {
     width: 375px;
@@ -1905,6 +1986,7 @@ input {
   }
 
   .warning {
+    position: fixed;
     width: 375px;
     height: 69px;
     background: #22252e;
@@ -2498,5 +2580,148 @@ input {
   .add_sidebar {
     margin: 30px 0 0 0;
     width: 315px;
+  }
+
+  .tag_cloud {
+    margin: 66px 0 0 0;
+  }
+
+  .tag_cloud-img {
+    margin: 20px 1px -3px -10px;
+  }
+
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .discount_block {
+    height: 1700px;
+    width: 375px;
+    border-radius: 0px;
+    background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+    margin: 72px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .pricing_block {
+    margin: 45px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 315px;
+  }
+
+  .sign_up_today {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #FFFFFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 60px 0 -5px 0;
+    letter-spacing: 0.2px;
+  }
+
+  .space {
+    margin: 0 0 0 -8px;
+  }
+
+  .pricing_block1 {
+    margin: 0px 0px 0 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 340px;
+    width: 315px;
+    background: #FFFFFF;
+    border: 1px solid #EBECED;
+    border-radius: 6px;
+  }
+
+  .pricing_block2 {
+    margin: 0px 0px 0 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 340px;
+    width: 315px;
+    background: #FFFFFF;
+    border: 1px solid #EBECED;
+    border-radius: 6px;
+  }
+
+  .pricing_block3 {
+    margin: 0px 0px 0 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 340px;
+    width: 315px;
+    background: #FFFFFF;
+    border: 1px solid #EBECED;
+    border-radius: 6px;
   }
 }
