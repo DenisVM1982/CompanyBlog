@@ -7,6 +7,7 @@
 
 body {
     width: 1600px;
+    height: 3880px;
     margin: 0 auto;
     cursor: default;
 }
@@ -1636,9 +1637,47 @@ footer {
 }
 
 .about_company {
-    margin: 0 0 0 0;
+    margin: 58px 0 0 0;
     display: grid;
-    grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
+    grid-template: 160px 122px 1fr/200px 200px 200px 600px;
+    h4 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323642;
+        margin: 0 0 14px 0;
+    }
+    a {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #889099;
+        margin: 0 0 0 0;
+        line-height: 32px;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #889099;
+        margin: 21px 0 0 0;
+        line-height: 22px;
+    }
+
+    a:hover, a:focus, a:active {
+        opacity: 0.5;
+    }
+   
+
 }
 
 .company_block {
@@ -1647,6 +1686,7 @@ footer {
     grid-column-end:2;
     grid-row-start:1;
     grid-row-end:3;
+
 }
 
 .programs_block {
@@ -1685,13 +1725,34 @@ footer {
     margin: 0 0 0 0;
     grid-column-start:4;
     grid-column-end:5;
+    grid-row-start:3;
+    grid-row-end:4;
+}
+
+.map_data {
+    margin: -14px 0 0 0;
+    grid-column-start:4;
+    grid-column-end:5;
     grid-row-start:2;
     grid-row-end:3;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #889099;
 }
 
 .social_icon-wrapper {
-    margin: 0 0 0 0;
+    margin: 23px 0 0px 0;
+    display: flex;
+    flex-direction: row;
+    width: 333px;
+    justify-content: space-between;
 }
+
+
+
 
 // About_company_block end
 

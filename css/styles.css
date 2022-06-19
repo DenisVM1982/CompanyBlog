@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Inter:400");
 body {
   width: 1600px;
+  height: 3880px;
   margin: 0 auto;
   cursor: default;
 }
@@ -2033,12 +2034,46 @@ footer {
 }
 
 .about_company {
-  margin: 0 0 0 0;
+  margin: 58px 0 0 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 160px 122px 1fr;
+  -ms-grid-columns: 200px 200px 200px 600px;
+      grid-template: 160px 122px 1fr/200px 200px 200px 600px;
+}
+.about_company h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+  margin: 0 0 14px 0;
+}
+.about_company a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #889099;
+  margin: 0 0 0 0;
+  line-height: 32px;
+}
+.about_company p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #889099;
+  margin: 21px 0 0 0;
+  line-height: 22px;
+}
+.about_company a:hover, .about_company a:focus, .about_company a:active {
+  opacity: 0.5;
 }
 
 .company_block {
@@ -2107,14 +2142,43 @@ footer {
       grid-column-start: 4;
   -ms-grid-column-span: 1;
   grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
+}
+
+.map_data {
+  margin: -14px 0 0 0;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-column-span: 1;
+  grid-column-end: 5;
   -ms-grid-row: 2;
       grid-row-start: 2;
   -ms-grid-row-span: 1;
   grid-row-end: 3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #889099;
 }
 
 .social_icon-wrapper {
-  margin: 0 0 0 0;
+  margin: 23px 0 0px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 333px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 930px) {
