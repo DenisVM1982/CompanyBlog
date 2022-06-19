@@ -995,6 +995,13 @@ input {
 
 // Footer start
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 // Discount_block start
 
 .discount_block {
@@ -1605,11 +1612,90 @@ input {
 
 // How_to_pay_block end
 
+// Discount_block end
 
+// About_company_block start
 
+.about_company-wrapper {
+    margin: 84px 0 0 0;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
+.company_name {
+    margin: 0 0 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
 
+.about_company {
+    margin: 0 0 0 0;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
+}
 
+.company_block {
+    margin: 0 0 0 0;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.programs_block {
+    margin: 0 0 0 0;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.learn_more_block {
+    margin: 0 0 0 0;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.legal_block {
+    margin: 0 0 0 0;
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.about_block {
+    margin: 0 0 0 0;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.social_block {
+    margin: 0 0 0 0;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.social_icon-wrapper {
+    margin: 0 0 0 0;
+}
+
+// About_company_block end
+
+// Footer end
 
 
 
