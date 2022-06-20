@@ -2771,8 +2771,6 @@ footer {
         font-size: 14px;
         line-height: 22px;
         color: #889099;
-        margin: 0 0 0 0;
-        line-height: 32px;
     }
 
     p {
@@ -2832,6 +2830,11 @@ footer {
     grid-column-end:3;
     grid-row-start:5;
     grid-row-end:6;
+    width: 314px;
+}
+
+.br1 {
+    display: none;
 }
 
 .social_block {
@@ -2854,6 +2857,7 @@ footer {
     font-size: 12px;
     line-height: 16px;
     color: #889099;
+    width: 310px;
 }
 
 .social_icon-wrapper {
