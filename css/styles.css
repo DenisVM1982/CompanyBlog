@@ -1225,7 +1225,7 @@ input {
 
 .announcements-line {
   height: 1px;
-  width: 340px;
+  width: 315px;
   left: 0px;
   background: #EBECED;
   margin: 28px 0 0 0;
@@ -1388,18 +1388,18 @@ footer {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.8px;
-  margin: 51px 7px 0 0px;
+  margin: 51px -1px 0 0px;
 }
 
 .pricing_block1-smallline {
   height: 2px;
   width: 24px;
   background: #4CB649;
-  margin: 13px -2px 0 0;
+  margin: 13px 8px 0 0;
 }
 
 .price_block-pricing_block1 {
-  margin: 16px 0 0 0;
+  margin: 15px 9px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1409,7 +1409,7 @@ footer {
 }
 
 .dollar1 {
-  margin: -12px 14px 0 1px;
+  margin: -8px 12px 0 1px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -1452,7 +1452,7 @@ footer {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  margin: 32px -1px 0 0;
+  margin: 34px 2px 0 0;
   font-weight: 400px;
 }
 
@@ -1476,7 +1476,7 @@ footer {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.8px;
-  margin: 31px -3px 0 0;
+  margin: 31px 2px 0 0;
 }
 
 .pricing_block1-sign_up:hover, .pricing_block1-sign_up:focus {
@@ -1678,7 +1678,7 @@ footer {
 }
 
 .pricing_block3 {
-  margin: 0px -3px 0 3px;
+  margin: 0px 3px 0 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1735,11 +1735,11 @@ footer {
   height: 2px;
   width: 24px;
   background: #4CB649;
-  margin: 13px -2px 0 0;
+  margin: 12px 3px 0 0;
 }
 
 .price_block-pricing_block3 {
-  margin: 16px 0 0 0;
+  margin: 15px 10px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2067,6 +2067,9 @@ footer {
   -ms-grid-columns: 200px 200px 200px 600px;
       grid-template: 160px 122px 1fr/200px 200px 200px 600px;
 }
+.about_company ul {
+  margin: 16px 0 0 0;
+}
 .about_company h4 {
   font-family: "Roboto";
   font-style: normal;
@@ -2270,14 +2273,14 @@ footer {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
-    margin: -8px 0 0 14px;
+    margin: -9px 0 0 20px;
   }
 
   .warning_block-3 {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
-    margin: -5px 0 0 -21px;
+    margin: -7px 0 0 -21px;
   }
 
   .warning_block-4 {
@@ -2333,9 +2336,26 @@ footer {
   }
 
   .navigation-block {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    height: 101px;
+    height: 130px;
+    width: 322px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .nav-sandwich_bar {
+    width: 24px;
+    margin: 200px 0 0 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .nav-sandwich_icon {
@@ -2351,6 +2371,15 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    z-index: 1;
+  }
+
+  .nav-sandwich_icon:hover, .nav-sandwich_icon:focus, .nav-sandwich_icon:active {
+    width: 24px;
+    height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     z-index: 1;
   }
 
@@ -2372,6 +2401,7 @@ footer {
     margin: 0px 0px 0 0px;
     text-decoration: none;
     cursor: pointer;
+    width: 181px;
   }
 
   .nav-wrapper {
@@ -2393,6 +2423,7 @@ footer {
   .nav-btn_wrapper {
     width: 126px;
     height: 40px;
+    margin: 0px -10px 0 22px;
   }
 
   .nav-get_started {
@@ -2678,11 +2709,12 @@ footer {
   }
 
   .recent_post1-line {
-    margin: 42px 0 0 0;
+    margin: 52px 0 0 0;
   }
 
   .recent_post2-wrapper {
     height: 385px;
+    margin: 44px 0 0 0;
   }
 
   .recent_post2-wrapper2 {
@@ -2712,7 +2744,7 @@ footer {
   }
 
   .recent_post2-title {
-    margin: 15px 0px 0 -1px;
+    margin: 11px 0px 0 0px;
     font-weight: 500;
   }
 
@@ -2743,7 +2775,7 @@ footer {
   }
 
   .recent_post3-post {
-    margin: 18px 0 0 0;
+    margin: 5px 0 0 0;
   }
 
   .recent_post3-data_author-wrapper {
@@ -2751,17 +2783,17 @@ footer {
   }
 
   .recent_post3-author {
-    margin: 0px 19px 0px 0px;
+    margin: 0px -11px 0px -1px;
     font-weight: 400;
   }
 
   .recent_post3-title {
-    margin: 13px 0 0 0;
+    margin: 12px 0 0 -2px;
     font-weight: 500;
   }
 
   .recent_post3-counter_comments {
-    margin: 14px 0 0px 7px;
+    margin: 2px 0 0px 14px;
   }
 
   .recent_post3-line {
@@ -2773,7 +2805,7 @@ footer {
   }
 
   .older_posts-button {
-    margin: 58px 0 0 0;
+    margin: 59px 0 0 0;
     width: 313px;
   }
 
@@ -2801,7 +2833,7 @@ footer {
   }
 
   .side_nav-header_announcements-wrapper {
-    margin: 0px 0 0 -5px;
+    margin: 0px 0 0 -7px;
   }
 
   .side_nav_popular_post {
@@ -3094,7 +3126,7 @@ footer {
 .pricing_block3:focus, .pricing_block3:active {
     position: absolute;
     top: 651px;
-    margin: -3px 0 0 0;
+    margin: -3px 0 0 2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3140,9 +3172,38 @@ footer {
     margin: 17px -2px 0 0;
   }
 
+  .pricing_block3-discount-wrapper {
+    color: #323642;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 19px 7px 0 0;
+    font-weight: 400px;
+  }
+
+  .pricing_block3-discount_save {
+    margin: 8px 8px 2px 0px;
+    color: #323642;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
   .ways_to_pay_block {
     position: absolute;
-    top: 5560px;
+    top: 5585px;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 32px 90px 44px 70px;
@@ -3228,7 +3289,7 @@ footer {
     position: fixed;
     position: absolute;
     margin: 0px 0 0 2px;
-    top: 5817px;
+    top: 5845px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3293,7 +3354,7 @@ footer {
   }
 
   .about_company-wrapper {
-    margin: 45px 0 0 37px;
+    margin: 45px 0 0 40px;
     width: 375px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3325,6 +3386,9 @@ footer {
     -ms-grid-columns: 180px 200px;
         grid-template: 124px 124px 100px 195px 206px 100px/180px 200px;
   }
+  .about_company ul {
+    margin: 0px 0 0 0;
+  }
   .about_company h4 {
     font-family: "Roboto";
     font-style: normal;
@@ -3351,7 +3415,7 @@ footer {
     font-size: 14px;
     line-height: 22px;
     color: #889099;
-    margin: 21px 0 0 0;
+    margin: 17px 0 0 0;
     line-height: 22px;
   }
   .about_company a:hover, .about_company a:focus, .about_company a:active {
@@ -3448,7 +3512,7 @@ footer {
   }
 
   .map_data {
-    margin: -14px 0 0 0;
+    margin: -17px 0 0 0;
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 2;
