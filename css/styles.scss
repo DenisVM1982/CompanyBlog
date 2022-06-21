@@ -119,8 +119,7 @@ a {
 
 .navigation-block {
     display: flex;
-    justify-content: space-between;
-    display: flex;
+    justify-content: start;
     align-items: 6px;
     height: 120px;
     margin-top: 40px;
@@ -138,8 +137,17 @@ a {
 .nav-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     width: 500px;
+    margin: 4px 0 0 244px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323642;
 }
 
 .nav_block-wrapper {
@@ -152,6 +160,7 @@ a {
     display: flex;
     justify-items: space-between;
     align-items: center;
+    margin: 0 -10px 0 194px;
 }
 
 .nav-sandwich_icon {
@@ -183,10 +192,16 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include inter-normal-black-18px;
-    margin: 7px 0px 0 206px;
+    margin: 7px 0px 0 183px;
     text-decoration: none;
     cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
 }
 
 .nav-company_name:hover {
@@ -195,12 +210,11 @@ a {
 
 
 .nav-why_us {
-    @include roboto-normal-tuna-14px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
-    margin: 45px 0 0 0;
+    margin: 57px 0 0 0;
 }
 
 .nav-why_us-submenu {
@@ -224,11 +238,11 @@ a {
 }
 
 .nav-vpn_apps {
-    @include roboto-normal-tuna-14px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
+    margin: 2px 0 0 9px;
 }
 
 .nav-vpn_apps:hover, .nav-vpn_apps:active, .nav-vpn_apps:focus {
@@ -237,11 +251,11 @@ a {
 }
 
 .nav-support {
-    @include roboto-normal-tuna-14px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
+    margin: 3px 0 0 9px;
 }
 
 .nav-support:hover, .nav-support:active, .nav-support:focus {
@@ -250,11 +264,12 @@ a {
 }
 
 .nav-resources {
-    @include roboto-normal-tuna-14px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
+    margin: 3px 0 0 21px;
+    letter-spacing: 0.7px;
 }
 
 .nav-resources:hover, .nav-resources:active, .nav-resources:focus {
@@ -265,6 +280,7 @@ a {
 .nav-list_icon {
     width: 10px;
     height: 5px;
+    margin: -4px 0 0 9px;
 }
 
 
@@ -678,7 +694,7 @@ input {
 }
 
 .recent_post2-wrapper2 {
-    margin: 0px 0 0 22px;
+    margin: 0px 0 0 41px;
 }
 
 .recent_post2-image {
@@ -838,7 +854,7 @@ input {
 }
 
 .recent_post5-wrapper2 {
-    margin: -39px 0px 0px 20px;
+    margin: -39px 0px 0px 41px;
 
 }
 
@@ -1184,6 +1200,13 @@ footer {
     border-radius: 4px;
 }
 
+.pricing_block2-line {
+    background: #EBECED;
+    height: 1px;
+    width: 200px;
+    margin: 18px 0 0 0;
+}
+
 
 .pricing_block2-period {
     @include roboto-bold-tuna-14px;
@@ -1251,7 +1274,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 38px -3px 0 0;
+    margin: 18px -3px 0 0;
     font-weight: 400px;
 }
 
@@ -1719,6 +1742,14 @@ footer {
     grid-column-end:5;
     grid-row-start:1;
     grid-row-end:2;
+}
+
+.desktop_li {
+    display: block;
+}
+
+.mobi_li {
+    display: none;
 }
 
 .social_block {
@@ -2769,7 +2800,7 @@ footer {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 22px;
+        line-height: 32px;
         color: #889099;
     }
 
@@ -2835,6 +2866,14 @@ footer {
 
 .br1 {
     display: none;
+}
+
+.desktop_li {
+    display: none;
+}
+
+.mobi_li {
+    display: block;
 }
 
 .social_block {
