@@ -2103,8 +2103,11 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 375px;
+    margin: 0 auto;
 
 }
+
 
 .search_recent_posts-line {
     display: none;
