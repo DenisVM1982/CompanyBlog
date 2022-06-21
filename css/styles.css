@@ -313,6 +313,7 @@ a {
 .nav-why_us:hover .nav-why_us-submenu, .nav-why_us:active .nav-why_us-submenu, .nav-why_us:focus .nav-why_us-submenu {
   visibility: visible;
   opacity: 1;
+  z-index: 10;
 }
 
 .nav-vpn_apps {
@@ -342,11 +343,35 @@ a {
           flex-direction: column;
   text-decoration: none;
   cursor: pointer;
-  margin: 3px 0 0 9px;
+  margin: 57px 0 0 9px;
 }
 
 .nav-support:hover .nav_line, .nav-support:active .nav_line, .nav-support:focus .nav_line {
   visibility: visible;
+}
+.nav-support:hover .nav-support-submenu, .nav-support:active .nav-support-submenu, .nav-support:focus .nav-support-submenu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+.nav-support-submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  cursor: pointer;
 }
 
 .nav-resources {
@@ -359,12 +384,36 @@ a {
           flex-direction: column;
   text-decoration: none;
   cursor: pointer;
-  margin: 3px 0 0 21px;
+  margin: 57px 0 0 21px;
   letter-spacing: 0.7px;
+}
+
+.nav-resources-submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  cursor: pointer;
 }
 
 .nav-resources:hover .nav_line, .nav-resources:active .nav_line, .nav-resources:focus .nav_line {
   visibility: visible;
+}
+.nav-resources:hover .nav-resources-submenu, .nav-resources:active .nav-resources-submenu, .nav-resources:focus .nav-resources-submenu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
 }
 
 .nav-list_icon {
@@ -505,6 +554,7 @@ article {
   font-weight: 500;
   font-style: normal;
   margin: 0 10px 0 0;
+  letter-spacing: -0.2px;
 }
 
 .feature_article-data {
