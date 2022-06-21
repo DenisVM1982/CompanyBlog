@@ -275,10 +275,6 @@ a {
   color: #000000;
 }
 
-.nav-company_name:hover {
-  text-decoration: underline;
-}
-
 .nav-why_us {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,7 +523,7 @@ article {
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin: 15px 0 -16px 0;
+  margin: 15px 0 -11px 0;
 }
 
 .feature_artile-comment_counter-wrapper {
@@ -806,7 +802,7 @@ input {
   font-size: 18px;
   font-weight: 300;
   font-style: normal;
-  margin: 2px 0px 0 19px;
+  margin: -1px 0px 0 17px;
 }
 
 .recent_posts-block {
@@ -884,12 +880,15 @@ input {
 }
 
 .recent_post1-post {
-  margin: 0 0 0 0;
-  margin: 0px 0 0 0;
+  margin: -2px 0 2px 0px;
 }
 
 .recent_post-comment_img {
   margin: 0 5px 0 -8px;
+}
+
+.recent_post1-comment_img {
+  margin: -4px 5px 0 -8px;
 }
 
 .recent_post-line {
@@ -901,7 +900,7 @@ input {
 }
 
 .recent_post1-line {
-  margin: 42px 0 0 0;
+  margin: 57px 0 -1px 0;
 }
 
 .recent_post2-wrapper {
@@ -968,7 +967,7 @@ input {
 }
 
 .recent_post3-post {
-  margin: 18px 0 0 0;
+  margin: 18px 0 0 0px;
 }
 
 .recent_post3-data_author-wrapper {
@@ -978,12 +977,12 @@ input {
 .recent_post3-author {
   margin: 0px 15px 0px 0px;
   font-weight: 400;
-  letter-spacing: 0.5px;
 }
 
 .recent_post3-title {
   margin: 13px 0 0 0;
   font-weight: 500;
+  letter-spacing: 0.45px;
 }
 
 .recent_post3-comment_counter-wrapper {
@@ -1011,7 +1010,11 @@ input {
 }
 
 .recent_post4-post {
-  margin: 8px 0 0 0;
+  margin: 0px 0 0 0;
+}
+
+.recent_post4-title {
+  margin: 0 0 0 0;
 }
 
 .recent_post4-data_author-wrapper {
@@ -1033,6 +1036,14 @@ input {
   margin: 14px 0 0px 7px;
 }
 
+.recent_post4-comment_counter-wrapper {
+  margin: 16px 0 0 7px;
+}
+
+.recent_post4-comment_img {
+  margin: -1px 3px 2px -1px;
+}
+
 .recent_post4-line {
   margin: 49px 0 0 0;
 }
@@ -1046,7 +1057,7 @@ input {
 }
 
 .recent_post5-wrapper {
-  margin: 27px 0px 15px -1px;
+  margin: 30px 0px 15px 1px;
 }
 
 .recent_post5-image {
@@ -1079,12 +1090,24 @@ input {
   margin: 14px 0 0px 7px;
 }
 
+.recent_post5-comment_img {
+  margin: 0 0 0 0;
+}
+
 .recent_post5-line {
-  margin: 7px 0 0 0;
+  margin: 11px 0 0 0;
 }
 
 .recent_post6-wrapper {
-  margin: 36px 0px 15px -1px;
+  margin: 31px 0px 15px 1px;
+}
+
+.recent_post6-comment_img {
+  margin: 0 6px 0 -10px;
+}
+
+.recent_post6-line {
+  margin: -8px 0 15px 0;
 }
 
 .older_posts-button {
@@ -1097,7 +1120,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 24px 0px 0 259px;
+  margin: 24px 0px 0 260px;
   color: #4cb649;
   font-family: "Roboto";
   font-size: 14px;
@@ -1272,7 +1295,7 @@ footer {
   height: 800px;
   width: 1600px;
   background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
-  margin: 72px 0 0 0;
+  margin: 75px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1300,8 +1323,8 @@ footer {
 
 .pricing_block {
   position: relative;
-  top: 69px;
-  /* margin: 45px 0 0 0; */
+  top: 68px;
+  margin: 0px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1315,7 +1338,7 @@ footer {
 }
 
 .pricing_block1 {
-  margin: 0px 0px 0 1px;
+  margin: 0px 0px 0 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1386,7 +1409,7 @@ footer {
 }
 
 .dollar1 {
-  margin: -7px 12px 0 0px;
+  margin: -12px 14px 0 1px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -1453,7 +1476,7 @@ footer {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.8px;
-  margin: 32px -2px 0 0;
+  margin: 31px -3px 0 0;
 }
 
 .pricing_block1-sign_up:hover, .pricing_block1-sign_up:focus {
@@ -1705,7 +1728,7 @@ footer {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.8px;
-  margin: 51px -1px 0 0px;
+  margin: 51px 2px 0 0px;
 }
 
 .pricing_block3-smallline {
@@ -1779,7 +1802,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 18px -1px 0 0;
+  margin: 18px 3px 0 0;
   font-weight: 400px;
 }
 
@@ -1830,7 +1853,7 @@ footer {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.8px;
-  margin: 17px -2px 0 0;
+  margin: 16px 0px 0 0;
 }
 
 .pricing_block3-sign_up:hover, .pricing_block3-sign_up:focus {
@@ -1840,9 +1863,9 @@ footer {
 
 .ways_to_pay_block {
   position: absolute;
-  top: 3076px;
+  top: 3078px;
   z-index: 10;
-  margin: 0px -7px 0 0;
+  margin: 0px -13px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1923,8 +1946,8 @@ footer {
 .how_to_pay_block {
   position: fixed;
   position: absolute;
-  margin: 0px 0 0 2px;
-  top: 3187px;
+  margin: 0px -6px 0 0px;
+  top: 3189px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2190,6 +2213,10 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.br2 {
+  display: none;
 }
 
 @media (max-width: 930px) {
@@ -3042,7 +3069,7 @@ footer {
   .pricing_block3 {
     position: absolute;
     top: 651px;
-    margin: 0 0 0 0;
+    margin: 0px -2px 0 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3394,6 +3421,10 @@ footer {
 
   .br1 {
     display: none;
+  }
+
+  .br2 {
+    display: block;
   }
 
   .desktop_li {
