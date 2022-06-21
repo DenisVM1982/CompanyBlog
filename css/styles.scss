@@ -534,6 +534,8 @@ article {
 .search_recent_posts-wrapper {
     display: grid;
     grid-template: 1fr/66.7% 0.1% 34.2%;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .search_recent_posts-line {
@@ -1114,21 +1116,21 @@ footer {
 .pricing_block1-period {
     @include roboto-medium-tuna-14px;
     letter-spacing: 0.8px;
-    margin: 51px -1px 0 0px;
+    margin: 51px 5px 0 0px;
 }
 
 .pricing_block1-smallline {
     height: 2px;
     width: 24px;
     background: #4CB649;
-    margin: 13px 8px 0 0;
+    margin: 13px 2px 0 0;
 
 }
 
 
 
 .price_block-pricing_block1 {
-    margin: 15px 9px 0 0;
+    margin: 15px -1px 0 0;
     display: flex;
     align-items: center;
 }
@@ -1173,7 +1175,7 @@ footer {
 
 .pricing_block1-discount-wrapper {
     @include roboto-medium-tuna-14px;
-    margin: 34px 2px 0 0;
+    margin: 33px -3px 0 0;
     font-weight: 400px;
 }
 
@@ -1187,7 +1189,7 @@ footer {
     justify-content: center;
     @include roboto-medium-apple-14px;
     letter-spacing: 0.8px;
-    margin: 31px 2px 0 0;
+    margin: 32px -2px 0 0;
 
 }
 
@@ -1353,7 +1355,7 @@ footer {
 // Pricing block3 start
 
 .pricing_block3 {
-    margin: 0px 3px 0 0px;
+    margin: 0px -2px 0 1px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -1383,7 +1385,7 @@ footer {
 .pricing_block3-period {
     @include roboto-medium-tuna-14px;
     letter-spacing: 0.8px;
-    margin: 51px 2px 0 0px;
+    margin: 51px -3px 0 0px;
 }
 
 .pricing_block3-smallline {
@@ -1397,7 +1399,7 @@ footer {
 
 
 .price_block-pricing_block3 {
-    margin: 15px 10px 0 0;
+    margin: 16px -1px 0 0;
     display: flex;
     align-items: center;
 }
@@ -1445,7 +1447,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 18px 3px 0 0;
+    margin: 18px -2px 0 0;
     font-weight: 400px;
 }
 
@@ -1468,7 +1470,7 @@ footer {
 }
 
 .pricing_block3-discount_save {
-    margin: 9px 0px 0 0;
+    margin: 10px 0px 0 0;
     @include roboto-bold-tuna-14px;
 }
 
@@ -1484,7 +1486,7 @@ footer {
     justify-content: center;
     @include roboto-medium-apple-14px;
     letter-spacing: 0.8px;
-    margin: 16px 0px 0 0;
+    margin: 17px -2px 0px 0;
 
 }
 
@@ -1499,9 +1501,9 @@ footer {
 
 .ways_to_pay_block {
     position: absolute;
-    top: 3078px;
+    top: 3077px;
     z-index: 10;
-    margin: 0px -13px 0 0;
+    margin: 0px -10px 0 0;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1587,8 +1589,8 @@ footer {
 .how_to_pay_block {
     position: fixed;
     position: absolute;
-    margin: 0px -6px 0 0px;
-    top: 3189px;
+    margin: 0px -5px 0 0px;
+    top: 3190px;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
