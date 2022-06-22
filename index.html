@@ -11,419 +11,453 @@
 </head>
 
 <body>
+    <div class="main-wrapper">
+        <!-- Header start -->
 
-    <!-- Header start -->
+        <header>
 
-    <header>
+            <!-- Warning block start -->
 
-        <!-- Warning block start -->
-
-        <div class="warning" id="warning">
-            <div class="warning_block-1">
-                <a href=""> <img id="alert_icon" src="img/svg/alert.svg" alt="alert_icon.svg"></a>
-                <a id="you-are-not-protected">You are not protected</a>
-            </div>
-            <a class="warning_block-2">Your IP Address: 107.3.176.194</a>
-            <a class="warning_block-3">Your ISP: Comcast Cable</a>
-            <a class="warning_block-4">Learn More ›</a>
-            <div class="warning_block-5">
+            <div class="warning" id="warning">
+                <div class="warning_block-1">
+                    <a href=""> <img id="alert_icon" src="img/svg/alert.svg" alt="alert_icon.svg"></a>
+                    <a id="you-are-not-protected">You are not protected</a>
+                </div>
+                <a class="warning_block-2">Your IP Address: 107.3.176.194</a>
+                <a class="warning_block-3">Your ISP: Comcast Cable</a>
+                <a class="warning_block-4">Learn More ›</a>
                 <div id="close_border" onclick="warningClose()">
                     <a href="#">
                         <img id="close_icon" src="img/svg/close_icon.svg" alt="close_icon.svg">
                     </a>
                 </div>
             </div>
-        </div>
 
-        <!-- Warning block end -->
+            <!-- Warning block end -->
 
-        <!-- Navigation_block start -->
+            <!-- Navigation_block start -->
 
-        <nav class="navigation-block">
-            <div class="nav-sandwich_bar">
-                <div class="nav-sandwich_icon" onclick="sandwichMenuOpen()">
-                    <div class="nav-sandwich_line"></div>
-                    <div class="nav-sandwich_line"></div>
-                    <div class="nav-sandwich_line"></div>
-                </div>
-                <ul class="nav-sandwich_menu" id="nav-sadnwich_menu">
-                    <li><a href="">WHY US</a></li>
-                    <li><a href="">VPN APPS</a></li>
-                    <li><a href="">SUPPORT</a></li>
-                    <li><a href="">RESOURCES</a></li>
-                    <li><a href="">LOG IN</a></li>
-                </ul>
-            </div>
-            <div><a href = "" tabindex="0" class="nav-company_name">Company Name</a></div>
-            <nav class="nav-wrapper">
-                <div tabindex="1" class="nav-why_us">
-                    <div class="nav_block-wrapper">
-                        <div>WHY US</div>
-                        <img class="nav-list_icon" src="img/icons/list.svg" alt="">
+            <nav class="navigation-block">
+                <div class="nav-sandwich_bar">
+                    <div class="nav-sandwich_icon" onclick="sandwichToggleMenu()">
+                        <div class="nav-sandwich_line"></div>
+                        <div class="nav-sandwich_line"></div>
+                        <div class="nav-sandwich_line"></div>
                     </div>
-                    <div class="nav_line"></div>
-                    <ul class="nav-why_us-submenu">
-                        <li><a href="">ONE</a></li>
-                        <li><a href="">TWO</a></li>
-                        <li><a href="">THREE</a></li>
+                    <ul class="nav-sandwich_menu" id="nav-sadnwich_menu">
+                        <li><a href="">WHY US</a></li>
+                        <li><a href="">VPN APPS</a></li>
+                        <li><a href="">SUPPORT</a></li>
+                        <li><a href="">RESOURCES</a></li>
+                        <li><a href="">LOG IN</a></li>
                     </ul>
                 </div>
-                <a href="#" tabindex="2" class="nav-vpn_apps">
-                    <div>VPN APPS</div>
-                    <div class="nav_line"></div>
+                <div class="nav-company_name"><a href="" tabindex="0">Company Name</a></div>
+                <nav class="nav-wrapper">
+                    <div tabindex="1" class="nav-why_us">
+                        <div class="nav_block-wrapper">
+                            <div>WHY US</div>
+                            <img class="nav-list_icon" src="img/icons/list.svg" alt="">
+                        </div>
+                        <div class="nav_line"></div>
+                        <ul class="nav-why_us-submenu">
+                            <li><a href="">ONE</a></li>
+                            <li><a href="">TWO</a></li>
+                            <li><a href="">THREE</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" tabindex="2" class="nav-vpn_apps">
+                        <div>VPN APPS</div>
+                        <div class="nav_line"></div>
 
-                </a>
-                <div tabindex="3" class="nav-support">
-                    <div class="nav_block-wrapper">
-                        <div>SUPPORT</div>
-                        <img class="nav-list_icon" src="img/icons/list.svg" alt="">
+                    </a>
+                    <div tabindex="3" class="nav-support">
+                        <div class="nav_block-wrapper">
+                            <div>SUPPORT</div>
+                            <img class="nav-list_icon" src="img/icons/list.svg" alt="">
+                        </div>
+                        <div class="nav_line"></div>
+                        <ul class="nav-support-submenu">
+                            <li><a href="">ONE</a></li>
+                            <li><a href="">TWO</a></li>
+                            <li><a href="">THREE</a></li>
+                        </ul>
                     </div>
-                    <div class="nav_line"></div>
-                    <ul class="nav-support-submenu">
-                        <li><a href="">ONE</a></li>
-                        <li><a href="">TWO</a></li>
-                        <li><a href="">THREE</a></li>
-                    </ul>
-                </div>
-                <div tabindex="4" class="nav-resources">
-                    <div class="nav_block-wrapper">
-                        <div>RESOURCES</div>
-                        <img class="nav-list_icon" src="img/icons/list.svg" alt="">
+                    <div tabindex="4" class="nav-resources">
+                        <div class="nav_block-wrapper">
+                            <div>RESOURCES</div>
+                            <img class="nav-list_icon" src="img/icons/list.svg" alt="">
+                        </div>
+                        <div class="nav_line"></div>
+                        <ul class="nav-resources-submenu">
+                            <li><a href="">ONE</a></li>
+                            <li><a href="">TWO</a></li>
+                            <li><a href="">THREE</a></li>
+                        </ul>
                     </div>
-                    <div class="nav_line"></div>
-                    <ul class="nav-resources-submenu">
-                        <li><a href="">ONE</a></li>
-                        <li><a href="">TWO</a></li>
-                        <li><a href="">THREE</a></li>
-                    </ul>
+                </nav>
+                <div class="nav-btn_wrapper">
+                    <a href="#" tabindex="5" class="nav-log_in">LOG IN</a>
+                    <a href="#" tavindex="6" class="nav-get_started">GET STARTED</a>
                 </div>
             </nav>
-            <div class="nav-btn_wrapper">
-                <a href="#" tabindex="5" class="nav-log_in">LOG IN</a>
-                <a href="#" tavindex="6" class="nav-get_started">GET STARTED</a>
-            </div>
-        </nav>
 
-        <!-- Navigation_block end -->
+            <!-- Navigation_block end -->
 
-    </header>
+        </header>
 
-    <!-- Header end -->
+        <!-- Header end -->
 
-    <!-- Article start -->
+        <!-- Main content start -->
 
-    <article>
-
-        <!-- Featured_article start -->
-
-        <div class="featured_article">
-            <img src="img/Bitmap.png" class="featured_article-img" alt="">
-            <div class="feature_article-wrapper">
-                <div class="feature_article-post"><a href="">TV Addons: Legal battle against Canadian media giants demonstrates
-                    severe consequences facing developers accused of copyright infringement</a>
-                </div>
-                <div class="feature_article-data_author-wrapper">
-                    <div class="feature_article-author">Danica Sergison</div>
-                    <div class="feature_article-data">|&nbsp;&nbsp;JUL 08, 2018</div>
-                </div>
-                <div class="feature_article-title">Copyright, News, Open Source, Privacy</div>
-                <div class="feature_artile-comment_counter-wrapper">
-                    <a class="feature_article-comment" href="#"></a>
-                    <a class="feature_article-counter_comments" href="#">0</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tags_block start -->
-
-        <div class="tags_block">
-            <a class="tags">TAGS:</a>
-            <div class="tags-wrapper">
-                <a class="bitcoin">BITCOIN</a>
-                <a class="bittorrent">BITTORRENT</a>
-                <a class="irc">IRC</a>
-                <a class="news">NEWS</a>
-                <a class="privacy">PRIVACY</a>
-                <a class="programming">PROGRAMMING</a>
-                <a class="security">SECURITY</a>
-            </div>
-            <div class="team_contact-wrapper">
-                <a class="team">TEAM</a>
-                <a class="contact">CONTACT</a>
-            </div>
-        </div>
-
-        <!-- Tags_block end -->
-
-    </article>
-
-    <!-- Article end -->
-
-    <!-- Search-recent_posts block start -->
-
-    <aside class="search_recent_posts-wrapper">
-
-        <!-- Search_block start -->
-
-        <div class="search_block">
-            <img class="search_icon" src="img/icons/search.svg" alt="search.svg">
-            <input class="search_input" type="search" placeholder="Search blog">
-
-        </div>
-
-        <!-- Search_block end -->
-
-        <div class="search_recent_posts-line"></div>
-
-        <!-- Recent_posts start -->
-
-        <div class="recent_posts-block">
-            <div class="recent_posts-title">Recent posts</div>
-
-            <!-- Recent post1 start -->
-
-            <div class="recent_post-wrapper">
-                <img class="recent_post-image" src="img/recent_post1.png" alt="recent_post1">
-                <div class="recent_post-wrapper2">
-                    <div class="feature_article-post recent_post1-post"><a href="">The Internet Cannot be Trusted –
-                        Beamsplitters,
-                        Backdoors, and Broken Promises</a>
+        <main class="content">
+            <section>
+                <div class="wrapper">
+                    <div class="featured_article">
+                        <img src="img/Bitmap.png" class="featured_article-img" alt="Bitmap">
+                        <div class="feature_article-wrapper">
+                            <p class="feature_article-post"><a href="">TV Addons: Legal battle against Canadian media
+                                    giants
+                                    demonstrates
+                                    severe consequences facing developers accused of copyright infringement</a>
+                            </p>
+                            <div>
+                                <div class="feature_article-data_author-wrapper">
+                                    <div class="feature_article-author">Danica Sergison</div>
+                                    <div class="feature_article-data">|&nbsp;&nbsp;JUL 08, 2018</div>
+                                </div>
+                                <div class="feature_article-title">Copyright, News, Open Source, Privacy</div>
+                                <div class="feature_artile-comment_counter-wrapper">
+                                    <a class="feature_article-comment" href="#"></a>
+                                    <a class="feature_article-counter_comments" href="#">0</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature_article-data_author-wrapper recent_post1-wrapper">
-                        <div class="feature_article-author recent_post1-author">Derek Zimmer</div>
-                        <div class="feature_article-data recent_post1-data">|&nbsp;&nbsp;JUL 25, 2018</div>
+                </div>
+            </section>
+
+            <!-- Article start -->
+
+            <article>
+
+                <!-- Tags_block start -->
+
+                <div class="tags_block">
+                    <a class="tags">TAGS:</a>
+                    <div class="tags-wrapper">
+                        <a class="bitcoin">BITCOIN</a>
+                        <a class="bittorrent">BITTORRENT</a>
+                        <a class="irc">IRC</a>
+                        <a class="news">NEWS</a>
+                        <a class="privacy">PRIVACY</a>
+                        <a class="programming">PROGRAMMING</a>
+                        <a class="security">SECURITY</a>
                     </div>
-                    <div class="feature_article-title recent_post1-title">Governments, Networking, Open Source,
-                        Privacy,
-                        Security</div>
-                    <div class="feature_artile-comment_counter-wrapper 
+                    <div class="team_contact-wrapper">
+                        <a class="team">TEAM</a>
+                        <a class="contact">CONTACT</a>
+                    </div>
+                </div>
+
+                <!-- Tags_block end -->
+
+            </article>
+
+            <!-- Article end -->
+
+            <!-- Search-recent_posts block start -->
+
+            <aside class="search_recent_posts-wrapper">
+
+                <!-- Search_block start -->
+
+                <div class="search_block">
+                    <img class="search_icon" src="img/icons/search.svg" alt="search.svg">
+                    <input class="search_input" type="search" placeholder="Search blog">
+
+                </div>
+
+                <!-- Search_block end -->
+
+                <div class="search_recent_posts-line"></div>
+
+                <!-- Recent_posts start -->
+
+                <div class="recent_posts-block">
+                    <div class="recent_posts-title">Recent posts</div>
+
+                    <!-- Recent post1 start -->
+
+                    <div class="recent_post-wrapper">
+                        <img class="recent_post-image" src="img/recent_post1.png" alt="recent_post1">
+                        <div class="recent_post-wrapper2">
+                            <div class="feature_article-post recent_post1-post"><a href="">The Internet Cannot be
+                                    Trusted –
+                                    Beamsplitters,
+                                    Backdoors, and Broken Promises</a>
+                            </div>
+                            <div class="feature_article-data_author-wrapper recent_post1-wrapper">
+                                <div class="feature_article-author recent_post1-author">Derek Zimmer</div>
+                                <div class="feature_article-data recent_post1-data">|&nbsp;&nbsp;JUL 25, 2018</div>
+                            </div>
+                            <div class="feature_article-title recent_post1-title">Governments, Networking, Open Source,
+                                Privacy,
+                                Security</div>
+                            <div class="feature_artile-comment_counter-wrapper 
                 recent_post1-comment_counter-wrapper">
-                        <img class="recent_post-comment_img recent_post1-comment_img" src="img/icons/comment.svg" alt="">
-                        <a class="feature_article-counter_comments recent_post1-counter_comments" href="#">0</a>
-                    </div>
-                </div>
-            </div>
-            <div class="recent_post-line recent_post1-line"></div>
-
-            <!-- Recent post1 end -->
-
-            <!-- Recent post2 start -->
-
-            <div class="recent_post-wrapper recent_post2-wrapper">
-                <img class="recent_post-image recent_post2-image" src="img/recent_post2.png" alt="recent_post1">
-                <div class="recent_post-wrapper2 recent_post2-wrapper2">
-                    <div class="feature_article-post recent_post2-post"><a href="">How to get cheaper flights using a VPN</a>
-                    </div>
-                    <div class="feature_article-data_author-wrapper recent_post2-data_author-wrapper">
-                        <div class="feature_article-author recent_post2-author">Jayson</div>
-                        <div class="feature_article-data recent_post2-data">|&nbsp;&nbsp;JUL 24, 2018</div>
-                    </div>
-                    <div class="feature_article-title recent_post2-title">Guides</div>
-                    <div
-                        class="feature_artile-comment_counter-wrapper recent_post1-comment_counter-wrapper recent_post2-comment_counter-wrapper">
-                        <img class="recent_post-comment_img" src="img/icons/comment.svg" alt="">
-                        <a class="feature_article-counter_comments recent_post2-counter_comments" href="#">0</a>
-                    </div>
-                </div>
-            </div>
-            <div class="recent_post-line recent_post2-line"></div>
-
-            <!-- Recent post2 end -->
-
-            <!-- Recent post3 start -->
-
-            <div class="recent_post-wrapper recent_post3-wrapper">
-                <img class="recent_post-image recent_post3-image" src="img/recent_post3.png" alt="recent_post1">
-                <div class="recent_post-wrapper2 recent_post3-wrapper2">
-                    <div class="recent_post2-wrapper">
-                        <div class="feature_article-post recent_post3-post"><a href="">Net Neutrality was repealed, but the
-                            fight<br>is far
-                            from over</a>
-                        </div>
-                        <div class="feature_article-data_author-wrapper recent_post3-data_author-wrapper">
-                            <div class="feature_article-author recent_post3-author">Chris Miller</div>
-                            <div class="feature_article-data recent_post3-data">|&nbsp;&nbsp;JUL 22, 2018</div>
-                        </div>
-                        <div class="feature_article-title recent_post3-title">Governments, Net Neutrality, News
-                        </div>
-                        <div class="feature_artile-comment_counter-wrapper recent_post3-comment_counter-wrapper">
-                            <img class="recent_post-comment_img" src="img/icons/comment.svg" alt="">
-                            <a class="feature_article-counter_comments recent_post3-counter_comments" href="#">0</a>
+                                <img class="recent_post-comment_img recent_post1-comment_img"
+                                    src="img/icons/comment.svg" alt="">
+                                <a class="feature_article-counter_comments recent_post1-counter_comments" href="#">0</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="recent_post-line recent_post3-line"></div>
+                    <div class="recent_post-line recent_post1-line"></div>
 
-            <!-- Recent_post3 end -->
+                    <!-- Recent post1 end -->
 
-            <!-- Recent post4 start -->
+                    <!-- Recent post2 start -->
 
-            <div class="recent_post-wrapper recent_post4-wrapper">
-                <img class="recent_post-image" src="img/recent_post1.png" alt="recent_post1">
-                <div class="recent_post-wrapper2">
-                    <div class="feature_article-post recent_post1-post recent_post4-post"><a href="">The Internet Cannot be Trusted –
-                        Beamsplitters,
-                        Backdoors, and Broken Promises</a>
+                    <div class="recent_post-wrapper recent_post2-wrapper">
+                        <img class="recent_post-image recent_post2-image" src="img/recent_post2.png" alt="recent_post1">
+                        <div class="recent_post-wrapper2 recent_post2-wrapper2">
+                            <div class="feature_article-post recent_post2-post"><a href="">How to get cheaper flights
+                                    using
+                                    a VPN</a>
+                            </div>
+                            <div class="feature_article-data_author-wrapper recent_post2-data_author-wrapper">
+                                <div class="feature_article-author recent_post2-author">Jayson</div>
+                                <div class="feature_article-data recent_post2-data">|&nbsp;&nbsp;JUL 24, 2018</div>
+                            </div>
+                            <div class="feature_article-title recent_post2-title">Guides</div>
+                            <div
+                                class="feature_artile-comment_counter-wrapper recent_post1-comment_counter-wrapper recent_post2-comment_counter-wrapper">
+                                <img class="recent_post-comment_img" src="img/icons/comment.svg" alt="">
+                                <a class="feature_article-counter_comments recent_post2-counter_comments" href="#">0</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature_article-data_author-wrapper recent_post1-wrapper">
-                        <div class="feature_article-author recent_post1-author">Derek Zimmer</div>
-                        <div class="feature_article-data recent_post1-data">|&nbsp;&nbsp;JUL 25, 2018</div>
+                    <div class="recent_post-line recent_post2-line"></div>
+
+                    <!-- Recent post2 end -->
+
+                    <!-- Recent post3 start -->
+
+                    <div class="recent_post-wrapper recent_post3-wrapper">
+                        <img class="recent_post-image recent_post3-image" src="img/recent_post3.png" alt="recent_post1">
+                        <div class="recent_post-wrapper2 recent_post3-wrapper2">
+                            <div class="recent_post2-wrapper">
+                                <div class="feature_article-post recent_post3-post"><a href="">Net Neutrality was
+                                        repealed,
+                                        but the
+                                        fight<br>is far
+                                        from over</a>
+                                </div>
+                                <div class="feature_article-data_author-wrapper recent_post3-data_author-wrapper">
+                                    <div class="feature_article-author recent_post3-author">Chris Miller</div>
+                                    <div class="feature_article-data recent_post3-data">|&nbsp;&nbsp;JUL 22, 2018</div>
+                                </div>
+                                <div class="feature_article-title recent_post3-title">Governments, Net Neutrality, News
+                                </div>
+                                <div
+                                    class="feature_artile-comment_counter-wrapper recent_post3-comment_counter-wrapper">
+                                    <img class="recent_post-comment_img" src="img/icons/comment.svg" alt="">
+                                    <a class="feature_article-counter_comments recent_post3-counter_comments"
+                                        href="#">0</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature_article-title recent_post1-title recent_post4-title">Governments, Networking, Open Source,
-                        Privacy,
-                        Security</div>
-                    <div class="feature_artile-comment_counter-wrapper 
+                    <div class="recent_post-line recent_post3-line"></div>
+
+                    <!-- Recent_post3 end -->
+
+                    <!-- Recent post4 start -->
+
+                    <div class="recent_post-wrapper recent_post4-wrapper">
+                        <img class="recent_post-image" src="img/recent_post1.png" alt="recent_post1">
+                        <div class="recent_post-wrapper2">
+                            <div class="feature_article-post recent_post1-post recent_post4-post"><a href="">The
+                                    Internet
+                                    Cannot be Trusted –
+                                    Beamsplitters,
+                                    Backdoors, and Broken Promises</a>
+                            </div>
+                            <div class="feature_article-data_author-wrapper recent_post1-wrapper">
+                                <div class="feature_article-author recent_post1-author">Derek Zimmer</div>
+                                <div class="feature_article-data recent_post1-data">|&nbsp;&nbsp;JUL 25, 2018</div>
+                            </div>
+                            <div class="feature_article-title recent_post1-title recent_post4-title">Governments,
+                                Networking, Open Source,
+                                Privacy,
+                                Security</div>
+                            <div class="feature_artile-comment_counter-wrapper 
                 recent_post1-comment_counter-wrapper recent_post4-comment_counter-wrapper">
-                        <img class="recent_post-comment_img recent_post4-comment_img" src="img/icons/comment.svg" alt="">
-                        <a class="feature_article-counter_comments recent_post1-counter_comments" href="#">0</a>
-                    </div>
-                </div>
-            </div>
-            <div class="recent_post-line recent_post4-line"></div>
-
-            <!-- Recent post4 end -->
-
-            <!-- Recent post5 start -->
-
-            <div class="recent_post-wrapper recent_post5-wrapper">
-                <img class="recent_post-image recent_post2-image" src="img/recent_post2.png" alt="recent_post1">
-                <div class="recent_post-wrapper2 recent_post2-wrapper2">
-                    <div class="feature_article-post recent_post2-post"><a href="">How to get cheaper flights using a VPN</a>
-                    </div>
-                    <div class="feature_article-data_author-wrapper recent_post2-data_author-wrapper">
-                        <div class="feature_article-author recent_post2-author">Jayson</div>
-                        <div class="feature_article-data recent_post2-data">|&nbsp;&nbsp;JUL 24, 2018</div>
-                    </div>
-                    <div class="feature_article-title recent_post2-title">Guides</div>
-                    <div
-                        class="feature_artile-comment_counter-wrapper recent_post1-comment_counter-wrapper recent_post2-comment_counter-wrapper">
-                        <img class="recent_post-comment_img" src="img/icons/comment.svg" alt="">
-                        <a class="feature_article-counter_comments recent_post2-counter_comments" href="#">0</a>
-                    </div>
-                </div>
-            </div>
-            <div class="recent_post-line recent_post5-line"></div>
-
-            <!-- Recent post5 end -->
-
-            <!-- Recent post6 start -->
-
-            <div class="recent_post-wrapper recent_post3-wrapper recent_post6-wrapper">
-                <img class="recent_post-image recent_post3-image" src="img/recent_post3.png" alt="recent_post1">
-                <div class="recent_post-wrapper2 recent_post3-wrapper2">
-                    <div class="recent_post2-wrapper">
-                        <div class="feature_article-post recent_post3-post"><a href="">Net Neutrality was repealed, but the
-                            fight<br>is far
-                            from over</a>
-                        </div>
-                        <div class="feature_article-data_author-wrapper recent_post3-data_author-wrapper">
-                            <div class="feature_article-author recent_post3-author">Chris Miller</div>
-                            <div class="feature_article-data recent_post3-data">|&nbsp;&nbsp;JUL 22, 2018</div>
-                        </div>
-                        <div class="feature_article-title recent_post3-title">Governments, Net Neutrality, News
-                        </div>
-                        <div class="feature_artile-comment_counter-wrapper recent_post3-comment_counter-wrapper">
-                            <img class="recent_post-comment_img recent_post6-comment_img" src="img/icons/comment.svg" alt="">
-                            <a class="feature_article-counter_comments recent_post3-counter_comments" href="#">0</a>
+                                <img class="recent_post-comment_img recent_post4-comment_img"
+                                    src="img/icons/comment.svg" alt="">
+                                <a class="feature_article-counter_comments recent_post1-counter_comments" href="#">0</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="recent_post-line recent_post4-line"></div>
+
+                    <!-- Recent post4 end -->
+
+                    <!-- Recent post5 start -->
+
+                    <div class="recent_post-wrapper recent_post5-wrapper">
+                        <img class="recent_post-image recent_post2-image" src="img/recent_post2.png" alt="recent_post1">
+                        <div class="recent_post-wrapper2 recent_post2-wrapper2">
+                            <div class="feature_article-post recent_post2-post"><a href="">How to get cheaper flights
+                                    using
+                                    a VPN</a>
+                            </div>
+                            <div class="feature_article-data_author-wrapper recent_post2-data_author-wrapper">
+                                <div class="feature_article-author recent_post2-author">Jayson</div>
+                                <div class="feature_article-data recent_post2-data">|&nbsp;&nbsp;JUL 24, 2018</div>
+                            </div>
+                            <div class="feature_article-title recent_post2-title">Guides</div>
+                            <div
+                                class="feature_artile-comment_counter-wrapper recent_post1-comment_counter-wrapper recent_post2-comment_counter-wrapper">
+                                <img class="recent_post-comment_img" src="img/icons/comment.svg" alt="">
+                                <a class="feature_article-counter_comments recent_post2-counter_comments" href="#">0</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent_post-line recent_post5-line"></div>
+
+                    <!-- Recent post5 end -->
+
+                    <!-- Recent post6 start -->
+
+                    <div class="recent_post-wrapper recent_post3-wrapper recent_post6-wrapper">
+                        <img class="recent_post-image recent_post3-image" src="img/recent_post3.png" alt="recent_post1">
+                        <div class="recent_post-wrapper2 recent_post3-wrapper2">
+                            <div class="recent_post2-wrapper">
+                                <div class="feature_article-post recent_post3-post"><a href="">Net Neutrality was
+                                        repealed,
+                                        but the
+                                        fight<br>is far
+                                        from over</a>
+                                </div>
+                                <div class="feature_article-data_author-wrapper recent_post3-data_author-wrapper">
+                                    <div class="feature_article-author recent_post3-author">Chris Miller</div>
+                                    <div class="feature_article-data recent_post3-data">|&nbsp;&nbsp;JUL 22, 2018</div>
+                                </div>
+                                <div class="feature_article-title recent_post3-title">Governments, Net Neutrality, News
+                                </div>
+                                <div
+                                    class="feature_artile-comment_counter-wrapper recent_post3-comment_counter-wrapper">
+                                    <img class="recent_post-comment_img recent_post6-comment_img"
+                                        src="img/icons/comment.svg" alt="">
+                                    <a class="feature_article-counter_comments recent_post3-counter_comments"
+                                        href="#">0</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent_post-line recent_post3-line recent_post6-line"></div>
+
+                    <!-- Recent_post6 end -->
+
+                    <!--  Button Older_Post -->
+
+                    <a class="older_posts-button">Older posts</a>
+
+                    <!--  Button Older_Post end -->
+
+
                 </div>
-            </div>
-            <div class="recent_post-line recent_post3-line recent_post6-line"></div>
 
-            <!-- Recent_post6 end -->
+                <!-- Side_nav_blog start-->
 
-            <!--  Button Older_Post -->
+                <div class="side_nav_blog-block">
+                    <div class="side_nav_announcements">
+                        <div class="side_nav-header_announcements-wrapper">
+                            <img src="img/icons/announcements_icon.svg" alt="announcements_icon">
+                            <div class="announcements-side_nav_header">Announcements</div>
+                        </div>
+                        <ul class="announcements-ul">
+                            <li>
+                                <div>•</div><a href="">Upcoming Changes (Live Chat, Less Censorship, More Access)</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">New Servers (US Washington DC)</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">New Servers (US Denver)</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">Open Source: Releasing the PIA iOS Client</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">Opera Extension is now available</a>
+                            </li>
+                    </div>
+                    </ul>
+                    <div class="announcements-line"></div>
 
-            <a class="older_posts-button">Older posts</a>
+                    <div class="side_nav_announcements side_nav_popular_post">
+                        <div class="side_nav-header_announcements-wrapper side_nav-header_popular_post-wrapper">
+                            <img src="img/icons/popular_post.svg" alt="announcements_icon">
+                            <div class="announcements-side_nav_header popular_post-side_nav_header">Popular posts</div>
+                        </div>
+                        <ul class="announcements-ul popular_post-ul">
+                            <li>
+                                <div>•</div><a href="">The Gift of Privacy</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">UK High Court Censors Many Links To Popcorn Time: Useless,
+                                    Dangerous
+                                    Gesture</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">About the PIA Client Security and VPN Security in General</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">A Private Net Is Just As Fundamental A Right As Freedom Of
+                                    Speech</a>
+                            </li>
+                            <li>
+                                <div>•</div><a href="">Wiretapping Today Just Doesn’t Mean What The Word Meant In The
+                                    1990s,
+                                    So Don’t
+                                    Fall For That Lie</a>
+                            </li>
+                    </div>
+                    </ul>
+                    <div class="announcements-line popular_post-line"></div>
+                    <a href=""><img class="add_sidebar" src="img/add_sidebar.jpg" alt="add_sidebar"></a>
+                    <h1 class="tag_cloud">Tag cloud</h1>
+                    <a href=""><img class="tag_cloud-img" src="img/tag_cloud.png" alt="tag_cloud"></a>
 
-            <!--  Button Older_Post end -->
 
 
-        </div>
 
-        <!-- Side_nav_blog start-->
 
-        <div class="side_nav_blog-block">
-            <div class="side_nav_announcements">
-                <div class="side_nav-header_announcements-wrapper">
-                    <img src="img/icons/announcements_icon.svg" alt="announcements_icon">
-                    <div class="announcements-side_nav_header">Announcements</div>
                 </div>
-                <ul class="announcements-ul">
-                    <li>
-                        <div>•</div><a href="">Upcoming Changes (Live Chat, Less Censorship, More Access)</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">New Servers (US Washington DC)</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">New Servers (US Denver)</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">Open Source: Releasing the PIA iOS Client</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">Opera Extension is now available</a>
-                    </li>
-            </div>
-            </ul>
-            <div class="announcements-line"></div>
 
-            <div class="side_nav_announcements side_nav_popular_post">
-                <div class="side_nav-header_announcements-wrapper side_nav-header_popular_post-wrapper">
-                    <img src="img/icons/popular_post.svg" alt="announcements_icon">
-                    <div class="announcements-side_nav_header popular_post-side_nav_header">Popular posts</div>
+                <!-- Side_nav_blog end-->
+
+            </aside>
+
+            <!-- Search-recent_posts block end -->
+
+        </main>
+
+        <!-- Main content end -->
+
+        <!-- Footer start -->
+
+        <footer class="footer">
+
+
+            <!-- Discount_block start -->
+
+            <div class="discount_block">
+                <div class="sign_up_today">
+                    <div class="space">Sign up today&nbsp;</div> – 7 day money back guarantee
                 </div>
-                <ul class="announcements-ul popular_post-ul">
-                    <li>
-                        <div>•</div><a href="">The Gift of Privacy</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">About the PIA Client Security and VPN Security in General</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</a>
-                    </li>
-                    <li>
-                        <div>•</div><a href="">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t
-                            Fall For That Lie</a>
-                    </li>
-            </div>
-            </ul>
-            <div class="announcements-line popular_post-line"></div>
-            <a href=""><img class="add_sidebar" src="img/add_sidebar.jpg" alt="add_sidebar"></a>
-            <h1 class="tag_cloud">Tag cloud</h1>
-            <a href=""><img class="tag_cloud-img" src="img/tag_cloud.png" alt="tag_cloud"></a>
-
-
-
-
-
-        </div>
-        
-        <!-- Side_nav_blog end-->
-
-    </aside>
-
-    <!-- Search-recent_posts block end -->
-
-    <!-- Footer start -->
-
-    <footer>
-
-
-        <!-- Discount_block start -->
-
-        <div class="discount_block">
-            <h1 class="sign_up_today">
-                <div class="space">Sign up today&nbsp;</div> – 7 day money back guarantee
-            </h1>
-            <div class="pricing_block">
                 <div class="pricing_block1">
                     <h3 class="pricing_block1-period">MONTHLY</h3>
                     <div class="pricing_block1-smallline"></div>
@@ -468,110 +502,114 @@
                     <div class="pricing_block3-discount_save">Save 52%*</div>
                     <div class="pricing_block3-sign_up">SIGN UP</div>
                 </div>
+
+                <div class="ways_to_pay_block">
+                    <h5 class="ways_to_pay">Ways to pay:</h5>
+                    <a id="visa" href=""><img src="img/svg/visa.svg" alt="visa"></a>
+                    <a id="mastercard" href=""><img src="img/svg/master_card.svg" alt="mastercard"></a>
+                    <a id="american_express" href=""><img src="img/svg/american_express.svg" alt="american_express"></a>
+                    <a id="pay_pal" href=""><img src="img/svg/pay_pal.svg" alt="pay_pal"></a>
+                    <a id="bitcoin" href=""><img src="img/svg/Bitcoin.svg" alt="bitcoin"></a>
+                    <a id="okpay" href=""><img src="img/svg/OK Pay.svg" alt="OK pay"></a>
+                    <a id="amazon_pay" href=""><img src="img/svg/Amazon-Pay.svg" alt="Amazon-Pay"></a>
+                </div>
+                <div class="how_to_pay_block">
+                    <div class="how_to_pay_wrapper1">
+                        <h5 class="how_to_pay_anonymously">How to pay anonymously</h5>
+                        <img id="arrow1" src="img/icons/arrow.svg" alt="">
+                    </div>
+                    <a class="how_to_pay_wrapper2">
+                        <h5 class="redeem_gift_card">REDEEM GIFT CARD</h5>
+                        <img id="arrow2" src="img/icons/arrow.svg" alt="">
+                    </a>
+                </div>
+
             </div>
-            <div class="ways_to_pay_block">
-                <h5 class="ways_to_pay">Ways to pay:</h5>
-                <a id="visa" href=""><img src="img/svg/visa.svg" alt="visa"></a>
-                <a id="mastercard" href=""><img src="img/svg/master_card.svg" alt="mastercard"></a>
-                <a id="american_express" href=""><img src="img/svg/american_express.svg" alt="american_express"></a>
-                <a id="pay_pal" href=""><img src="img/svg/pay_pal.svg" alt="pay_pal"></a>
-                <a id="bitcoin" href=""><img src="img/svg/Bitcoin.svg" alt="bitcoin"></a>
-                <a id="okpay" href=""><img src="img/svg/OK Pay.svg" alt="OK pay"></a>
-                <a id="amazon_pay" href=""><img src="img/svg/Amazon-Pay.svg" alt="Amazon-Pay"></a>
-            </div>
-            <div class="how_to_pay_block">
-                <div class="how_to_pay_wrapper1">
-                    <h5 class="how_to_pay_anonymously">How to pay anonymously</h5>
-                    <img id="arrow1" src="img/icons/arrow.svg" alt="">
-                </div>
-                <a class="how_to_pay_wrapper2">
-                    <h5 class="redeem_gift_card">REDEEM GIFT CARD</h5>
-                    <img id="arrow2" src="img/icons/arrow.svg" alt="">
-                </a>
-            </div>
 
-        </div>
+            <!-- Discount_block end -->
 
-        <!-- Discount_block end -->
+            <!-- About_company_block start -->
 
-        <!-- About_company_block start -->
-
-        <div class="about_company-wrapper">
-            <h1 class="company_name">Company Name</h1>
-            <div class="about_company">
-                <div class="company_block">
-                    <h4 class="company">COMPANY</h4>
-                    <ul class="company_title">
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Our Team</a></li>
-                        <li class="mobi_li"><a href="">Jobs</a></li>
-                        <li class="desktop_li"><a href="">Careers</a></li>
-                        <li><a href="">Press</a></li>
-                        <li><a href="">In the Media</a></li>
-                        <li><a href="">VPN Reviews</a></li>
-                        <li><a href="">Companies We Support</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="programs_block">
-                    <h4 class="programs">PROGRAMS</h4>
-                    <ul>
-                        <li><a href="">Whitehat Security</a></li>
-                        <li><a href="">Affiliates</a></li>
-                    </ul>
-                </div>
-                <div class="learn_more_block">
-                    <h4 class="learn_more">LEARN MORE</h4>
-                    <ul>
-                        <li><a href="">VPN Encryption</a></li>
-                        <li><a href="">Android VPN App</a></li>
-                        <li><a href="">IOS VPN App</a></li>
-                        <li><a href="">PIA Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="legal_block">
-                    <h4 class="legal">LEGAL</h4>
-                    <ul>
-                        <li><a href="">Terms Of Service</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">DMCA Policy</a></li>
-                        <li><a href="">Export Control Policy</a></li>
-                    </ul>
-                </div>
-                <div class="about_block">
-                    <h4 class="about">ABOUT</h4>
-                    <p class="prvate_internet">Private Internet Access is the leading VPN Service provider specializing
-                        in secure, encrypted <br class="br1">VPN tunnels which create several layers of privacy and
-                        security
-                        providing you safety on the internet. Our service is backed by multiple gateways worldwide with
-                        access in 28+ countries, 44+ regions.</p>
-                </div>
-                <sup class="map_data">Map data provided by Google.<br><br>
-                    PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights
-                    Reserved.<span class="br1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights
-                    Reserved.<br><br>
-                    © London Trust Media, Inc. All Rights Reserved.</sup>
-                <div class="social_block">
-                    <h4 class="social">SOCIAL</h4>
-                    <div class="social_icon-wrapper">
-                        <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
-                        <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
-                        <a href=""><img src="img/icons/google_plus.svg" alt="google_plus"></a>
-                        <a href=""><img src="img/icons/LinkedIn.svg" alt="LinkedIn"></a>
-                        <a href=""><img src="img/icons/reddit.svg" alt="reddit"></a>
-                        <a href=""><img src="img/icons/youtube.svg" alt="youtube"></a>
+            <div class="about_company-wrapper">
+                <h1 class="company_name">Company Name</h1>
+                <div class="about_company">
+                    <div class="company_block">
+                        <h4 class="company">COMPANY</h4>
+                        <ul class="company_title">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li class="mobi_li"><a href="">Jobs</a></li>
+                            <li class="desktop_li"><a href="">Careers</a></li>
+                            <li><a href="">Press</a></li>
+                            <li><a href="">In the Media</a></li>
+                            <li><a href="">VPN Reviews</a></li>
+                            <li><a href="">Companies We Support</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="programs_block">
+                        <h4 class="programs">PROGRAMS</h4>
+                        <ul>
+                            <li><a href="">Whitehat Security</a></li>
+                            <li><a href="">Affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="learn_more_block">
+                        <h4 class="learn_more">LEARN MORE</h4>
+                        <ul>
+                            <li><a href="">VPN Encryption</a></li>
+                            <li><a href="">Android VPN App</a></li>
+                            <li><a href="">IOS VPN App</a></li>
+                            <li><a href="">PIA Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="legal_block">
+                        <h4 class="legal">LEGAL</h4>
+                        <ul>
+                            <li><a href="">Terms Of Service</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">DMCA Policy</a></li>
+                            <li><a href="">Export Control Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="about_block">
+                        <h4 class="about">ABOUT</h4>
+                        <p class="prvate_internet">Private Internet Access is the leading VPN Service provider
+                            specializing
+                            in secure, encrypted <br class="br1">VPN tunnels which create several layers of privacy and
+                            security
+                            providing you safety on the internet. Our service is backed by multiple gateways worldwide
+                            with
+                            access in 28+ countries, 44+ regions.</p>
+                    </div>
+                    <sup class="map_data">Map data provided by Google.<br><br>
+                        PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights
+                        Reserved.<span class="br1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights
+                        Reserved.<br><br>
+                        © London Trust Media, Inc. All Rights Reserved.</sup>
+                    <div class="social_block">
+                        <h4 class="social">SOCIAL</h4>
+                        <div class="social_icon-wrapper">
+                            <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
+                            <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+                            <a href=""><img src="img/icons/google_plus.svg" alt="google_plus"></a>
+                            <a href=""><img src="img/icons/LinkedIn.svg" alt="LinkedIn"></a>
+                            <a href=""><img src="img/icons/reddit.svg" alt="reddit"></a>
+                            <a href=""><img src="img/icons/youtube.svg" alt="youtube"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- About_company_block end -->
+            <!-- About_company_block end -->
 
-    </footer>
+        </footer>
 
-    <!-- Footer end -->
+        <!-- Footer end -->
+
+    </div>
 
     <script src="js/main.js"></script>
 </body>
