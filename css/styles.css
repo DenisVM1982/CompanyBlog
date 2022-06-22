@@ -2433,24 +2433,13 @@ footer {
           align-items: start;
 }
 
-.company_name {
-  margin: 0 0 0 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 27px;
-  line-height: 33px;
-  text-align: center;
-  color: #000000;
-}
-
 .about_company {
-  margin: 58px 0 0 0;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 160px 122px 1fr;
+  -ms-grid-rows: 91px 160px 122px 1fr;
   -ms-grid-columns: 200px 200px 200px 600px;
-      grid-template: 160px 122px 1fr/200px 200px 200px 600px;
+      grid-template: 91px 160px 122px 1fr/200px 200px 200px 600px;
 }
 .about_company ul {
   margin: 16px 0 0 0;
@@ -2486,10 +2475,50 @@ footer {
   margin: 21px 0 0 0;
   line-height: 22px;
 }
-.about_company a:hover,
-.about_company a:focus,
-.about_company a:active {
+@media (max-width: 1250px) {
+  .about_company {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 91px 160px 122px 1fr;
+    -ms-grid-columns: 158px 130px 157px 567px;
+        grid-template: 91px 160px 122px 1fr/158px 130px 157px 567px;
+  }
+}
+@media (max-width: 1050px) {
+  .about_company {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 91px 160px 122px 1fr;
+    -ms-grid-columns: 158px 130px 137px 431px;
+        grid-template: 91px 160px 122px 1fr/158px 130px 137px 431px;
+  }
+}
+
+a:hover,
+a:focus,
+a:active {
   opacity: 0.5;
+}
+
+.company_name {
+  margin: 0 0 0 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 .company_block {
@@ -2498,10 +2527,10 @@ footer {
       grid-column-start: 1;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   -ms-grid-row-span: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 
 .programs_block {
@@ -2510,10 +2539,10 @@ footer {
       grid-column-start: 2;
   -ms-grid-column-span: 1;
   grid-column-end: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 2;
+  grid-row-end: 4;
 }
 
 .learn_more_block {
@@ -2522,10 +2551,10 @@ footer {
       grid-column-start: 2;
   -ms-grid-column-span: 1;
   grid-column-end: 3;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   -ms-grid-row-span: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 
 .legal_block {
@@ -2534,9 +2563,9 @@ footer {
       grid-column-start: 3;
   -ms-grid-column-span: 1;
   grid-column-end: 4;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 1;
   grid-row-end: 3;
 }
 
@@ -2546,10 +2575,10 @@ footer {
       grid-column-start: 4;
   -ms-grid-column-span: 1;
   grid-column-end: 5;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   -ms-grid-row-span: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
 }
 
 .desktop_li {
@@ -2566,10 +2595,10 @@ footer {
       grid-column-start: 4;
   -ms-grid-column-span: 1;
   grid-column-end: 5;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
   -ms-grid-row-span: 1;
-  grid-row-end: 4;
+  grid-row-end: 5;
 }
 
 .map_data {
@@ -2578,10 +2607,10 @@ footer {
       grid-column-start: 4;
   -ms-grid-column-span: 1;
   grid-column-end: 5;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   -ms-grid-row-span: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -3302,7 +3331,7 @@ footer {
   .pricing_block1:hover,
 .pricing_block1:focus,
 .pricing_block1:active {
-    margin: -3px 0 0 0;
+    margin: 45px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3375,9 +3404,7 @@ footer {
   .pricing_block2:hover,
 .pricing_block2:focus,
 .pricing_block2:active {
-    position: absolute;
-    top: 290px;
-    margin: -3px 0 0 0;
+    margin: 17px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3422,7 +3449,7 @@ footer {
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.8px;
-    margin: 27px 0px 0 0;
+    margin: -3px 0 0 0;
   }
 
   .discount_block {
@@ -3444,7 +3471,7 @@ footer {
   }
 
   .pricing_block3 {
-    margin: 18px 0px 0 0px;
+    margin: 18px 0px 34px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3468,9 +3495,7 @@ footer {
   .pricing_block3:hover,
 .pricing_block3:focus,
 .pricing_block3:active {
-    position: absolute;
-    top: 651px;
-    margin: -3px 0 0 2px;
+    margin: 18px 0px 34px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3642,10 +3667,7 @@ footer {
   }
 
   .how_to_pay_block {
-    position: fixed;
-    position: absolute;
     margin: 0px 0 0 2px;
-    top: 5845px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

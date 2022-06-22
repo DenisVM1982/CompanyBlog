@@ -2001,21 +2001,13 @@ footer {
     align-items: start;
 }
 
-.company_name {
-    margin: 0 0 0 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 33px;
-    text-align: center;
-    color: #000000;
-}
+
 
 .about_company {
-    margin: 58px 0 0 0;
+    margin: 0 auto;
     display: grid;
-    grid-template: 160px 122px 1fr/200px 200px 200px 600px;
+    grid-template: 91px 160px 122px 1fr/200px 200px 200px 600px;
+
 
     ul {
         margin: 16px 0 0 0;
@@ -2055,6 +2047,19 @@ footer {
         line-height: 22px;
     }
 
+    @media(max-width:1250px) {
+        display: grid;
+        grid-template: 91px 160px 122px 1fr/158px 130px 157px 567px;
+
+    }
+
+    @media(max-width:1050px) {
+        display: grid;
+        grid-template: 91px 160px 122px 1fr/158px 130px 137px 431px;
+    }
+
+    }
+
     a:hover,
     a:focus,
     a:active {
@@ -2062,14 +2067,31 @@ footer {
     }
 
 
+
+
+.company_name {
+    margin: 0 0 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+
 }
 
 .company_block {
     margin: 0 0 0 0;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 
 }
 
@@ -2077,23 +2099,23 @@ footer {
     margin: 0 0 0 0;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .learn_more_block {
     margin: 0 0 0 0;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .legal_block {
     margin: 0 0 0 0;
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 3;
 }
 
@@ -2101,8 +2123,8 @@ footer {
     margin: 0 0 0 0;
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .desktop_li {
@@ -2117,16 +2139,16 @@ footer {
     margin: 0 0 0 0;
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 .map_data {
     margin: -14px 0 0 0;
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -2766,7 +2788,7 @@ footer {
     .pricing_block1:hover,
     .pricing_block1:focus,
     .pricing_block1:active {
-        margin: -3px 0 0 0;
+        margin: 45px 0 0 0;
         display: flex;
         flex-direction: column;
         -webkit-box-align: center;
@@ -2836,9 +2858,7 @@ footer {
     .pricing_block2:hover,
     .pricing_block2:focus,
     .pricing_block2:active {
-        position: absolute;
-        top: 290px;
-        margin: -3px 0 0 0;
+        margin: 17px 0 0 0;
         display: flex;
         flex-direction: column;
         -webkit-box-orient: vertical;
@@ -2880,7 +2900,7 @@ footer {
         font-weight: 500;
         font-style: normal;
         letter-spacing: 0.8px;
-        margin: 27px 0px 0 0;
+        margin: -3px 0 0 0;
     }
 
     // Discount_block start
@@ -2914,7 +2934,7 @@ footer {
     // Pricing block3 start
 
     .pricing_block3 {
-        margin: 18px 0px 0 0px;
+        margin: 18px 0px 34px 0px;
         display: flex;
         flex-direction: column;
         -webkit-box-orient: vertical;
@@ -2936,9 +2956,7 @@ footer {
     .pricing_block3:hover,
     .pricing_block3:focus,
     .pricing_block3:active {
-        position: absolute;
-        top: 651px;
-        margin: -3px 0 0 2px;
+        margin: 18px 0px 34px 0px;
         display: flex;
         flex-direction: column;
         -webkit-box-orient: vertical;
@@ -3104,10 +3122,7 @@ footer {
     // How_to_pay_block start
 
     .how_to_pay_block {
-        position: fixed;
-        position: absolute;
         margin: 0px 0 0 2px;
-        top: 5845px;
         display: flex;
         flex-direction: column;
         -webkit-box-align: center;
