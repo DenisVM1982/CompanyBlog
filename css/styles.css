@@ -3331,7 +3331,7 @@ a:active {
   .pricing_block1:hover,
 .pricing_block1:focus,
 .pricing_block1:active {
-    margin: 45px 0 0 0;
+    margin: 42px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3404,7 +3404,7 @@ a:active {
   .pricing_block2:hover,
 .pricing_block2:focus,
 .pricing_block2:active {
-    margin: 17px 0 0 0;
+    margin: 14px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3471,7 +3471,7 @@ a:active {
   }
 
   .pricing_block3 {
-    margin: 18px 0px 34px 0px;
+    margin: 18px 0px 33px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3495,7 +3495,7 @@ a:active {
   .pricing_block3:hover,
 .pricing_block3:focus,
 .pricing_block3:active {
-    margin: 18px 0px 34px 0px;
+    margin: 15px 0px 30px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3667,7 +3667,7 @@ a:active {
   }
 
   .how_to_pay_block {
-    margin: 0px 0 0 2px;
+    margin: 23px 0 0 2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3728,11 +3728,10 @@ a:active {
     -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
-    color: #4cb649;
   }
 
   .about_company-wrapper {
-    margin: 45px 0 0 40px;
+    margin: -10px 0 0 40px;
     width: 375px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3746,23 +3745,13 @@ a:active {
             align-items: start;
   }
 
-  .company_name {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #000000;
-  }
-
   .about_company {
     margin: 55px 0 0 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 124px 124px 100px 195px 206px 100px;
+    -ms-grid-rows: 76px 124px 124px 100px 195px 206px 100px;
     -ms-grid-columns: 180px 200px;
-        grid-template: 124px 124px 100px 195px 206px 100px/180px 200px;
+        grid-template: 76px 124px 124px 100px 195px 206px 100px/180px 200px;
   }
   .about_company ul {
     margin: 0px 0 0 0;
@@ -3802,23 +3791,17 @@ a:active {
     opacity: 0.5;
   }
 
-  .company_block {
-    margin: 0 0 0 0;
+  .company_name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: 2;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-row-span: 2;
-    grid-row-end: 3;
-  }
-
-  .programs_block {
-    margin: 0 0 0 0;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    -ms-grid-column-span: 1;
+    -ms-grid-column-span: 2;
     grid-column-end: 3;
     -ms-grid-row: 1;
         grid-row-start: 1;
@@ -3826,7 +3809,19 @@ a:active {
     grid-row-end: 2;
   }
 
-  .learn_more_block {
+  .company_block {
+    margin: 0 0 0 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 2;
+    grid-row-end: 4;
+  }
+
+  .programs_block {
     margin: 0 0 0 0;
     -ms-grid-column: 2;
         grid-column-start: 2;
@@ -3838,16 +3833,28 @@ a:active {
     grid-row-end: 3;
   }
 
+  .learn_more_block {
+    margin: 0 0 0 0;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-row-span: 1;
+    grid-row-end: 4;
+  }
+
   .legal_block {
     margin: 0 0 0 0;
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 1;
     grid-column-end: 2;
-    -ms-grid-row: 4;
-        grid-row-start: 4;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
     -ms-grid-row-span: 1;
-    grid-row-end: 5;
+    grid-row-end: 6;
   }
 
   .about_block {
@@ -3856,10 +3863,10 @@ a:active {
         grid-column-start: 1;
     -ms-grid-column-span: 2;
     grid-column-end: 3;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
     -ms-grid-row-span: 1;
-    grid-row-end: 6;
+    grid-row-end: 7;
     width: 314px;
   }
 
@@ -3885,10 +3892,10 @@ a:active {
         grid-column-start: 2;
     -ms-grid-column-span: 1;
     grid-column-end: 3;
-    -ms-grid-row: 4;
-        grid-row-start: 4;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
     -ms-grid-row-span: 1;
-    grid-row-end: 5;
+    grid-row-end: 6;
   }
 
   .map_data {
@@ -3897,10 +3904,10 @@ a:active {
         grid-column-start: 1;
     -ms-grid-column-span: 2;
     grid-column-end: 3;
-    -ms-grid-row: 6;
-        grid-row-start: 6;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
     -ms-grid-row-span: 1;
-    grid-row-end: 7;
+    grid-row-end: 8;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
