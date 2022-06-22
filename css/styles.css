@@ -711,10 +711,10 @@ article {
 }
 
 .feature_article-comment {
-  background-image: url(../img/icons/comment_mobile.svg);
+  background-image: url(../img/icons/comment.svg);
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   margin: 0 4px 0 -4px;
 }
 
@@ -729,7 +729,7 @@ article {
 
 @media (min-width: 1200px) {
   .feature_article-wrapper {
-    padding: 60px 60px 45px;
+    padding: 57px 62px 45px;
   }
 }
 @media (min-width: 960px) and (max-width: 1199.9px) {
@@ -1028,10 +1028,20 @@ article {
   -ms-grid-rows: 1fr;
   -ms-grid-columns: 66.7% 0.1% 34.2%;
       grid-template: 1fr/66.7% 0.1% 34.2%;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .search_recent_posts-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 45.7% 0.1% 34.2%;
+        grid-template: 1fr/45.7% 0.1% 34.2%;
+    margin: 0 auto;
+  }
+}
 .search_recent_posts-line {
   height: 1650px;
   width: 1px;
@@ -1124,7 +1134,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 780px;
+  width: 100%;
   margin: 0 auto;
   margin: 47px 0 0 0;
   height: 184px;
@@ -1687,6 +1697,7 @@ footer {
   background: #FFFFFF;
   border: 4px solid #4CB649;
   border-radius: 4px;
+  z-index: 10;
 }
 
 .pricing_block1-period {
@@ -1845,6 +1856,7 @@ footer {
   background: #FFFFFF;
   border: 4px solid #4CB649;
   border-radius: 4px;
+  z-index: 10;
 }
 
 .pricing_block2-line {
@@ -2049,6 +2061,7 @@ footer {
   background: #FFFFFF;
   border: 4px solid #4CB649;
   border-radius: 4px;
+  z-index: 10;
 }
 
 .pricing_block3-period {
@@ -2192,6 +2205,19 @@ footer {
   color: white;
 }
 
+@media (max-width: 1600px) {
+  .pricing_block1, .pricing_block1:hover {
+    width: 70%;
+  }
+
+  .pricing_block2, .pricing_block2:hover {
+    width: 70%;
+  }
+
+  .pricing_block3, .pricing_block3:hover {
+    width: 70%;
+  }
+}
 .ways_to_pay_block {
   margin: 0px -26px 0 0;
   display: -webkit-box;
@@ -3522,8 +3548,6 @@ footer {
   }
 
   .ways_to_pay_block {
-    position: absolute;
-    top: 5585px;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 32px 90px 44px 70px;
