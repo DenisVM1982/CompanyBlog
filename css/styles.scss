@@ -592,6 +592,16 @@ article {
     .feature_article-wrapper {
         padding: 27px 30px 17px
     }
+    .featured_article {
+        background: #FFFFFF;
+        border: 1px solid #D7D8D9;
+        border-radius: 6px;
+        overflow: hidden;
+        -webkit-filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+        width: 335px;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:959.9px) {
@@ -811,11 +821,7 @@ article {
     margin: 0 auto;
     width: 339px;
     height: 57px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     margin-top: 40px;
@@ -824,7 +830,7 @@ article {
     align-items: center;
     grid-column-start: 3;
     grid-row-start: 1;
-    margin: 39px 0 0 58px;
+    margin: 40px 0 3px 1px;
 
 }
 
@@ -2060,11 +2066,6 @@ footer {
 
     }
 
-    a:hover,
-    a:focus,
-    a:active {
-        opacity: 0.5;
-    }
 
 
 
@@ -2232,7 +2233,7 @@ footer {
         position: fixed;
         background: $shark;
         display: grid;
-        grid-template: 50% 50%/30% 30% 40%;
+        grid-template: 50% 50%/54% 35% 8%;
         height: 68px;
     }
 
@@ -2318,6 +2319,8 @@ footer {
         grid-row-start: 1;
         grid-row-end: 3;
         justify-self: end;
+        align-items: start;
+        margin: -18px 0 0 0;
 
     }
 
@@ -2368,7 +2371,7 @@ footer {
         justify-content: center;
         align-items: center;
         @include inter-normal-black-18px;
-        margin: 2px -2px 0 2px;
+        margin: 2px -13px 0 23px;
         text-decoration: none;
         cursor: pointer;
         width: 181px;
@@ -2389,7 +2392,7 @@ footer {
     .nav-btn_wrapper {
         width: 126px;
         height: 40px;
-        margin: 0px -10px 0 22px;
+        margin: -5px -43px 0 54px;
     }
 
     .nav-get_started {
@@ -2414,8 +2417,8 @@ footer {
 
     // Article start
 
-    article {
-        width: 375px;
+    section {
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -3125,11 +3128,7 @@ footer {
         margin: 23px 0 0 2px;
         display: flex;
         flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
         color: #4cb649;
         font-family: "Roboto";
@@ -3138,8 +3137,6 @@ footer {
         font-style: normal;
         text-transform: uppercase;
         width: 455px;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
         justify-content: start;
         letter-spacing: 0.8px;
     }
@@ -3147,31 +3144,18 @@ footer {
     .how_to_pay_wrapper1 {
         margin: -2px 0 2px -5px;
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
         cursor: pointer;
+        color: $apple;
     }
 
     .how_to_pay_wrapper2 {
         margin: 42px 0 0 -6px;
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
         cursor: pointer;
     }
@@ -3195,7 +3179,6 @@ footer {
     .about_company {
         margin: 55px 0 0 0;
         display: grid;
-
         grid-template:76px 124px 124px 100px 195px 206px 100px/180px 200px;
 
         ul {
