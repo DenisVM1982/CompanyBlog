@@ -225,6 +225,8 @@ a:active, a:hover, a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding: 30px 30px 30px 30px;
+  margin: 39px 0 0 0;
 }
 
 .nav_line {
@@ -2384,12 +2386,17 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  color: #4cb649;
 }
 
 #arrow1 {
   margin: 0 0 0 17px;
 }
 
+.how_to_pay_wrapper1:hover,
+.how_to_pay_wrapper1:focus {
+  color: #4cb649;
+}
 .how_to_pay_wrapper1:hover #arrow1,
 .how_to_pay_wrapper1:focus #arrow1 {
   cursor: pointer;
@@ -3340,7 +3347,7 @@ footer {
   .pricing_block1:hover,
 .pricing_block1:focus,
 .pricing_block1:active {
-    margin: 42px 0 0 0;
+    margin: 42px 0 -3px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3374,11 +3381,11 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #FFFFFF;
     font-family: "Roboto";
     font-size: 14px;
@@ -3393,13 +3400,13 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    -webkit-box-align: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
@@ -3413,17 +3420,17 @@ footer {
   .pricing_block2:hover,
 .pricing_block2:focus,
 .pricing_block2:active {
-    margin: 14px 0 0 0;
+    margin: 14px 0 -3px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
@@ -3447,18 +3454,84 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #FFFFFF;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.8px;
-    margin: -3px 0 0 0;
+    margin: 29px 0 0 0;
+  }
+
+  .pricing_block2-period {
+    color: #323642;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    margin: 42px 1px 0 0px;
+    text-transform: uppercase;
+  }
+
+  .pricing_block2-smallline {
+    height: 2px;
+    width: 24px;
+    background: #4CB649;
+    margin: 16px 0px 0 0;
+  }
+
+  .price_block-pricing_block2 {
+    margin: 13px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .dollar2 {
+    margin: -7px 12px 0 0px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #22252E;
+  }
+
+  .price-pricing_block2 {
+    margin: 0 6px 0 -6px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -1.5px;
+    color: #22252E;
+  }
+
+  .mo2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #22252E;
+    margin: 34px 0 0 0;
+  }
+
+  .pricing_block1-line {
+    background: #EBECED;
+    height: 1px;
+    width: 200px;
+    margin: 18px 0 0 0;
   }
 
   .discount_block {
