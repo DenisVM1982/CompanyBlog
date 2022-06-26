@@ -398,13 +398,18 @@
 }
 
 .search_recent_posts-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-  -ms-grid-columns: 66.7% 0.1% 34.2%;
-      grid-template: 1fr/66.7% 0.1% 34.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  height: 1790px;
 }
 
 .search_block {
@@ -425,6 +430,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .search_icon {
@@ -454,11 +462,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  width: 800px;
+  border-right: 1px solid #EBECED;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .recent_posts-title {
@@ -533,7 +541,7 @@
 }
 
 .recent_post-line {
-  width: 740px;
+  width: 95%;
   height: 1px;
   background: #EBECED;
   margin: 0 auto;
@@ -782,11 +790,6 @@
 }
 
 .side_nav_blog-block {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  margin: 130px 0 0 59px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,6 +797,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .side_nav-header_announcements-wrapper {
