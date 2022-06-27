@@ -282,6 +282,7 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 1745px;
+    padding: 40px 0 0 0;
 }
 
 
@@ -338,7 +339,6 @@
 
 .recent_posts-title {
     @include roboto-light-shark-32px;
-    margin: 44px 0 0 0;
 }
 
 .recent_post-wrapper {
@@ -606,6 +606,8 @@
         border: none;
     }
 
+
+
     .recent_posts-block {
         padding-left: 10px;
         width: 100%;
@@ -616,6 +618,12 @@
     .recent_post-image {
         width: auto;
         height: auto;
+    }
+
+    .side_nav_blog-block {
+        display: flex;
+        flex-flow: wrap;
+        margin: 0 auto;
     }
 }
 
@@ -728,7 +736,7 @@
 
     .recent_posts-block {
         padding-left: 10px;
-        width: 100%;
+        width: 90%;
         border-right: none;
         order: 2;
     }
@@ -781,7 +789,7 @@
     .recent_posts-block {
         padding: 0;
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
     }
 
     .recent_posts-title {
@@ -791,6 +799,7 @@
 
     .recent_post-wrapper {
         height: 100%;
+        width: 100%;
         margin: 0 auto;
         flex-direction: column;
     }
@@ -801,6 +810,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        padding: 27px 0px 17px;
 
     }
 
@@ -821,11 +831,10 @@
     }
 
     .side_nav_blog-block {
-        display: flex;
-        flex-direction: column;
-        width: 315px;
+        width: 100%;
+        display: column;
         margin: 0 auto;
-        margin: 59px 0 0 0;
+        padding: 30px;
     }
 
     .side_nav_announcements {
@@ -848,26 +857,47 @@
         width: 323px;
     }
 
-    .popular_post-line {
-        margin: 29px 0 0 0;
-    }
 
     .add_sidebar {
-        margin: 30px 0 0 0;
-        width: 315px;
-        height: 421px;
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+    }
+
+    .tag_cloud-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+
     }
 
     .tag_cloud {
-        margin: 66px 0 0 0;
+        margin: 0;
+    
     }
 
     .tag_cloud-img {
-        margin: 20px 0px -2px -12px;
-        height: 308px;
-        width: 324px;
+        display: flex;
+        width: 80%;
+        height: 80%;
     }
 
 
+
+}
+
+
+//****************************************************************** 375px ***********************************************************
+
+
+@media (max-width: 375px) {
+    
+    .recent_posts-block {
+        width: 100%;
+    }
 
 }

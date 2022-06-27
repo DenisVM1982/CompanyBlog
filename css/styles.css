@@ -410,6 +410,7 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 1745px;
+  padding: 40px 0 0 0;
 }
 
 .search_block {
@@ -474,7 +475,6 @@
   font-size: 32px;
   font-weight: 300;
   font-style: normal;
-  margin: 44px 0 0 0;
 }
 
 .recent_post-wrapper {
@@ -808,6 +808,15 @@
     width: auto;
     height: auto;
   }
+
+  .side_nav_blog-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 768px) {
   .featured_article {
@@ -914,7 +923,7 @@
 
   .recent_posts-block {
     padding-left: 10px;
-    width: 100%;
+    width: 90%;
     border-right: none;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -963,7 +972,7 @@
   .recent_posts-block {
     padding: 0;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
   }
 
   .recent_posts-title {
@@ -977,6 +986,7 @@
 
   .recent_post-wrapper {
     height: 100%;
+    width: 100%;
     margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -995,6 +1005,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 27px 0px 17px;
   }
 
   .recent_post-image {
@@ -1008,16 +1019,10 @@
   }
 
   .side_nav_blog-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 315px;
+    width: 100%;
+    display: column;
     margin: 0 auto;
-    margin: 59px 0 0 0;
+    padding: 30px;
   }
 
   .side_nav_announcements {
@@ -1044,24 +1049,46 @@
     width: 323px;
   }
 
-  .popular_post-line {
-    margin: 29px 0 0 0;
+  .add_sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
   }
 
-  .add_sidebar {
-    margin: 30px 0 0 0;
-    width: 315px;
-    height: 421px;
+  .tag_cloud-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
   }
 
   .tag_cloud {
-    margin: 66px 0 0 0;
+    margin: 0;
   }
 
   .tag_cloud-img {
-    margin: 20px 0px -2px -12px;
-    height: 308px;
-    width: 324px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    height: 80%;
+  }
+}
+@media (max-width: 375px) {
+  .recent_posts-block {
+    width: 100%;
   }
 }
 .warning {
