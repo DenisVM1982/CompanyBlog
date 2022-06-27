@@ -590,7 +590,9 @@
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
+        padding: 0 10px 0px 10px;
     }
+    
 
 
     .search_block {
@@ -624,7 +626,38 @@
         display: flex;
         flex-flow: wrap;
         margin: 0 auto;
+        padding: 30px;
+        justify-content: space-between;
     }
+
+    .side_nav_announcements {
+        border-bottom: 1px solid #EBECED;
+        padding: 40px 0 30px 0;
+        width: 50%;
+    }
+
+    .tag_cloud-wrapper {
+        width: 50%;
+        margin: 40px 0 0 0;
+    }
+
+    .add_sidebar {
+        margin: 40px 0 0 0;
+        width: 96%;
+        height: 85%;
+    }
+
+    .tag_cloud-img {
+        margin: 4px 0 0 -15px;
+        width: 90%;
+        height: 85%;
+    }
+
+    .tag_cloud {
+        margin: 0 0 0 0;
+    }
+
+
 }
 
 
@@ -728,11 +761,6 @@
         height: auto;
     }
 
-    .search_block {
-        margin: 30px auto;
-        width: 50%;
-        order:1;
-    }
 
     .recent_posts-block {
         padding-left: 10px;
@@ -746,16 +774,9 @@
     // Search_block start
 
     .search_block {
-        background: #FFFFFF;
-        border: 1px solid #D7D8D9;
-        border-radius: 4px;
-        margin: 0 auto;
-        width: 335px;
-        height: 59px;
-        display: flex;
-        flex-direction: row;
-        margin: 40px 0 2px -3px;
-        align-items: center;
+        width: 90%;
+        margin: 30px auto;
+
     }
 
 
@@ -826,7 +847,7 @@
 
 
     .older_posts-button {
-        margin: auto;
+        margin:30px auto;
         width: 313px;
     }
 
@@ -834,33 +855,36 @@
         width: 100%;
         display: column;
         margin: 0 auto;
-        padding: 30px;
     }
 
     .side_nav_announcements {
         display: flex;
         flex-direction: column;
+        padding: 30px;
 
     }
 
     .side_nav-header_announcements-wrapper {
-        margin: 0px 0 0 -7px;
+        margin: 0;
+    }
+
+    .announcements-ul {
+        width: 100%;
+    }
+
+    .popular_post-ul {
+        width: 100%;
     }
 
     .side_nav_popular_post {
         margin: 70px 0 0 7px;
     }
 
-    .popular_post-ul {
-        margin: 31px 0 0 -1px;
-        height: 283px;
-        width: 323px;
-    }
 
 
     .add_sidebar {
         display: flex;
-        margin: 0 auto;
+        margin: 30px auto;
         width: 80%;
         height: 80%;
     }
