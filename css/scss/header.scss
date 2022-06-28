@@ -14,6 +14,7 @@
     align-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
     a:active,
     a:hover,
@@ -106,6 +107,9 @@
     height: 160px;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
+    padding-top: 60px;
+    display: flex;
 }
 
 
@@ -384,7 +388,7 @@
     // Nav-menu start
 
     .navigation-block {
-        padding: 0 40px 0 40px;
+        justify-content: space-around;
     }
 
 
@@ -459,7 +463,7 @@
     // Nav-menu start
 
     .navigation-block {
-        gap: 7rem;
+        justify-content: space-around;
     }
 
     .nav-sandwich_bar {
@@ -578,8 +582,8 @@
     // Nav-menu start
 
     .navigation-block {
-        gap: 2rem;
-
+        gap: 0rem;
+        justify-content: space-around;
     }
 
     .nav-sandwich_bar {

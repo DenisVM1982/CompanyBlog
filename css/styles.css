@@ -1108,7 +1108,7 @@
 
   .older_posts-button {
     margin: 30px auto;
-    width: 313px;
+    width: 50%;
   }
 
   .side_nav_blog-block {
@@ -1204,6 +1204,8 @@
   gap: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .warning a:active,
 .warning a:hover,
@@ -1335,6 +1337,10 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 60px;
+  display: flex;
 }
 
 .nav_line {
@@ -1661,7 +1667,8 @@
 /* Portrait phones and smaller */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navigation-block {
-    padding: 0 40px 0 40px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .nav-sandwich_bar {
@@ -1739,7 +1746,8 @@
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navigation-block {
-    gap: 7rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .nav-sandwich_bar {
@@ -1867,7 +1875,9 @@
   }
 
   .navigation-block {
-    gap: 2rem;
+    gap: 0rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .nav-sandwich_bar {
@@ -3269,10 +3279,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding: 0 0 40px 0;
+    height: 1700px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
   .sign_up_today {
