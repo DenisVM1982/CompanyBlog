@@ -102,14 +102,16 @@
 
 .navigation-block {
     display: flex;
-    justify-content: center;
-    gap: 8rem;
-    height: 160px;
+    justify-content: space-around;
+    gap: 0%;
+    height: 158px;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding-top: 60px;
+    padding-top: 40px;
     display: flex;
+    width: 104%;
+    padding-left: 5%;
 }
 
 
@@ -124,8 +126,6 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 481px;
-    margin: 5px 21px 0 5px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;

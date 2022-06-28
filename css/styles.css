@@ -490,6 +490,7 @@
   border-bottom: 1px solid #EBECED;
   border-width: 80%;
   padding-top: 30px;
+  margin-right: 60px;
 }
 
 .recent_post-wrapper2 {
@@ -1328,19 +1329,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8rem;
-  height: 160px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 0%;
+  height: 158px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 60px;
+  padding-top: 40px;
   display: flex;
+  width: 104%;
+  padding-left: 5%;
 }
 
 .nav_line {
@@ -1360,8 +1362,6 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  width: 481px;
-  margin: 5px 21px 0 5px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
