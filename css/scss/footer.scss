@@ -1,4 +1,3 @@
-
 // Footer start
 
 footer {
@@ -18,14 +17,15 @@ footer {
 .discount_block {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 800px;
     background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
     margin: 75px 0 0 0;
     align-items: center;
     width: 100%;
+    padding: 100px 0 60px 0;
+    height: 800px;
+    box-sizing: border-box;
 
 }
 
@@ -44,6 +44,8 @@ footer {
     margin: 40px auto;
     justify-content: center;
     width: 80%;
+    align-items: center;
+    height: 340px;
 }
 
 // Pricing_block1 start
@@ -60,10 +62,14 @@ footer {
     border-radius: 6px;
 }
 
-.pricing_block1:hover,.pricing_block1:focus, .pricing_block1:active {
+.pricing_block1:hover,
+.pricing_block1:focus,
+.pricing_block1:active {
     background: #FFFFFF;
     border: 4px solid #4CB649;
     border-radius: 4px;
+    height: 380px;
+    margin: -3px -3px -3px -3px;
 }
 
 .pricing_block1-period {
@@ -165,11 +171,16 @@ footer {
 }
 
 
-.pricing_block2:hover, .pricing_block2:focus, .pricing_block2:active {
+.pricing_block2:hover,
+.pricing_block2:focus,
+.pricing_block2:active {
     background: #FFFFFF;
     border: 4px solid #4CB649;
     border-radius: 4px;
+    height: 380px;
+    margin: -3px -3px -3px -3px;
 }
+
 
 .pricing_block2-line {
     background: #EBECED;
@@ -245,6 +256,7 @@ footer {
     align-items: center;
     margin: 18px -3px 0 0;
     font-weight: 400px;
+
 }
 
 .pricing_block2-discount_cost {
@@ -308,10 +320,14 @@ footer {
     border-radius: 6px;
 }
 
-.pricing_block3:hover, .pricing_block3:focus, .pricing_block3:active {
+.pricing_block3:hover,
+.pricing_block3:focus,
+.pricing_block3:active {
     background: #FFFFFF;
     border: 4px solid #4CB649;
     border-radius: 4px;
+    height: 380px;
+    margin: -3px -3px -3px -3px;
 }
 
 
@@ -768,6 +784,7 @@ footer {
     pricing_block-wrapper {
         flex-direction: column;
     }
+
     .pricing_block1,
     .pricing_block1:hover {
         width: 100%;
@@ -786,23 +803,36 @@ footer {
 
     }
 
+    .ways_to_pay_block {
+        flex-direction: row;
+    }
+
+}
+
+//************************************************************************ min-width 920px-max-width 1199px ******************************************************************
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ways_to_pay_block {
+        flex-direction: row;
+    }
 }
 
 
 
 
-
 @media(max-width: 930px) {
-       // Footer start
+    // Footer start
 
-       footer {
+    footer {
         display: flex;
         flex-direction: column;
     }
 
     .footer {
         flex: 1 0 auto;
-        paddin-bottom: 50px;
+        padding-bottom: 50px;
     }
 
 
@@ -818,6 +848,7 @@ footer {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: flex-start;
+        padding: 0 0 40px 0;
     }
 
 
@@ -841,8 +872,8 @@ footer {
 
     .pricing_block-wrapper {
         flex-direction: column;
-        width:100%;
-        gap:1%;
+        width: 100%;
+        gap: 1%;
         height: 1000px;
         justify-content: space-between;
         align-items: center;
@@ -872,7 +903,10 @@ footer {
         background: #FFFFFF;
         border: 4px solid #FF8D00;
         border-radius: 4px;
+        margin: -3px -3px -3px -3px;
+        height: 315px;
     }
+
 
     .pricing_block1-sign_up:hover,
     .pricing_block1-sign_up:focus,
@@ -915,6 +949,8 @@ footer {
         background: #FFFFFF;
         border: 4px solid #FF8D00;
         border-radius: 4px;
+        margin: -3px -3px -3px -3px;
+        height: 315px;
     }
 
     .pricing_block2-sign_up:hover,
@@ -1024,6 +1060,9 @@ footer {
         background: #FFFFFF;
         border: 4px solid #FF8D00;
         border-radius: 4px;
+        margin: -3px -3px -3px -3px;
+        height: 315px;
+
     }
 
 
@@ -1266,8 +1305,6 @@ footer {
         a:active {
             opacity: 0.5;
         }
-
-
     }
 
     .company_name {
