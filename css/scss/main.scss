@@ -492,6 +492,35 @@
 
 @media(min-width:1200px) {
 
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 100%;
+        flex: 1 0 auto;
+    
+    }
+    
+    .content {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    
+    
+    
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    
+    }
+    
+
     .feature_article-wrapper {
         padding: 59px 60px 45px;
     }
@@ -506,6 +535,35 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 100%;
+        flex: 1 0 auto;
+    
+    }
+    
+    .content {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    
+    
+    
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    
+    }
+    
 
     .tags_block {
         display: none;

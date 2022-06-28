@@ -10,6 +10,7 @@ footer {
 
 .footer {
     flex: 1 0 auto;
+    padding-bottom: 80px;
 }
 
 // Discount_block start
@@ -43,7 +44,6 @@ footer {
     gap: 1%;
     margin: 40px auto;
     justify-content: center;
-    padding: 10%;
 }
 
 // Pricing_block1 start
@@ -431,12 +431,10 @@ footer {
 // Ways_to_pay_block start
 
 .ways_to_pay_block {
-    margin: 0px -26px 0 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
-    width: 913px;
+    justify-content: center;
 }
 
 .ways_to_pay {
@@ -444,7 +442,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    width: 920px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -510,7 +507,6 @@ footer {
 // How_to_pay_block start
 
 .how_to_pay_block {
-    margin: 4px -19px 0 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -524,7 +520,8 @@ footer {
     width: 455px;
     justify-content: start;
     letter-spacing: 0.8px;
-    justify-self: center;
+    margin: 0 auto;
+
 }
 
 
@@ -598,7 +595,7 @@ footer {
 .about_company {
     margin: 0 auto;
     display: grid;
-    grid-template: 91px 160px 122px 1fr/200px 200px 200px 600px;
+    grid-template: 91px 160px 122px 1fr/20% 20% 20% 53%;
 
 
     ul {
@@ -805,6 +802,7 @@ footer {
 
     .footer {
         flex: 1 0 auto;
+        paddin-bottom: 50px;
     }
 
 
@@ -845,6 +843,9 @@ footer {
         flex-direction: column;
         width:100%;
         gap:1%;
+        height: 1000px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     // Pricing block1 start
@@ -859,7 +860,7 @@ footer {
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: start;
-        height: 340px;
+        height: 315px;
         background: #FFFFFF;
         border: 1px solid #EBECED;
         border-radius: 6px;
@@ -868,17 +869,6 @@ footer {
     .pricing_block1:hover,
     .pricing_block1:focus,
     .pricing_block1:active {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: start;
-        height: 340px;
-        width: 83%;
         background: #FFFFFF;
         border: 4px solid #FF8D00;
         border-radius: 4px;
@@ -912,13 +902,8 @@ footer {
     .pricing_block2 {
         width: 80%;
         display: flex;
-        flex-direction: column;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
         justify-content: start;
-        height: 340px;
+        height: 315px;
         background: #FFFFFF;
         border: 1px solid #EBECED;
         border-radius: 6px;
@@ -927,14 +912,6 @@ footer {
     .pricing_block2:hover,
     .pricing_block2:focus,
     .pricing_block2:active {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: start;
-        height: 340px;
         background: #FFFFFF;
         border: 4px solid #FF8D00;
         border-radius: 4px;
@@ -1034,10 +1011,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
         justify-content: start;
-        height: 340px;
+        height: 315px;
         background: #FFFFFF;
         border: 1px solid #EBECED;
         border-radius: 6px;
@@ -1046,12 +1021,6 @@ footer {
     .pricing_block3:hover,
     .pricing_block3:focus,
     .pricing_block3:active {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        height: 340px;
         background: #FFFFFF;
         border: 4px solid #FF8D00;
         border-radius: 4px;
@@ -1106,10 +1075,12 @@ footer {
 
     .ways_to_pay_block {
         display: grid;
-        grid-template: 32px 90px 44px 70px/119px 120px 136px;
+        grid-template: 25% 25% 25% 25%/33% 33% 33%;
         justify-content: center;
-        width: 375px;
-        margin: 0px 0 0 66px;
+        width: 80%;
+        grid-gap: 2%;
+
+
     }
 
     .ways_to_pay {
@@ -1120,7 +1091,6 @@ footer {
         font-weight: 300;
         font-size: 18px;
         color: #FFFFFF;
-        width: 375px;
     }
 
 
@@ -1130,6 +1100,7 @@ footer {
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
+        justify-self: center;
     }
 
     #visa:hover,
@@ -1157,22 +1128,27 @@ footer {
 
     #mastercard {
         margin: 0px 0px 0px 12px;
+        justify-self: center;
     }
 
     #american_express {
         margin: 0px 0px 0 -5px;
+        justify-self: center;
     }
 
     #pay_pal {
         margin: 4px 0px 0 -6px;
+        justify-self: center;
     }
 
     #bitcoin {
         margin: 3px 0 0 -1px;
+        justify-self: center;
     }
 
     #okpay {
         margin: 4px 0 0 -8px;
+        justify-self: center;
     }
 
 
@@ -1182,6 +1158,7 @@ footer {
         grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 5;
+        justify-self: center;
     }
 
 
@@ -1245,7 +1222,8 @@ footer {
     .about_company {
         margin: 55px 0 0 0;
         display: grid;
-        grid-template: 76px 124px 124px 100px 195px 206px 100px/180px 200px;
+        grid-template: 76px 124px 124px 100px 195px 206px 100px/100% 40%;
+        justify-content: center;
 
         ul {
             margin: 0px 0 0 0;
@@ -1402,4 +1380,12 @@ footer {
 
     // Footer end
 
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .about_company {
+        grid-template: 76px 124px 124px 100px 195px 206px 100px/55% 35%;
+
+    }
 }
