@@ -16,10 +16,10 @@ footer {
 // Discount_block start
 
 .discount_block {
-    position: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 800px;
     background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
@@ -30,7 +30,6 @@ footer {
 }
 
 .sign_up_today {
-    margin: 107px -14px 0 0;
     @include roboto-light-white-48px;
     letter-spacing: -0.5px;
     display: flex;
@@ -44,6 +43,7 @@ footer {
     gap: 1%;
     margin: 40px auto;
     justify-content: center;
+    width: 80%;
 }
 
 // Pricing_block1 start
