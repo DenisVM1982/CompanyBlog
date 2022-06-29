@@ -410,7 +410,9 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 1745px;
-  padding: 40px 0 0 0;
+  padding: 15px 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .search_block {
@@ -461,12 +463,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 63%;
+  width: 66.5%;
   border-right: 1px solid #EBECED;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .recent_posts-title {
@@ -475,6 +479,7 @@
   font-size: 32px;
   font-weight: 300;
   font-style: normal;
+  margin-bottom: 16px;
 }
 
 .recent_post-wrapper {
@@ -485,12 +490,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 1200px;
-  height: 270px;
   border-bottom: 1px solid #EBECED;
   border-width: 80%;
   padding-top: 30px;
   margin-right: 60px;
+  padding-bottom: 60px;
+}
+
+.recent_post-wrapper1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .recent_post-wrapper2 {
@@ -504,6 +518,11 @@
   width: 58%;
   margin: 0 auto;
   margin: 0px 0px 0 41px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 8%;
+  height: 100%;
 }
 
 .recent_post-image {
@@ -511,8 +530,72 @@
   height: 180px;
 }
 
-.recent_post-comment_img {
-  margin: 0 5px 0 -8px;
+.recent_post-data_author-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.recent_post-author {
+  color: #323642;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.recent_post-data {
+  color: #889099;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.recent_post-title {
+  color: #4cb649;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.recent_post-comment_counter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recent_post-comment {
+  background-image: url(../img/icons/comment.svg);
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+.recent_post-counter_comments {
+  color: #889099;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px 0px 0px 7px;
+}
+
+.recent_post-post {
+  color: #22252e;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 34px;
+  margin: 0px 0 0 0;
 }
 
 .older_posts-button {
@@ -713,6 +796,11 @@
   .feature_article-wrapper {
     padding: 59px 60px 45px;
   }
+
+  .recent_post-image {
+    width: 280px;
+    height: 180px;
+  }
 }
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -768,6 +856,10 @@
 
   .recent_posts-block {
     padding-left: 10px;
+  }
+
+  .recent_post-wrapper {
+    border: none;
   }
 }
 /* Portrait tablets and small desktops */
@@ -881,6 +973,12 @@
     border: none;
   }
 
+  .recent_post-wrapper1 {
+    height: 100%;
+    margin: 0;
+    border: none;
+  }
+
   .recent_posts-block {
     padding-left: 10px;
     width: 100%;
@@ -933,6 +1031,10 @@
 
   .tag_cloud {
     margin: 0 0 0 0;
+  }
+
+  .recent_post-wrapper {
+    border: none;
   }
 }
 @media (min-width: 768px) {
@@ -1079,6 +1181,17 @@
   }
 
   .recent_post-wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+  }
+
+  .recent_post-wrapper1 {
     height: 100%;
     width: 100%;
     margin: 0 auto;
@@ -1332,7 +1445,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 0%;
-  height: 158px;
+  height: 160px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
