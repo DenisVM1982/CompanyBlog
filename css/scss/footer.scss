@@ -37,7 +37,6 @@
         justify-content: space-around;
     }
 }
-
 .sign_up_today {
     display: flex;
     justify-content: center;
@@ -50,7 +49,6 @@
     margin: 60px 0 -5px 0;
     letter-spacing: 0.2px;
 }
-
 .pricing_block-wrapper {
     display: flex;
     flex-direction: column;
@@ -88,7 +86,6 @@
         width: 30%;
     }
 }
-
 .pricing_block1:hover,
 .pricing_block1:focus,
 .pricing_block1:active {
@@ -102,26 +99,22 @@
         height: 380px;
     }
 }
-
 .pricing_block1-period {
     @include roboto-medium-tuna-14px;
     letter-spacing: 0.8px;
     margin: 51px 5px 0 0px;
 }
-
 .pricing_block1-smallline {
     height: 2px;
     width: 24px;
     background: #4CB649;
     margin: 13px 2px 0 0;
 }
-
 .price_block-pricing_block1 {
     margin: 15px -1px 0 0;
     display: flex;
     align-items: center;
 }
-
 .dollar1 {
     margin: -8px 12px 0 1px;
     font-family: 'Roboto';
@@ -131,7 +124,6 @@
     line-height: 32px;
     color: #22252E;
 }
-
 .price-pricing_block1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -141,7 +133,6 @@
     letter-spacing: -1.5px;
     color: #22252E;
 }
-
 .mo1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -151,20 +142,17 @@
     color: #22252E;
     margin: 34px 0 0 0;
 }
-
 .pricing_block1-line {
     background: #EBECED;
     height: 1px;
     width: 200px;
     margin: 18px 0 0 0;
 }
-
 .pricing_block1-discount-wrapper {
     @include roboto-medium-tuna-14px;
     margin: 33px -3px 0 0;
     font-weight: 400px;
 }
-
 .pricing_block1-sign_up {
     height: 40px;
     width: 205px;
@@ -176,7 +164,6 @@
     @include roboto-medium-apple-14px;
     letter-spacing: 0.8px;
     margin: 32px -2px 0 0;
-
 }
 
 .pricing_block1-sign_up:hover,
@@ -620,7 +607,7 @@
     grid-row-end: 5;
     justify-self: center;
     @include tabletUp {
-        margin: 0 -3px 0 40px;
+    margin: 0 -3px 0 40px;
     }
 }
 
@@ -669,9 +656,7 @@
         cursor: pointer;
         margin: 0px -10px 0 27px;
     }
-
     color: $apple;
-
 }
 .how_to_pay_wrapper2 {
     margin: 42px 0 0 -6px;
@@ -682,7 +667,7 @@
     cursor: pointer;
     color: #4cb649;
     @include tabletUp {
-        margin: 0 0 0 44px;
+    margin: 0 0 0 44px;
     }
 }
 #arrow2 {
@@ -693,9 +678,7 @@
     #arrow2 {
         cursor: pointer;
         margin: 0px -10px 0 27px;
-
     }
-
 }
 .redeem_gift_card {
     color: $apple;
@@ -913,23 +896,19 @@
         grid-row-end: 4;
     }
 }
-
 .social_icon-wrapper {
-
     margin: 23px 0 0px 0;
     display: grid;
     grid-template: 55px 40px/45px 45px 45px;
     width: 151px;
     justify-content: space-between;
     @include tabletUp {
-        width: 100%;
         display: flex;
         flex-direction: row;
         margin: 23px 0 0px 0;
         width: 333px;
     }
 }
-
 .br2 {
     display: none;
 }

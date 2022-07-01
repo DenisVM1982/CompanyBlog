@@ -3,73 +3,88 @@
 // Warning block start
 
 .warning {
+    display: flex;
+    flex-wrap: wrap;
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
     background: $shark;
     padding: 8px 0 8px 0;
-    display: flex;
     justify-content: center;
     align-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-
     a:active,
     a:hover,
     a:focus {
         color: $pizazz;
     }
+    @include phoneOnly {
+        height: 68px;
+        padding: 0 0 0 0;
+        gap: 0.5rem;
+    }
+    @include tabletUp {
+        gap: 2rem;
+    }
 }
-
-
 .warning_block-1 {
     display: flex;
     align-items: center;
-    justify-self: end;
-    margin: 0 2px 0 0;
+    @include phoneOnly {
+        order: 1;
+    }
+    @include tabletUp {
+        justify-self: end;
+        margin: 0 2px 0 0;
+        order: 1;
+    }
 }
-
 #alert_svg {
     width: 24px;
     height: 24px;
 }
-
 #you-are-not-protected {
     @include roboto-normal-pizazz-12px;
     line-height: 16px;
 }
-
 .warning_block-2 {
     display: flex;
     align-items: center;
     @include roboto-normal-oslo-gray-12px;
+    @include phoneOnly {
+        order: 4;
+    }
+    @include tabletUp {
+        order:2;
+    }
 }
-
 .warning_block-3 {
-    display: flex;
-    align-items: center;
-    @include roboto-normal-oslo-gray-12px;
+        @include roboto-normal-oslo-gray-12px;
+        display: flex;
+        align-items: center;
+        order: 3;
 }
 
 .warning_block-4 {
-    display: flex;
-    align-items: center;
     @include roboto-normal-white-12px;
+    display: flex;
+    justify-content: center;
+    @include phoneOnly {
+        order: 2;
+        width: 190px;
+    }
+    @include tabletUp {
+        order:4;
+    }
 }
-
 .warning_block-4:hover {
     @include roboto-normal-pizazz-12px;
     font-weight: 400;
 }
-
-
 #close_icon {
     width: 14px;
     height: 14px;
 }
-
 #close_border {
     width: 24px;
     height: 24px;
@@ -80,16 +95,13 @@
     justify-content: center;
     align-content: center;
 }
-
 #close_border:hover {
     cursor: pointer;
 }
-
 #close_icon:hover {
     width: 20px;
     height: 20px;
 }
-
 #close_border:active {
     .warning {
         visibility: hidden;
@@ -103,25 +115,51 @@
 .navigation-block {
     display: flex;
     justify-content: space-around;
-    gap: 0%;
-    height: 160px;
     align-items: center;
     width: 100%;
-    box-sizing: border-box;
     padding-top: 40px;
-    display: flex;
-    width: 104%;
+    @include phoneOnly {
+        height: 170px;
+    }
+    @include tabletUp {
+    height: 160px;
     padding-left: 5%;
+    }
 }
 
-
+.nav-sandwich_bar {
+    width: 24px;
+    margin: 200px -22px 0 -19px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-sandwich_icon {
+    @include phoneOnly {
+        width: 24px;
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    @include tabletUp {
+        display: none;
+    }
+}
+.nav-sandwich_icon:hover,
+.nav-sandwich_icon:focus,
+.nav-sandwich_icon:active {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    z-index: 1;
+}
 .nav_line {
     width: 97px;
     height: 3px;
     background: $apple;
     visibility: hidden;
 }
-
 .nav-wrapper {
     display: flex;
     align-items: center;
@@ -135,36 +173,40 @@
     text-transform: uppercase;
     color: #323642;
 }
-
 .nav_block-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-
-.nav-sandwich_icon {
-    width: 24px;
-    height: 16px;
-    display: none;
-}
-
 .nav-sandwich_bar {
-    display: none;
+    @include phoneOnly {
+        display: block;
+    }
+    @include tabletUp {
+        display: none;
+    }
 }
-
 .nav-sandwich_menu {
+    display: flex;
+    flex-direction: column;
+    @include roboto-medium-apple-14px;
+    margin: 7px 0 22px 0;
+    z-index: 1;
+    line-height: 34px;
+    border: 1px solid $black;
+    width: 100px;
     visibility: hidden;
 }
-
-
 .nav-sandwich_line {
     width: 24px;
     height: 2px;
     background: $shark;
 }
-
-
+.nav-log_in {
+    display: none;
+    width: 126px;
+    height: 40px;
+}
 .nav-company_name {
     display: flex;
     justify-content: center;
@@ -180,9 +222,6 @@
     color: #000000;
     width: max-content;
 }
-
-
-
 .nav-why_us {
     display: flex;
     flex-direction: column;
@@ -190,7 +229,6 @@
     cursor: pointer;
     margin: 57px 0 0 0;
 }
-
 .nav-why_us-submenu {
     display: flex;
     flex-direction: column;
@@ -201,24 +239,18 @@
     background: white;
     cursor: pointer;
 }
-
-
 .nav-why_us:hover,
 .nav-why_us:active,
 .nav-why_us:focus {
     .nav_line {
         visibility: visible
     }
-
-    ;
-
     .nav-why_us-submenu {
         visibility: visible;
         opacity: 1;
         z-index: 10;
     }
 }
-
 .nav-vpn_apps {
     display: flex;
     flex-direction: column;
@@ -226,18 +258,13 @@
     cursor: pointer;
     margin: 2px 0 0 9px;
 }
-
 .nav-vpn_apps:hover,
 .nav-vpn_apps:active,
 .nav-vpn_apps:focus {
     .nav_line {
         visibility: visible
     }
-
-    ;
-
 }
-
 .nav-support {
     display: flex;
     flex-direction: column;
@@ -252,18 +279,13 @@
     .nav_line {
         visibility: visible
     }
-
-    ;
-
     .nav-support-submenu {
         visibility: visible;
         opacity: 1;
         z-index: 10;
 
     }
-
 }
-
 .nav-support-submenu {
     display: flex;
     flex-direction: column;
@@ -274,7 +296,6 @@
     background: white;
     cursor: pointer;
 }
-
 .nav-resources {
     display: flex;
     flex-direction: column;
@@ -283,7 +304,6 @@
     margin: 57px 0 0 21px;
     letter-spacing: 0.7px;
 }
-
 .nav-resources-submenu {
     display: flex;
     flex-direction: column;
@@ -294,16 +314,12 @@
     background: white;
     cursor: pointer;
 }
-
 .nav-resources:hover,
 .nav-resources:active,
 .nav-resources:focus {
     .nav_line {
         visibility: visible
     }
-
-    ;
-
     .nav-resources-submenu {
         visibility: visible;
         opacity: 1;
@@ -311,14 +327,11 @@
     }
 
 }
-
 .nav-list_icon {
     width: 10px;
     height: 5px;
     margin: -4px 0 0 9px;
 }
-
-
 .nav-btn_wrapper {
     display: flex;
     justify-items: space-between;
@@ -326,7 +339,6 @@
     gap: 1rem;
     width: max-content;
 }
-
 .nav-log_in {
     border: 1px solid $apple;
     border-radius: 30px;
@@ -338,573 +350,44 @@
     justify-content: center;
     align-items: center;
 }
-
 .nav-log_in:hover {
     background: $apple;
     color: white;
 }
-
 .nav-get_started {
     background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
     border-radius: 30px;
-    width: 160px;
-    height: 40px;
-    @include roboto-medium-white-14px;
-    letter-spacing: 0.8px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    flex-direction: column;
+    @include roboto-medium-apple-14px;
+    letter-spacing: 0.8px;
+    height: 40px;
+    margin: 7px 0 22px 0;
+    z-index: 1;
+    line-height: 34px;
+    border: 1px solid $black;
+    margin: 3px 0 0 0;
+    @include desktop {
+        width: 160px;
 
+    }
+    @include tablet {
+        margin: 3px 0 0 0;
+        width: 126px;
+    }
+    @include phoneOnly {
+        visibility: hidden;
+        width: 100px;
+    }
+}
 .nav-get_started:hover {
     background: linear-gradient(0deg, #5DDF5A 0%, #4CB649 100%);
     color: white;
 }
-
-// Navigation block end
-
-// Header end
-
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {}
-
-/* Portrait phones and smaller */
-@media (max-width: 360px) {}
-
-// *********************************************************** 992 - 1199 ****************************************************************************
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    // Nav-menu start
-
-    .navigation-block {
-        justify-content: space-around;
-    }
-
-
-    .nav-sandwich_bar {
-        width: 24px;
-        margin: 200px -22px 0 -19px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .nav-sandwich_icon {
-        width: 24px;
-        height: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 1;
-    }
-
-    .nav-sandwich_icon:hover,
-    .nav-sandwich_icon:focus,
-    .nav-sandwich_icon:active {
-        width: 24px;
-        height: 18px;
-        display: flex;
-        z-index: 1;
-    }
-
-    .nav-company_name {
-        margin: 0;
-    }
-
-    .nav-wrapper {
+.nav-wrapper {
+    @include tabletUp {
         display: none;
     }
-
-    .nav-log_in {}
-
-    .nav-btn_wrapper {
-
-    }
-
-    .nav-get_started {
-        margin: 3px 0 0 0;
-        width: 126px;
-    }
-
-    .nav-sandwich_menu {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        @include roboto-medium-apple-14px;
-        margin: 7px 0 22px 0;
-        z-index: 1;
-        line-height: 34px;
-        border: 1px solid $black;
-        width: 100px;
-
-    }
-
-
-    // Nav menu end
-
-}
-
-
-// *********************************************************** 768 - 991 ****************************************************************************
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-    // Nav-menu start
-
-    .navigation-block {
-        justify-content: space-around;
-    }
-
-    .nav-sandwich_bar {
-        width: 24px;
-        margin: 200px -22px 0 -19px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .nav-sandwich_icon {
-        width: 24px;
-        height: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 1;
-    }
-
-    .nav-sandwich_icon:hover,
-    .nav-sandwich_icon:focus,
-    .nav-sandwich_icon:active {
-        width: 24px;
-        height: 18px;
-        display: flex;
-        z-index: 1;
-    }
-
-    .nav-company_name {
-        margin:0;
-    }
-
-    .nav-wrapper {
-        display: none;
-    }
-
-    .nav-log_in {}
-
-    .nav-btn_wrapper {
-
-    }
-
-    .nav-get_started {
-        margin: 3px 0 0 0;
-        width: 126px;
-
-    }
-
-    .nav-sandwich_menu {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        @include roboto-medium-apple-14px;
-        margin: 7px 0 22px 0;
-        z-index: 1;
-        line-height: 34px;
-        border: 1px solid $black;
-        width: 100px;
-
-    }
-
-
-    // Nav menu end
-
-}
-
-
-// *************************************************************  767  **************************************************************************
-
-@media(max-width:767px) {
-    // Header start
-
-    // Warning block start
-
-    .warning {
-        height: 68px;
-        padding: 0 0 0 0;
-        gap: 0.5rem;
-    }
-
-
-    .warning_block-1 {
-        order: 1;
-    }
-
-    #alert_svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    #you-are-not-protected {
-        @include roboto-normal-pizazz-12px;
-
-    }
-
-
-    .warning_block-2 {
-        order: 4;
-    }
-
-    .warning_block-3 {
-        order: 3;
-    }
-
-    .warning_block-4 {
-        order: 2;
-        width: 190px;
-        display: flex;
-        justify-content: center;
-    }
-
-    #close_border {}
-
-    // Warning block end
-
-    // Nav-menu start
-
-    .navigation-block {
-        gap: 0rem;
-        justify-content: space-around;
-        height: 170px;
-    }
-
-    .nav-sandwich_bar {
-        width: 24px;
-        margin: 200px -22px 0 -19px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .nav-sandwich_icon {
-        width: 24px;
-        height: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 1;
-    }
-
-    .nav-sandwich_icon:hover,
-    .nav-sandwich_icon:focus,
-    .nav-sandwich_icon:active {
-        width: 24px;
-        height: 18px;
-        display: flex;
-        z-index: 1;
-    }
-
-    .nav-company_name {
-        margin: 0;
-
-    }
-
-    .nav-log_in {
-        display: none;
-        width: 126px;
-        height: 40px;
-    }
-
-    .nav-btn_wrapper {
-
-    }
-
-    .nav-get_started {
-        margin: 3px 0 0 0;
-        width: 126px;
-    }
-
-    .nav-sandwich_menu {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        @include roboto-medium-apple-14px;
-        margin: 7px 0 22px 0;
-        z-index: 1;
-        line-height: 34px;
-        border: 1px solid $black;
-        width: 100px;
-
-    }
-
-    // Nav-menu start
-
-    .navigation-block {}
-
-    .nav-sandwich_bar {
-        width: 24px;
-        margin: 200px -22px 0 -19px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .nav-sandwich_icon {
-        width: 24px;
-        height: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 1;
-    }
-
-    .nav-sandwich_icon:hover,
-    .nav-sandwich_icon:focus,
-    .nav-sandwich_icon:active {
-        width: 24px;
-        height: 18px;
-        display: flex;
-        z-index: 1;
-    }
-
-    .nav-company_name {
-        margin: 0;
-    }
-
-    .nav-wrapper {
-        display: none;
-    }
-
-    .nav-log_in {}
-
-    .nav-btn_wrapper {
-        margin: 0;
-
-    }
-
-    .nav-get_started {
-        margin: 3px 0 0 0;
-        width: 126px;
-    }
-
-    .nav-sandwich_menu {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        @include roboto-medium-apple-14px;
-        margin: 7px 0 22px 0;
-        z-index: 1;
-        line-height: 34px;
-        border: 1px solid $black;
-        width: 100px;
-
-    }
-
-
-    // Nav menu end
-
-
-    // Nav menu end
-
-    // Header end
-}
-
-
-// *********************************************************** 360px ****************************************************************************
-
-
-@media (max-width: 360px) {
-
-    // Header start
-
-    // Warning block start
-
-    .warning {
-        height: 68px;
-        padding: 0 0 0 0;
-        gap: 0rem;
-    }
-
-
-    .warning_block-1 {
-        order: 1;
-    }
-
-    #alert_svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    #you-are-not-protected {
-        @include roboto-normal-pizazz-12px;
-
-    }
-
-
-    .warning_block-2 {
-        order: 4;
-    }
-
-    .warning_block-3 {
-        order: 3;
-    }
-
-    .warning_block-4 {
-        order: 2;
-        width: 190px;
-        display: flex;
-        justify-content: center;
-    }
-
-    #close_border {}
-
-    // Warning block end
-
-    // Nav-menu start
-
-    .navigation-block {
-        gap: 1rem;
-
-    }
-
-    .nav-sandwich_bar {
-        width: 24px;
-        margin: 200px -22px 0 -19px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .nav-sandwich_icon {
-        width: 24px;
-        height: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 1;
-    }
-
-    .nav-sandwich_icon:hover,
-    .nav-sandwich_icon:focus,
-    .nav-sandwich_icon:active {
-        width: 24px;
-        height: 18px;
-        display: flex;
-        z-index: 1;
-    }
-
-    .nav-company_name {
-        margin: 0;
-    }
-
-    .nav-log_in {
-        display: none;
-        width: 126px;
-        height: 40px;
-    }
-
-    .nav-btn_wrapper {
-    }
-
-    .nav-get_started {
-        margin: 3px 0 0 0;
-        width: 126px;
-    }
-
-    .nav-sandwich_menu {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        @include roboto-medium-apple-14px;
-        margin: 7px 0 22px 0;
-        z-index: 1;
-        line-height: 34px;
-        border: 1px solid $black;
-        width: 100px;
-
-    }
-
-    // Nav-menu start
-
-    .navigation-block {
-        gap: 0rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .nav-sandwich_bar {
-        width: 24px;
-        margin: 200px -22px 0 -19px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .nav-sandwich_icon {
-        width: 24px;
-        height: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 1;
-    }
-
-    .nav-sandwich_icon:hover,
-    .nav-sandwich_icon:focus,
-    .nav-sandwich_icon:active {
-        width: 24px;
-        height: 18px;
-        display: flex;
-        z-index: 1;
-    }
-
-    .nav-company_name {
-        display: none;
-    }
-
-    .nav-wrapper {
-        display: none;
-    }
-
-    .nav-log_in {}
-
-    .nav-btn_wrapper {
-        margin: 0;
-
-    }
-    .nav-get_started {
-        margin: 3px 0 0 0;
-        width: 126px;
-    }
-
-    .nav-sandwich_menu {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        @include roboto-medium-apple-14px;
-        margin: 7px 0 22px 0;
-        z-index: 1;
-        line-height: 34px;
-        border: 1px solid $black;
-        width: 100px;
-
-    }
-
-
-    // Nav menu end
-
-
-    // Nav menu end
-
-    // Header end
 }
