@@ -1,6 +1,5 @@
-@mixin roboto-normal-apple-14px {
+@mixin normal-apple-14px {
   color: $apple;
-  font-family: $font-family-roboto;
   font-size: $font-size-m;
   font-weight: 400;
   font-style: normal;
@@ -14,113 +13,99 @@
   font-style: normal;
 }
 
-@mixin roboto-normal-apple-12px {
+@mixin normal-apple-12px {
   color: $apple;
-  font-family: $font-family-roboto;
   font-size: $font-size-s;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin roboto-normal-white-12px {
+@mixin normal-white-12px {
   color: $white;
-  font-family: $font-family-roboto;
-  font-size: $font-size-s;
+ font-size: $font-size-s;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin roboto-light-shark-18px {
+@mixin light-shark-18px {
   color: $shark;
-  font-family: $font-family-roboto;
   font-size: $font-size-l;
   font-weight: 300;
   font-style: normal;
 }
 
-@mixin roboto-light-shark-24px {
+@mixin light-shark-24px {
   color: $shark;
-  font-family: $font-family-roboto;
   font-size: $font-size-xl;
   font-weight: 300;
   font-style: normal;
 }
 
-@mixin roboto-medium-white-14px {
+@mixin medium-white-14px {
   color: $white;
-  font-family: $font-family-roboto;
   font-size: $font-size-m;
   font-weight: 500;
   font-style: normal;
 }
 
-@mixin roboto-medium-tuna-14px {
+@mixin medium-tuna-14px {
   color: $tuna;
-  font-family: $font-family-roboto;
   font-size: $font-size-m;
   font-weight: 500;
   font-style: normal;
 }
 
-@mixin roboto-medium-apple-14px {
+@mixin medium-apple-14px {
   color: $apple;
-  font-family: $font-family-roboto;
   font-size: $font-size-m;
   font-weight: 500;
   font-style: normal;
 }
 
-@mixin roboto-light-shark-32px {
+@mixin light-shark-32px {
   color: $shark;
-  font-family: $font-family-roboto;
   font-size: $font-size-xxxl;
   font-weight: 300;
   font-style: normal;
 }
 
-@mixin roboto-light-white-48px {
+@mixin light-white-48px {
   color: $white;
-  font-family: $font-family-roboto;
   font-size: $font-size-xxxxl;
   font-weight: 300;
   font-style: normal;
 }
 
-@mixin roboto-bold-tuna-14px {
+@mixin bold-tuna-14px {
   color: $tuna;
-  font-family: $font-family-roboto;
   font-size: $font-size-m;
   font-weight: 700;
   font-style: normal;
 }
 
-@mixin roboto-normal-oslo-gray-14px {
+@mixin normal-oslo-gray-14px {
   color: $oslo-gray;
-  font-family: $font-family-roboto;
   font-size: $font-size-m;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin roboto-normal-tuna-14px {
+@mixin normal-tuna-14px {
   color: $tuna;
-  font-family: $font-family-roboto;
   font-size: $font-size-m;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin roboto-normal-oslo-gray-12px {
+@mixin normal-oslo-gray-12px {
   color: $oslo-gray;
-  font-family: $font-family-roboto;
   font-size: $font-size-s;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin roboto-light-white-18px {
+@mixin light-white-18px {
   color: $white;
-  font-family: $font-family-roboto;
   font-size: $font-size-l;
   font-weight: 300;
   font-style: normal;
@@ -135,15 +120,14 @@
 }
 
 
-@mixin roboto-bold-pizazz-12px {
+@mixin bold-pizazz-12px {
   color: $pizazz;
-  font-family: $font-family-roboto;
   font-size: $font-size-s;
   font-weight: 700;
   font-style: normal;
 }
 
-@mixin roboto-normal-tuna-18px {
+@mixin normal-tuna-18px {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -154,9 +138,8 @@
   color: #323642;
 }
 
-@mixin roboto-normal-pizazz-12px {
+@mixin normal-pizazz-12px {
   color: $pizazz;
-  font-family: $font-family-roboto;
   font-size: $font-size-s;
   font-weight: 700;
   font-style: normal;

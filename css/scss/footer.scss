@@ -42,11 +42,11 @@
 .sign_up_today {
     display: flex;
     justify-content: center;
-    @include roboto-light-white-48px;
+    @include light-white-48px;
     letter-spacing: -0.5px;
     text-align: center;
     display: flex;
-    color: #FFFFFF;
+    color: $white;
     flex-direction: column;
     margin: 60px 0 -5px 0;
     letter-spacing: 0.2px;
@@ -81,7 +81,7 @@
     align-items: center;
     justify-content: start;
     height: 315px;
-    background: #FFFFFF;
+    background: $white;
     border: 1px solid #EBECED;
     border-radius: 6px;
 
@@ -95,20 +95,20 @@
 .pricing_block1:hover,
 .pricing_block1:focus,
 .pricing_block1:active {
-    background: #FFFFFF;
+    background: $white;
     border: 4px solid #FF8D00;
     border-radius: 4px;
     margin: -3px -3px -3px -3px;
     height: 315px;
 
     @include tabletUp {
-        border: 4px solid #4CB649;
+        border: 4px solid $apple;
         height: 380px;
     }
 }
 
 .pricing_block1-period {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
     letter-spacing: 0.8px;
     margin: 51px 5px 0 0px;
 }
@@ -116,7 +116,7 @@
 .pricing_block1-smallline {
     height: 2px;
     width: 24px;
-    background: #4CB649;
+    background: $apple;
     margin: 13px 2px 0 0;
 }
 
@@ -133,7 +133,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
-    color: #22252E;
+    color: $shark;
 }
 
 .price-pricing_block1 {
@@ -143,7 +143,7 @@
     font-size: 56px;
     line-height: 66px;
     letter-spacing: -1.5px;
-    color: #22252E;
+    color: $shark;
 }
 
 .mo1 {
@@ -152,7 +152,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
-    color: #22252E;
+    color: $shark;
     margin: 34px 0 0 0;
 }
 
@@ -164,7 +164,7 @@
 }
 
 .pricing_block1-discount-wrapper {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
     margin: 33px -3px 0 0;
     font-weight: 400px;
 }
@@ -173,11 +173,11 @@
     height: 40px;
     width: 205px;
     border-radius: 30px;
-    border: 1px solid #4CB649;
+    border: 1px solid $apple;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include roboto-medium-apple-14px;
+    @include medium-apple-14px;
     letter-spacing: 0.8px;
     margin: 32px -2px 0 0;
 }
@@ -219,7 +219,7 @@
     align-items: center;
     justify-content: start;
     height: 315px;
-    background: #FFFFFF;
+    background: $white;
     border: 1px solid #EBECED;
     border-radius: 6px;
 
@@ -233,14 +233,14 @@
 .pricing_block2:hover,
 .pricing_block2:focus,
 .pricing_block2:active {
-    background: #FFFFFF;
+    background: $white;
     border: 4px solid #FF8D00;
     border-radius: 4px;
     margin: -3px -3px -3px -3px;
     height: 315px;
 
     @include tabletUp {
-        border: 4px solid #4CB649;
+        border: 4px solid $apple;
         height: 380px;
     }
 }
@@ -253,7 +253,7 @@
 }
 
 .pricing_block2-period {
-    @include roboto-bold-tuna-14px;
+    @include bold-tuna-14px;
     letter-spacing: 0.8px;
     margin: 61px -2px 0 0px;
     text-transform: uppercase;
@@ -262,7 +262,7 @@
 .pricing_block2-smallline {
     height: 2px;
     width: 24px;
-    background: #4CB649;
+    background: $apple;
     margin: 16px 0px 0 0;
 
 }
@@ -280,7 +280,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
-    color: #22252E;
+    color: $shark;
 }
 
 .price-pricing_block2 {
@@ -291,7 +291,7 @@
     font-size: 56px;
     line-height: 66px;
     letter-spacing: -1.5px;
-    color: #22252E;
+    color: $shark;
 }
 
 .mo2 {
@@ -300,7 +300,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
-    color: #22252E;
+    color: $shark;
     margin: 34px 0 0 0;
 }
 
@@ -312,7 +312,7 @@
 }
 
 .pricing_block2-discount-wrapper {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -339,18 +339,18 @@
 
 .pricing_block2-discount_save {
     margin: 9px 0px 0 0;
-    @include roboto-bold-tuna-14px;
+    @include bold-tuna-14px;
 }
 
 .pricing_block2-sign_up {
     height: 40px;
     width: 205px;
     border-radius: 30px;
-    border: 1px solid #4CB649;
+    border: 1px solid $apple;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include roboto-medium-apple-14px;
+    @include medium-apple-14px;
     letter-spacing: 0.8px;
     margin: 32px -2px 0 0;
 }
@@ -391,7 +391,7 @@
     align-items: center;
     justify-content: start;
     height: 315px;
-    background: #FFFFFF;
+    background: $white;
     border: 1px solid #EBECED;
     border-radius: 6px;
 
@@ -405,20 +405,20 @@
 .pricing_block3:hover,
 .pricing_block3:focus,
 .pricing_block3:active {
-    background: #FFFFFF;
+    background: $white;
     border: 4px solid #FF8D00;
     border-radius: 4px;
     margin: -3px -3px -3px -3px;
     height: 315px;
 
     @include tabletUp {
-        border: 4px solid #4CB649;
+        border: 4px solid $apple;
         height: 380px;
     }
 }
 
 .pricing_block3-period {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
     letter-spacing: 0.8px;
     margin: 51px -3px 0 0px;
 }
@@ -426,7 +426,7 @@
 .pricing_block3-smallline {
     height: 2px;
     width: 24px;
-    background: #4CB649;
+    background: $apple;
     margin: 12px 3px 0 0;
 }
 
@@ -443,7 +443,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
-    color: #22252E;
+    color: $shark;
 }
 
 .price-pricing_block3 {
@@ -454,7 +454,7 @@
     font-size: 56px;
     line-height: 66px;
     letter-spacing: -1.5px;
-    color: #22252E;
+    color: $shark;
 }
 
 .mo3 {
@@ -463,7 +463,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
-    color: #22252E;
+    color: $shark;
     margin: 34px 0 0 0;
 }
 
@@ -475,7 +475,7 @@
 }
 
 .pricing_block3-discount-wrapper {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
     font-style: normal;
     display: flex;
     flex-direction: row;
@@ -508,7 +508,7 @@
 
 .pricing_block3-discount_save {
     margin: 8px 8px 2px 0px;
-    @include roboto-bold-tuna-14px;
+    @include bold-tuna-14px;
     font-style: normal;
 
     @include tabletUp {
@@ -520,11 +520,11 @@
     height: 40px;
     width: 205px;
     border-radius: 30px;
-    border: 1px solid #4CB649;
+    border: 1px solid $apple;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include roboto-medium-apple-14px;
+    @include medium-apple-14px;
     letter-spacing: 0.8px;
     margin: 32px -2px 0 0;
 }
@@ -581,7 +581,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    color: #FFFFFF;
+    color: $white;
 
     @include tabletUp {
         display: flex;
@@ -694,7 +694,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #4cb649;
+    color: $apple;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
@@ -744,7 +744,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #4cb649;
+    color: $apple;
 
     @include tabletUp {
         margin: 0 0 0 44px;

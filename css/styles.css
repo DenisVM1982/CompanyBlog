@@ -126,7 +126,6 @@ section {
 
 .feature_article-post {
   color: #22252e;
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -165,7 +164,6 @@ section {
 
 .feature_article-author {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -174,7 +172,6 @@ section {
 
 .feature_article-data {
   color: #889099;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -182,7 +179,6 @@ section {
 
 .feature_article-title {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -243,7 +239,6 @@ section {
 
 .feature_article-counter_comments {
   color: #889099;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -252,7 +247,6 @@ section {
 
 .feature_article-post {
   color: #22252e;
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -273,7 +267,6 @@ section {
 
 .feature_article-author {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -282,7 +275,6 @@ section {
 
 .feature_article-data {
   color: #889099;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -290,7 +282,6 @@ section {
 
 .feature_article-title {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -316,7 +307,6 @@ section {
 
 .feature_article-counter_comments {
   color: #889099;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -352,7 +342,6 @@ section {
 
 .tags {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -380,7 +369,6 @@ section {
 
 .bitcoin {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -392,7 +380,6 @@ section {
 
 .bittorrent {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -404,7 +391,6 @@ section {
 
 .irc {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -416,7 +402,6 @@ section {
 
 .news {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -428,7 +413,6 @@ section {
 
 .privacy {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -440,7 +424,6 @@ section {
 
 .programming {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -452,7 +435,6 @@ section {
 
 .security {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -481,7 +463,6 @@ section {
 
 .team {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -498,7 +479,6 @@ section {
 
 .contact {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -548,7 +528,7 @@ section {
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  padding: 0 10px 0 20px;
+  padding: 0px 30px 0 30px;
 }
 @media (min-width: 998px) {
   .recent_posts-block {
@@ -613,6 +593,15 @@ section {
 .recent_post-wrapper5,
 .recent_post-wrapper6 {
   display: none;
+}
+@media (min-width: 998px) {
+  .recent_post-wrapper4,
+.recent_post-wrapper5,
+.recent_post-wrapper6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .search_icon {
@@ -696,7 +685,6 @@ section {
 
 .recent_posts-title {
   color: #22252e;
-  font-family: "Roboto";
   font-size: 32px;
   font-weight: 300;
   font-style: normal;
@@ -714,28 +702,10 @@ section {
   border-bottom: 1px solid #EBECED;
   border-width: 80%;
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 35px;
 }
 @media (min-width: 998px) {
   .recent_post-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.recent_post-wrapper1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media (min-width: 768px) {
-  .recent_post-wrapper1 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -757,6 +727,7 @@ section {
           justify-content: start;
   height: 100%;
   width: 100%;
+  padding: 18px 0 0px 0px;
 }
 @media (min-width: 998px) {
   .recent_post-wrapper2 {
@@ -774,7 +745,6 @@ section {
 
 .recent_post-post {
   color: #22252e;
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -795,7 +765,6 @@ section {
 
 .recent_post-author {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -803,7 +772,6 @@ section {
 
 .recent_post-data {
   color: #889099;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -811,7 +779,6 @@ section {
 
 .recent_post-title {
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -835,7 +802,6 @@ section {
 
 .recent_post-counter_comments {
   color: #889099;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -853,7 +819,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -917,7 +882,6 @@ section {
 
 .announcements-side_nav_header {
   color: #22252e;
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -926,7 +890,6 @@ section {
 
 .announcements-ul {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -1052,7 +1015,6 @@ section {
 
 .tag_cloud {
   color: #22252e;
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -1146,7 +1108,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   color: #ff8d00;
-  font-family: "Roboto";
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
@@ -1176,7 +1137,6 @@ section {
 
 .warning_address {
   color: #889099;
-  font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -1204,7 +1164,6 @@ section {
 
 .warning_more {
   color: #ffffff;
-  font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -1258,6 +1217,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  justify-content: space-around;
+  margin: 19px 0 -19px 0;
 }
 @media (max-device-width: 767px) {
   .navigation-block {
@@ -1377,7 +1338,6 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -1606,7 +1566,6 @@ section {
   width: 90px;
   height: 40px;
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -1620,6 +1579,14 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
+}
+@media (min-width: 998px) {
+  .nav-log_in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav-log_in:hover {
@@ -1645,7 +1612,6 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -1656,23 +1622,7 @@ section {
   line-height: 34px;
   margin: 3px 0 0 0;
   color: white;
-}
-@media (min-width: 998px) {
-  .nav-get_started {
-    width: 160px;
-  }
-}
-@media (min-device-width: 768px) and (max-device-width: 997px) {
-  .nav-get_started {
-    margin: 3px 0 0 0;
-    width: 126px;
-  }
-}
-@media (max-device-width: 767px) {
-  .nav-get_started {
-    display: none;
-    width: 100px;
-  }
+  width: 126px;
 }
 
 .nav-get_started:hover {
@@ -1755,7 +1705,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-  font-family: "Roboto";
   font-size: 48px;
   font-weight: 300;
   font-style: normal;
@@ -1855,7 +1804,6 @@ section {
 
 .pricing_block1-period {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -1919,7 +1867,6 @@ section {
 
 .pricing_block1-discount-wrapper {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -1942,7 +1889,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -2042,7 +1988,6 @@ section {
 
 .pricing_block2-period {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
@@ -2108,7 +2053,6 @@ section {
 
 .pricing_block2-discount-wrapper {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -2147,7 +2091,6 @@ section {
 .pricing_block2-discount_save {
   margin: 9px 0px 0 0;
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
@@ -2168,7 +2111,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -2261,7 +2203,6 @@ section {
 
 .pricing_block3-period {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -2326,7 +2267,6 @@ section {
 
 .pricing_block3-discount-wrapper {
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -2371,7 +2311,6 @@ section {
 .pricing_block3-discount_save {
   margin: 8px 8px 2px 0px;
   color: #323642;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
@@ -2398,7 +2337,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   color: #4cb649;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;

@@ -47,12 +47,12 @@ section {
 .featured_article {
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
-    border: 1px solid #D7D8D9;
+    background: $white;
+    border: 1px solid $iron;
     border-radius: 6px;
     overflow: hidden;
-    -webkit-filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
-    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+    -webkit-filter: drop-shadow(0px 8px 16px #0000001a);
+    filter: drop-shadow(0px 8px 16px #0000001a);
     margin: 0 auto;
     width: 97%;
     @include desktop {
@@ -100,7 +100,7 @@ section {
 }
 
 .feature_article-post {
-    @include roboto-light-shark-24px;
+    @include light-shark-24px;
     line-height: 34px;
 
     @include phoneDown {
@@ -127,16 +127,16 @@ section {
 }
 
 .feature_article-author {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
     margin: 0 10px 0 0;
 }
 
 .feature_article-data {
-    @include roboto-normal-oslo-gray-14px;
+    @include normal-oslo-gray-14px;
 }
 
 .feature_article-title {
-    @include roboto-normal-apple-12px;
+    @include normal-apple-12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 
@@ -184,12 +184,12 @@ section {
 }
 
 .feature_article-counter_comments {
-    @include roboto-normal-oslo-gray-14px;
+    @include normal-oslo-gray-14px;
     margin: 0px 0px 0px 7px;
 }
 
 .feature_article-post {
-    @include roboto-light-shark-24px;
+    @include light-shark-24px;
     line-height: 34px;
     margin: 0px 0 0 0;
 }
@@ -201,16 +201,16 @@ section {
 }
 
 .feature_article-author {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
     margin: 0 10px 0 0;
 }
 
 .feature_article-data {
-    @include roboto-normal-oslo-gray-14px;
+    @include normal-oslo-gray-14px;
 }
 
 .feature_article-title {
-    @include roboto-normal-apple-12px;
+    @include normal-apple-12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 17px 0 0px 0;
@@ -231,7 +231,7 @@ section {
 }
 
 .feature_article-counter_comments {
-    @include roboto-normal-oslo-gray-14px;
+    @include normal-oslo-gray-14px;
     margin: 0px 0px 0px 7px;
 }
 
@@ -251,7 +251,7 @@ section {
     justify-content: space-around;
     gap: 20rem;
     align-items: center;
-    color: #4cb649;
+    color: $apple;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
@@ -263,7 +263,7 @@ section {
 }
 
 .tags {
-    @include roboto-normal-tuna-14px;
+    @include normal-tuna-14px;
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -278,7 +278,7 @@ section {
 }
 
 .bitcoin {
-    @include roboto-normal-apple-14px;
+    @include normal-apple-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -286,7 +286,7 @@ section {
 }
 
 .bittorrent {
-    @include roboto-normal-apple-14px;
+    @include normal-apple-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -294,7 +294,7 @@ section {
 }
 
 .irc {
-    @include roboto-normal-apple-14px;
+    @include normal-apple-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -302,7 +302,7 @@ section {
 }
 
 .news {
-    @include roboto-normal-apple-14px;
+    @include normal-apple-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -310,7 +310,7 @@ section {
 }
 
 .privacy {
-    @include roboto-normal-apple-14px;
+    @include normal-apple-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -318,7 +318,7 @@ section {
 }
 
 .programming {
-    @include roboto-normal-apple-14px;
+    @include normal-apple-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -326,7 +326,7 @@ section {
 }
 
 .security {
-    @include roboto-normal-apple-14px;
+    @include normal-apple-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -342,7 +342,7 @@ section {
 }
 
 .team {
-    @include roboto-normal-tuna-14px;
+    @include normal-tuna-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 1px;
@@ -355,7 +355,7 @@ section {
 }
 
 .contact {
-    @include roboto-normal-tuna-14px;
+    @include normal-tuna-14px;
     margin: 0 0 0 0;
     font-weight: 500;
     letter-spacing: 1px;
@@ -397,7 +397,7 @@ section {
     width: 100%;
     padding: 0;
     margin: 0 auto;
-    padding: 0 10px 0 20px;
+    padding: 0px 30px 0 30px;
 
     @include desktop {
         padding-left: 10px;
@@ -451,6 +451,9 @@ section {
 .recent_post-wrapper5,
 .recent_post-wrapper6 {
     display: none;
+    @include desktop {
+        display: flex;
+    }
 }
 
 
@@ -475,7 +478,7 @@ section {
     border: none;
     width: 103px;
     height: 28px;
-    color: #22252e;
+    color: $shark;
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 300;
@@ -484,8 +487,8 @@ section {
 }
 
 .search_block {
-    background: #FFFFFF;
-    border: 1px solid #D7D8D9;
+    background: $white;
+    border: 1px solid $iron;
     border-radius: 4px;
     height: 59px;
     display: flex;
@@ -523,7 +526,7 @@ section {
     border: none;
     width: 103px;
     height: 28px;
-    color: #22252e;
+    color: $shark;
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 300;
@@ -538,7 +541,7 @@ section {
 
 
 .recent_posts-title {
-    @include roboto-light-shark-32px;
+    @include light-shark-32px;
     margin: 7px 0 15px 0;
 }
 
@@ -548,19 +551,10 @@ section {
     border-bottom: 1px solid #EBECED;
     border-width: 80%;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 35px;
     @include desktop {
         flex-direction: row;
     }
-}
-
-.recent_post-wrapper1 {
-    display: flex;
-    flex-direction: column;
-    @include tabletUp {
-        flex-direction: row;
-    }
-
 }
 
 .recent_post-wrapper2 {
@@ -570,6 +564,7 @@ section {
     justify-content: start;
     height: 100%;
     width: 100%;
+    padding: 18px 0 0px 0px;
     @include desktop {
         width: 58%;
         margin: 0px 0px 0 41px;
@@ -584,7 +579,7 @@ section {
 }
 
 .recent_post-post {
-    @include roboto-light-shark-24px;
+    @include light-shark-24px;
     line-height: 34px;
     margin: 0px 0 12px 0;
 }
@@ -596,15 +591,15 @@ section {
 }
 
 .recent_post-author {
-    @include roboto-medium-tuna-14px;
+    @include medium-tuna-14px;
 }
 
 .recent_post-data {
-    @include roboto-normal-oslo-gray-14px;
+    @include normal-oslo-gray-14px;
 }
 
 .recent_post-title {
-    @include roboto-normal-apple-12px;
+    @include normal-apple-12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 0 0 18px 0;
@@ -622,7 +617,7 @@ section {
 }
 
 .recent_post-counter_comments {
-    @include roboto-normal-oslo-gray-14px;
+    @include normal-oslo-gray-14px;
     margin: 0px 0px 0px 7px;
 }
 
@@ -633,9 +628,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include roboto-medium-apple-14px;
+    @include medium-apple-14px;
     text-transform: uppercase;
-    border: 1px solid #4CB649;
+    border: 1px solid $apple;
     border-radius: 30px;
     height: 40px;
     width: 260px;
@@ -686,12 +681,12 @@ section {
 }
 
 .announcements-side_nav_header {
-    @include roboto-light-shark-24px;
+    @include light-shark-24px;
     margin: -4px 0 0 20px;
 }
 
 .announcements-ul {
-    @include roboto-normal-tuna-14px;
+    @include normal-tuna-14px;
     display: flex;
     line-height: 22px;
     justify-content: space-between;
@@ -718,7 +713,7 @@ section {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        color: #4CB649;
+        color: $apple;
         align-items: center;
         justify-content: center;
         margin: 0 5px 0 -6px;
@@ -783,7 +778,7 @@ section {
 }
 
 .tag_cloud {
-    @include roboto-light-shark-24px;
+    @include light-shark-24px;
 
     @include phoneDown {
         margin: 0;
