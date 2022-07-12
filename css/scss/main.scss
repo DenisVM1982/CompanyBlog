@@ -371,10 +371,6 @@ section {
 
 // Article end
 
-.recent_post-wrapper {
-    height: 100%;
-    margin: 0;
-}
 
 .recent_posts-title {
     margin: 0px 0 25px 0;
@@ -385,15 +381,6 @@ section {
     width: 100%;
     margin: 0 auto;
     flex-direction: column;
-}
-
-.recent_post-wrapper2 {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 27px 0px 17px;
 }
 
 .recent_post-wrapper3 {
@@ -408,20 +395,14 @@ section {
     border-right: none;
     order: 2;
     width: 100%;
-
-    @include phoneDown {
-        padding: 0;
-        margin: 0 auto;
-        order: 2;
-    }
-
-    @include tabletOnly {
-        order: 2;
-    }
+    padding: 0;
+    margin: 0 auto;
+    padding: 0 10px 0 20px;
 
     @include desktop {
         padding-left: 10px;
         order: 1;
+        width: 65%;
     }
 }
 
@@ -430,21 +411,13 @@ section {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    height: 1820px;
     padding: 8px 0 0 0;
     box-sizing: border-box;
-
-    @include phoneDown {
-        flex-wrap: nowrap;
-    }
-
-    @include tabletOnly {
-        flex-wrap: nowrap;
-        padding: 0 10px 0px 10px;
-    }
+    flex-wrap: nowrap;
 
     @include desktop {
         flex-wrap: wrap;
+        height: 1800px;
     }
 }
 
@@ -472,11 +445,6 @@ section {
 
 .recent_post-title {
     margin: 0 0 7px 0;
-}
-
-.older_posts-button {
-    margin: 27px auto;
-    width: 100%;
 }
 
 .recent_post-wrapper4,
@@ -576,32 +544,43 @@ section {
 
 .recent_post-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 1px solid #EBECED;
     border-width: 80%;
     padding-top: 30px;
-    margin-right: 60px;
     padding-bottom: 60px;
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .recent_post-wrapper1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include tabletUp {
+        flex-direction: row;
+    }
+
 }
 
 .recent_post-wrapper2 {
     display: flex;
     flex-direction: column;
-    width: 58%;
     margin: 0 auto;
-    margin: 0px 0px 0 41px;
     justify-content: start;
     height: 100%;
+    width: 100%;
+    @include desktop {
+        width: 58%;
+        margin: 0px 0px 0 41px;
+    }
 }
 
 .recent_post-image {
-    width: 280px;
-    height: 180px;
+    @include desktop {
+        width: 280px;
+        height: 180px;
+    }
 }
 
 .recent_post-post {
@@ -654,7 +633,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 24px 0px 0 260px;
     @include roboto-medium-apple-14px;
     text-transform: uppercase;
     border: 1px solid #4CB649;
@@ -662,6 +640,7 @@ section {
     height: 40px;
     width: 260px;
     letter-spacing: 0.8px;
+    margin: 0 auto;
 }
 
 .older_posts-button:hover,
@@ -682,43 +661,17 @@ section {
     border-bottom: 1px solid #EBECED;
     padding: 40px 0 30px 0;
     width: 50%;
+    margin: auto;
+    width: 100%;
 }
 
 .side_nav_blog-block {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    display: column;
     justify-content: space-between;
+    margin: 0 auto;
     order: 3;
-
-    @include phoneDown {
-        margin: 0 auto;
-    }
-
-    @include tabletOnly {
-        flex-flow: wrap;
-        margin: 0 auto;
-        padding: 30px;
-
-    }
-
-    @include tabletUp {
-        margin: -8px 0 0 5.1%;
-    }
-}
-
-.side_nav_announcements {
-    display: flex;
-    border-bottom: 1px solid #EBECED;
-
-    @include phoneDown {
-        flex-direction: column;
-        padding: 30px;
-    }
-
-    @include tabletUp {
-        padding: 40px 0 27px 0;
-    }
 }
 
 .side_nav_popular_post {
@@ -823,7 +776,7 @@ section {
     height: 80%;
     margin: 0 auto;
 
-    @include tabletOnly {
+    @include desktop {
         width: 50%;
         margin: 40px 0 0 0;
     }

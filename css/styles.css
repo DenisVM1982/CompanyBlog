@@ -513,11 +513,6 @@ section {
   color: #4cb649;
 }
 
-.recent_post-wrapper {
-  height: 100%;
-  margin: 0;
-}
-
 .recent_posts-title {
   margin: 0px 0 25px 0;
 }
@@ -530,20 +525,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.recent_post-wrapper2 {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 27px 0px 17px;
 }
 
 .recent_post-wrapper3 {
@@ -565,22 +546,9 @@ section {
       -ms-flex-order: 2;
           order: 2;
   width: 100%;
-}
-@media (max-device-width: 767px) {
-  .recent_posts-block {
-    padding: 0;
-    margin: 0 auto;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-}
-@media (min-device-width: 768px) and (max-device-width: 997px) {
-  .recent_posts-block {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
+  padding: 0;
+  margin: 0 auto;
+  padding: 0 10px 0 20px;
 }
 @media (min-width: 998px) {
   .recent_posts-block {
@@ -588,6 +556,7 @@ section {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    width: 65%;
   }
 }
 
@@ -601,28 +570,17 @@ section {
           flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  height: 1820px;
   padding: 8px 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-@media (max-device-width: 767px) {
-  .search_recent_posts-wrapper {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-@media (min-device-width: 768px) and (max-device-width: 997px) {
-  .search_recent_posts-wrapper {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    padding: 0 10px 0px 10px;
-  }
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 @media (min-width: 998px) {
   .search_recent_posts-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    height: 1800px;
   }
 }
 
@@ -649,11 +607,6 @@ section {
 
 .recent_post-title {
   margin: 0 0 7px 0;
-}
-
-.older_posts-button {
-  margin: 27px auto;
-  width: 100%;
 }
 
 .recent_post-wrapper4,
@@ -754,25 +707,40 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-bottom: 1px solid #EBECED;
   border-width: 80%;
   padding-top: 30px;
-  margin-right: 60px;
   padding-bottom: 60px;
+}
+@media (min-width: 998px) {
+  .recent_post-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .recent_post-wrapper1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 768px) {
+  .recent_post-wrapper1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .recent_post-wrapper2 {
@@ -783,18 +751,25 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 58%;
   margin: 0 auto;
-  margin: 0px 0px 0 41px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   height: 100%;
+  width: 100%;
+}
+@media (min-width: 998px) {
+  .recent_post-wrapper2 {
+    width: 58%;
+    margin: 0px 0px 0 41px;
+  }
 }
 
-.recent_post-image {
-  width: 280px;
-  height: 180px;
+@media (min-width: 998px) {
+  .recent_post-image {
+    width: 280px;
+    height: 180px;
+  }
 }
 
 .recent_post-post {
@@ -877,7 +852,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 24px 0px 0 260px;
   color: #4cb649;
   font-family: "Roboto";
   font-size: 14px;
@@ -889,6 +863,7 @@ section {
   height: 40px;
   width: 260px;
   letter-spacing: 0.8px;
+  margin: 0 auto;
 }
 
 .older_posts-button:hover,
@@ -901,59 +876,26 @@ section {
   border-bottom: 1px solid #EBECED;
   padding: 40px 0 30px 0;
   width: 50%;
+  margin: auto;
+  width: 100%;
 }
 
 .side_nav_blog-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  display: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-}
-@media (max-device-width: 767px) {
-  .side_nav_blog-block {
-    margin: 0 auto;
-  }
-}
-@media (min-device-width: 768px) and (max-device-width: 997px) {
-  .side_nav_blog-block {
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-    margin: 0 auto;
-    padding: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .side_nav_blog-block {
-    margin: -8px 0 0 5.1%;
-  }
-}
-
-.side_nav_announcements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid #EBECED;
-}
-@media (max-device-width: 767px) {
-  .side_nav_announcements {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .side_nav_announcements {
-    padding: 40px 0 27px 0;
-  }
 }
 
 .side_nav_popular_post {
@@ -1101,7 +1043,7 @@ section {
   height: 80%;
   margin: 0 auto;
 }
-@media (min-device-width: 768px) and (max-device-width: 997px) {
+@media (min-width: 998px) {
   .tag_cloud-wrapper {
     width: 50%;
     margin: 40px 0 0 0;
