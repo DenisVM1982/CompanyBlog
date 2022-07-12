@@ -164,17 +164,19 @@
 
 
 
-@mixin phoneOnly {
+@mixin phoneDown {
   @media (max-device-width: 767px) { @content; }
 }
 
-@mixin tablet {
+@mixin tabletUp {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin tabletOnly {
   @media (min-device-width: 768px) and (max-device-width: 997px) { @content; }
 }
 @mixin desktop {
   @media (min-width: 998px) { @content; }
 }
 
-@mixin tabletUp {
-  @media (min-width: 768px) { @content; }
-}
+

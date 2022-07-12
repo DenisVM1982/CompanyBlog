@@ -1,6 +1,9 @@
-function warningClose() {
+var warningCloseButton = document.querySelector(".warning_close--js")
+
+warningCloseButton.addEventListener('click', function (event) {
+    event.preventDefault();
     document.getElementById("warning").style.visibility = "hidden";
-}
+})
 
 function sandwichToggleMenu() {
     var navMenu = document.getElementById("nav-sadnwich_menu");

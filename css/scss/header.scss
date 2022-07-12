@@ -3,89 +3,92 @@
 // Warning block start
 
 .warning {
-    display: flex;
-    flex-wrap: wrap;
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
     background: $shark;
-    padding: 8px 0 8px 0;
-    justify-content: center;
-    align-content: center;
+    padding: 13px 40px 13px 20px;
+
     a:active,
     a:hover,
     a:focus {
         color: $pizazz;
     }
-    @include phoneOnly {
-        height: 68px;
-        padding: 0 0 0 0;
-        gap: 0.5rem;
+
+    @include phoneDown {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-gap: 5px;
     }
+
     @include tabletUp {
+        display: flex;
+        flex-wrap: wrap;
+        position: fixed;
         gap: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 }
-.warning_block-1 {
+
+.warning_protected {
     display: flex;
     align-items: center;
-    @include phoneOnly {
+    @include roboto-normal-pizazz-12px;
+    line-height: 16px;
+
+    @include phoneDown {
         order: 1;
     }
+
     @include tabletUp {
         justify-self: end;
         margin: 0 2px 0 0;
         order: 1;
     }
-}
-#alert_svg {
-    width: 24px;
-    height: 24px;
-}
-#you-are-not-protected {
-    @include roboto-normal-pizazz-12px;
-    line-height: 16px;
-}
-.warning_block-2 {
-    display: flex;
-    align-items: center;
-    @include roboto-normal-oslo-gray-12px;
-    @include phoneOnly {
-        order: 4;
+
+    img {
+        width: 24px;
+        height: 24px;
     }
-    @include tabletUp {
-        order:2;
-    }
-}
-.warning_block-3 {
-        @include roboto-normal-oslo-gray-12px;
-        display: flex;
-        align-items: center;
-        order: 3;
 }
 
-.warning_block-4 {
+.warning_address {
+    @include roboto-normal-oslo-gray-12px;
+
+    &--ip {
+        @include phoneDown {
+            order: 4;
+            margin-left: auto;
+        }
+
+        @include tabletUp {
+            order: 2;
+        }
+    }
+
+    &--ips {
+        order: 3;
+    }
+
+}
+
+
+.warning_more {
     @include roboto-normal-white-12px;
-    display: flex;
-    justify-content: center;
-    @include phoneOnly {
+
+    @include phoneDown {
         order: 2;
-        width: 190px;
+        margin-left: auto;
     }
+
     @include tabletUp {
-        order:4;
+        order: 4;
     }
 }
-.warning_block-4:hover {
-    @include roboto-normal-pizazz-12px;
-    font-weight: 400;
-}
-#close_icon {
-    width: 14px;
-    height: 14px;
-}
-#close_border {
+
+.warning_close {
     width: 24px;
     height: 24px;
     position: absolute;
@@ -94,17 +97,14 @@
     display: flex;
     justify-content: center;
     align-content: center;
-}
-#close_border:hover {
-    cursor: pointer;
-}
-#close_icon:hover {
-    width: 20px;
-    height: 20px;
-}
-#close_border:active {
-    .warning {
-        visibility: hidden;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    img {
+        width: 14px;
+        height: 14px;
     }
 }
 
@@ -117,24 +117,27 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-top: 40px;
-    @include phoneOnly {
+    // padding-top: 40px;
+
+    @include phoneDown {
         height: 170px;
     }
+
     @include tabletUp {
-    height: 160px;
-    padding-left: 5%;
+        height: 160px;
+        padding-left: 5%;
     }
 }
 
 .nav-sandwich_bar {
     width: 24px;
-    margin: 200px -22px 0 -19px;
+    margin: 200px 0 0 0;
     display: flex;
     flex-direction: column;
 }
+
 .nav-sandwich_icon {
-    @include phoneOnly {
+    @include phoneDown {
         width: 24px;
         height: 16px;
         display: flex;
@@ -142,10 +145,12 @@
         justify-content: space-between;
         z-index: 1;
     }
+
     @include tabletUp {
         display: none;
     }
 }
+
 .nav-sandwich_icon:hover,
 .nav-sandwich_icon:focus,
 .nav-sandwich_icon:active {
@@ -154,12 +159,14 @@
     display: flex;
     z-index: 1;
 }
+
 .nav_line {
     width: 97px;
     height: 3px;
     background: $apple;
     visibility: hidden;
 }
+
 .nav-wrapper {
     display: flex;
     align-items: center;
@@ -173,19 +180,23 @@
     text-transform: uppercase;
     color: #323642;
 }
+
 .nav_block-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .nav-sandwich_bar {
-    @include phoneOnly {
+    @include phoneDown {
         display: block;
     }
+
     @include tabletUp {
         display: none;
     }
 }
+
 .nav-sandwich_menu {
     display: flex;
     flex-direction: column;
@@ -197,16 +208,19 @@
     width: 100px;
     visibility: hidden;
 }
+
 .nav-sandwich_line {
     width: 24px;
     height: 2px;
     background: $shark;
 }
+
 .nav-log_in {
     display: none;
     width: 126px;
     height: 40px;
 }
+
 .nav-company_name {
     display: flex;
     justify-content: center;
@@ -222,6 +236,7 @@
     color: #000000;
     width: max-content;
 }
+
 .nav-why_us {
     display: flex;
     flex-direction: column;
@@ -229,6 +244,7 @@
     cursor: pointer;
     margin: 57px 0 0 0;
 }
+
 .nav-why_us-submenu {
     display: flex;
     flex-direction: column;
@@ -239,25 +255,29 @@
     background: white;
     cursor: pointer;
 }
+
 .nav-why_us:hover,
 .nav-why_us:active,
 .nav-why_us:focus {
     .nav_line {
         visibility: visible
     }
+
     .nav-why_us-submenu {
         visibility: visible;
         opacity: 1;
         z-index: 10;
     }
 }
+
 .nav-vpn_apps {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
-    margin: 2px 0 0 9px;
+    margin: 2px 0 0 0;
 }
+
 .nav-vpn_apps:hover,
 .nav-vpn_apps:active,
 .nav-vpn_apps:focus {
@@ -265,12 +285,13 @@
         visibility: visible
     }
 }
+
 .nav-support {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
-    margin: 57px 0 0 9px;
+    margin: 57px 0 0 0;
 }
 
 .nav-support:hover,
@@ -279,6 +300,7 @@
     .nav_line {
         visibility: visible
     }
+
     .nav-support-submenu {
         visibility: visible;
         opacity: 1;
@@ -286,6 +308,7 @@
 
     }
 }
+
 .nav-support-submenu {
     display: flex;
     flex-direction: column;
@@ -296,14 +319,16 @@
     background: white;
     cursor: pointer;
 }
+
 .nav-resources {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;
-    margin: 57px 0 0 21px;
+    margin: 57px 0 0 0;
     letter-spacing: 0.7px;
 }
+
 .nav-resources-submenu {
     display: flex;
     flex-direction: column;
@@ -314,12 +339,14 @@
     background: white;
     cursor: pointer;
 }
+
 .nav-resources:hover,
 .nav-resources:active,
 .nav-resources:focus {
     .nav_line {
         visibility: visible
     }
+
     .nav-resources-submenu {
         visibility: visible;
         opacity: 1;
@@ -327,11 +354,13 @@
     }
 
 }
+
 .nav-list_icon {
     width: 10px;
     height: 5px;
-    margin: -4px 0 0 9px;
+    margin: -4px 0 0 0;
 }
+
 .nav-btn_wrapper {
     display: flex;
     justify-items: space-between;
@@ -339,6 +368,7 @@
     gap: 1rem;
     width: max-content;
 }
+
 .nav-log_in {
     border: 1px solid $apple;
     border-radius: 30px;
@@ -350,10 +380,12 @@
     justify-content: center;
     align-items: center;
 }
+
 .nav-log_in:hover {
     background: $apple;
     color: white;
 }
+
 .nav-get_started {
     background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
     border-radius: 30px;
@@ -367,27 +399,33 @@
     margin: 7px 0 22px 0;
     z-index: 1;
     line-height: 34px;
-    border: 1px solid $black;
     margin: 3px 0 0 0;
+    color: white;
+
     @include desktop {
         width: 160px;
 
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 3px 0 0 0;
         width: 126px;
     }
-    @include phoneOnly {
-        visibility: hidden;
+
+    @include phoneDown {
+        display: none;
         width: 100px;
     }
 }
+
 .nav-get_started:hover {
     background: linear-gradient(0deg, #5DDF5A 0%, #4CB649 100%);
     color: white;
 }
+
 .nav-wrapper {
-    @include tabletUp {
-        display: none;
+    display: none;
+    @include desktop {
+        display: flex;
     }
 }

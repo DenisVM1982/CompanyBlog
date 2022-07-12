@@ -1,4 +1,7 @@
 // Footer start
+  
+
+
 
 .footer {
     display: flex;
@@ -7,6 +10,7 @@
     align-items: center;
     flex: 1 0 auto;
     padding-bottom: 80px;
+
     @include tabletUp {
         padding-bottom: 50px;
     }
@@ -20,23 +24,21 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    height: 100%;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     border-radius: 0px;
     background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
     margin: 72px 0 0 0;
     padding: 0 0 40px 0;
     height: 1700px;
-    @include tablet {
-        margin: 75px 0 0 0;
-        height: 800px;
-        padding: 100px 0 60px 0;
-    }
+    width: 100%;
+
     @include desktop {
         justify-content: space-around;
     }
 }
+
 .sign_up_today {
     display: flex;
     justify-content: center;
@@ -49,6 +51,7 @@
     margin: 60px 0 -5px 0;
     letter-spacing: 0.2px;
 }
+
 .pricing_block-wrapper {
     display: flex;
     flex-direction: column;
@@ -57,7 +60,8 @@
     height: 1000px;
     justify-content: space-between;
     align-items: center;
-    @include tabletUp {
+
+    @include desktop {
         flex-direction: row;
         gap: 1%;
         margin: 40px auto;
@@ -80,12 +84,14 @@
     background: #FFFFFF;
     border: 1px solid #EBECED;
     border-radius: 6px;
-    @include tabletUp {
+
+    @include desktop {
         justify-content: start;
         height: 340px;
         width: 30%;
     }
 }
+
 .pricing_block1:hover,
 .pricing_block1:focus,
 .pricing_block1:active {
@@ -94,27 +100,32 @@
     border-radius: 4px;
     margin: -3px -3px -3px -3px;
     height: 315px;
+
     @include tabletUp {
         border: 4px solid #4CB649;
         height: 380px;
     }
 }
+
 .pricing_block1-period {
     @include roboto-medium-tuna-14px;
     letter-spacing: 0.8px;
     margin: 51px 5px 0 0px;
 }
+
 .pricing_block1-smallline {
     height: 2px;
     width: 24px;
     background: #4CB649;
     margin: 13px 2px 0 0;
 }
+
 .price_block-pricing_block1 {
     margin: 15px -1px 0 0;
     display: flex;
     align-items: center;
 }
+
 .dollar1 {
     margin: -8px 12px 0 1px;
     font-family: 'Roboto';
@@ -124,6 +135,7 @@
     line-height: 32px;
     color: #22252E;
 }
+
 .price-pricing_block1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -133,6 +145,7 @@
     letter-spacing: -1.5px;
     color: #22252E;
 }
+
 .mo1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -142,17 +155,20 @@
     color: #22252E;
     margin: 34px 0 0 0;
 }
+
 .pricing_block1-line {
     background: #EBECED;
     height: 1px;
     width: 200px;
     margin: 18px 0 0 0;
 }
+
 .pricing_block1-discount-wrapper {
     @include roboto-medium-tuna-14px;
     margin: 33px -3px 0 0;
     font-weight: 400px;
 }
+
 .pricing_block1-sign_up {
     height: 40px;
     width: 205px;
@@ -184,6 +200,7 @@
     background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
     height: 40px;
     width: 205px;
+
     @include tabletUp {
         background: $apple;
         border-color: $apple;
@@ -205,12 +222,14 @@
     background: #FFFFFF;
     border: 1px solid #EBECED;
     border-radius: 6px;
-    @include tabletUp {
+
+    @include desktop {
         justify-content: start;
         height: 340px;
         width: 30%;
     }
 }
+
 .pricing_block2:hover,
 .pricing_block2:focus,
 .pricing_block2:active {
@@ -219,23 +238,27 @@
     border-radius: 4px;
     margin: -3px -3px -3px -3px;
     height: 315px;
+
     @include tabletUp {
         border: 4px solid #4CB649;
         height: 380px;
     }
 }
+
 .pricing_block2-line {
     background: #EBECED;
     height: 1px;
     width: 200px;
     margin: 18px 0 0 0;
 }
+
 .pricing_block2-period {
     @include roboto-bold-tuna-14px;
     letter-spacing: 0.8px;
     margin: 61px -2px 0 0px;
     text-transform: uppercase;
 }
+
 .pricing_block2-smallline {
     height: 2px;
     width: 24px;
@@ -243,11 +266,13 @@
     margin: 16px 0px 0 0;
 
 }
+
 .price_block-pricing_block2 {
     margin: 13px 0 0 0;
     display: flex;
     align-items: center;
 }
+
 .dollar2 {
     margin: -7px 12px 0 0px;
     font-family: 'Roboto';
@@ -257,6 +282,7 @@
     line-height: 32px;
     color: #22252E;
 }
+
 .price-pricing_block2 {
     margin: 0 6px 0 -6px;
     font-family: 'Roboto';
@@ -267,6 +293,7 @@
     letter-spacing: -1.5px;
     color: #22252E;
 }
+
 .mo2 {
     font-family: 'Roboto';
     font-style: normal;
@@ -276,12 +303,14 @@
     color: #22252E;
     margin: 34px 0 0 0;
 }
+
 .pricing_block1-line {
     background: #EBECED;
     height: 1px;
     width: 200px;
     margin: 18px 0 0 0;
 }
+
 .pricing_block2-discount-wrapper {
     @include roboto-medium-tuna-14px;
     display: flex;
@@ -290,6 +319,7 @@
     margin: 18px -3px 0 0;
     font-weight: 400px;
 }
+
 .pricing_block2-discount_cost {
     margin: 0px 7px 0 -5px;
     font-family: 'Roboto';
@@ -301,14 +331,17 @@
     text-decoration-line: line-through;
     color: #F24458;
 }
+
 .pricing_block2-discount_cost_per_year {
     margin: 0 0 0 0;
     font-weight: 400;
 }
+
 .pricing_block2-discount_save {
     margin: 9px 0px 0 0;
     @include roboto-bold-tuna-14px;
 }
+
 .pricing_block2-sign_up {
     height: 40px;
     width: 205px;
@@ -321,6 +354,7 @@
     letter-spacing: 0.8px;
     margin: 32px -2px 0 0;
 }
+
 .pricing_block2-sign_up:hover,
 .pricing_block2-sign_up:focus,
 .pricing_block2-sign_up:active {
@@ -339,6 +373,7 @@
     background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
     height: 40px;
     width: 205px;
+
     @include tabletUp {
         background: $apple;
         border-color: $apple;
@@ -359,12 +394,14 @@
     background: #FFFFFF;
     border: 1px solid #EBECED;
     border-radius: 6px;
-    @include tabletUp {
+
+    @include desktop {
         justify-content: start;
         height: 340px;
         width: 30%;
     }
 }
+
 .pricing_block3:hover,
 .pricing_block3:focus,
 .pricing_block3:active {
@@ -373,27 +410,32 @@
     border-radius: 4px;
     margin: -3px -3px -3px -3px;
     height: 315px;
+
     @include tabletUp {
         border: 4px solid #4CB649;
         height: 380px;
     }
 }
+
 .pricing_block3-period {
     @include roboto-medium-tuna-14px;
     letter-spacing: 0.8px;
     margin: 51px -3px 0 0px;
 }
+
 .pricing_block3-smallline {
     height: 2px;
     width: 24px;
     background: #4CB649;
     margin: 12px 3px 0 0;
 }
+
 .price_block-pricing_block3 {
     margin: 16px -1px 0 0;
     display: flex;
     align-items: center;
 }
+
 .dollar3 {
     margin: -9px 12px 0 0px;
     font-family: 'Roboto';
@@ -403,6 +445,7 @@
     line-height: 32px;
     color: #22252E;
 }
+
 .price-pricing_block3 {
     margin: 0 6px 0 -6px;
     font-family: 'Roboto';
@@ -413,6 +456,7 @@
     letter-spacing: -1.5px;
     color: #22252E;
 }
+
 .mo3 {
     font-family: 'Roboto';
     font-style: normal;
@@ -422,12 +466,14 @@
     color: #22252E;
     margin: 34px 0 0 0;
 }
+
 .pricing_block3-line {
     background: #EBECED;
     height: 1px;
     width: 200px;
     margin: 18px 0 0 0;
 }
+
 .pricing_block3-discount-wrapper {
     @include roboto-medium-tuna-14px;
     font-style: normal;
@@ -436,10 +482,12 @@
     align-items: center;
     margin: 19px 7px 0 0;
     font-weight: 400px;
+
     @include tabletUp {
         margin: 18px -2px 0 0;
     }
 }
+
 .pricing_block3-discount_cost {
     margin: 0px 13px 0 0px;
     font-family: 'Roboto';
@@ -451,19 +499,23 @@
     text-decoration-line: line-through;
     color: #F24458;
 }
+
 .pricing_block3-discount_cost_per_year {
     margin: 0 0 0 0;
     font-weight: 400;
 
 }
+
 .pricing_block3-discount_save {
     margin: 8px 8px 2px 0px;
     @include roboto-bold-tuna-14px;
     font-style: normal;
+
     @include tabletUp {
         margin: 10px 0px 0 0;
     }
 }
+
 .pricing_block3-sign_up {
     height: 40px;
     width: 205px;
@@ -476,6 +528,7 @@
     letter-spacing: 0.8px;
     margin: 32px -2px 0 0;
 }
+
 .pricing_block3-sign_up:hover,
 .pricing_block3-sign_up:focus,
 .pricing_block3-sign_up:active {
@@ -494,6 +547,7 @@
     background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
     height: 40px;
     width: 205px;
+
     @include tabletUp {
         background: $apple;
         border-color: $apple;
@@ -510,12 +564,14 @@
     justify-content: center;
     width: 80%;
     grid-gap: 2%;
-    @include tabletUp {
+
+    @include desktop {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 }
+
 .ways_to_pay {
     margin: 0px 0px 0 -34px;
     grid-column-start: 1;
@@ -526,6 +582,7 @@
     font-weight: 300;
     font-size: 18px;
     color: #FFFFFF;
+
     @include tabletUp {
         display: flex;
         flex-direction: row;
@@ -533,6 +590,7 @@
         justify-content: start;
     }
 }
+
 #visa {
     margin: 0px 0px 0 0px;
     grid-column-start: 1;
@@ -540,10 +598,12 @@
     grid-row-start: 2;
     grid-row-end: 3;
     justify-self: center;
+
     @include tabletUp {
         margin: -2px 0px 0 31px;
     }
 }
+
 #visa:hover,
 #mastercard:hover,
 #pay_pal:hover,
@@ -554,6 +614,7 @@
     cursor: pointer;
     opacity: 0.5;
 }
+
 #visa:focus,
 #mastercard:focus,
 #pay_pal:focus,
@@ -564,41 +625,52 @@
     cursor: pointer;
     opacity: 0.5;
 }
+
 #mastercard {
     margin: 0px 0px 0px 12px;
     justify-self: center;
+
     @include tabletUp {
         margin: 2px 0px 0px 30px;
     }
 }
+
 #american_express {
     margin: 0px 0px 0 -5px;
     justify-self: center;
+
     @include tabletUp {
         margin: -3px 0px 0 37px;
     }
 }
+
 #pay_pal {
     margin: 4px 0px 0 -6px;
     justify-self: center;
+
     @include tabletUp {
         margin: -1px 0px 0 25px;
     }
 }
+
 #bitcoin {
     margin: 3px 0 0 -1px;
     justify-self: center;
+
     @include tabletUp {
         margin: -2px 0 0 25px;
     }
 }
+
 #okpay {
     margin: 4px 0 0 -8px;
     justify-self: center;
+
     @include tabletUp {
         margin: -2px 0 0 34px;
     }
 }
+
 #amazon_pay {
     margin: -4px 0px 0 -14px;
     grid-column-start: 2;
@@ -606,8 +678,9 @@
     grid-row-start: 4;
     grid-row-end: 5;
     justify-self: center;
+
     @include tabletUp {
-    margin: 0 -3px 0 40px;
+        margin: 0 -3px 0 40px;
     }
 }
 
@@ -627,14 +700,15 @@
     font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
-    width: 455px;
     justify-content: start;
     letter-spacing: 0.8px;
+
     @include tabletUp {
         flex-direction: row;
         margin: 0 auto;
     }
 }
+
 .how_to_pay_wrapper1 {
     margin: -2px 0 2px -5px;
     display: flex;
@@ -643,21 +717,26 @@
     justify-content: center;
     cursor: pointer;
     color: $apple;
+
     @include tabletUp {
         margin: 0 0 0 0;
     }
 }
+
 #arrow1 {
     margin: 0 0 0 17px;
 }
+
 .how_to_pay_wrapper1:hover,
 .how_to_pay_wrapper1:focus {
     #arrow1 {
         cursor: pointer;
         margin: 0px -10px 0 27px;
     }
+
     color: $apple;
 }
+
 .how_to_pay_wrapper2 {
     margin: 42px 0 0 -6px;
     display: flex;
@@ -666,13 +745,16 @@
     justify-content: center;
     cursor: pointer;
     color: #4cb649;
+
     @include tabletUp {
-    margin: 0 0 0 44px;
+        margin: 0 0 0 44px;
     }
 }
+
 #arrow2 {
     margin: 0 0 0 18px;
 }
+
 .how_to_pay_wrapper2:hover,
 .how_to_pay_wrapper2:focus {
     #arrow2 {
@@ -680,9 +762,11 @@
         margin: 0px -10px 0 27px;
     }
 }
+
 .redeem_gift_card {
     color: $apple;
 }
+
 // How_to_pay_block end
 
 // Discount_block end
@@ -691,30 +775,37 @@
 
 .about_company-wrapper {
     margin: -10px 0 0 40px;
-    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: start;
+
     @include tabletUp {
         margin: 84px 0 0 0;
         width: 75%;
     }
 }
+
 .about_company {
     display: grid;
-    @include phoneOnly {
+
+    @include phoneDown {
         grid-template: 84px 136px 213px 84px 120px 190px/50% 50%;
     }
-    @include tablet {
+
+    @include tabletOnly {
         grid-template: 97px 200px 133px 1fr/22% 18% 19% 53%;
     }
+
     @include desktop {
         grid-template: 97px 200px 133px 1fr/22% 18% 19% 53%;
     }
+
     margin: 0 auto;
+
     ul {
         margin: 16px 0 0 0;
     }
+
     h4 {
         font-family: 'Roboto';
         font-style: normal;
@@ -726,6 +817,7 @@
         color: #323642;
         margin: 0 0 14px 0;
     }
+
     a {
         font-family: 'Roboto';
         font-style: normal;
@@ -736,6 +828,7 @@
         margin: 0 0 0 0;
         line-height: 32px;
     }
+
     p {
         font-family: 'Roboto';
         font-style: normal;
@@ -747,6 +840,7 @@
         line-height: 22px;
     }
 }
+
 .company_name {
     margin: 0 0 0 0;
     font-family: 'Inter';
@@ -756,13 +850,15 @@
     line-height: 33px;
     text-align: center;
     color: #000000;
-    @include phoneOnly {
-        grid-column-start:1;
-        grid-column-end:3;
-        grid-row-start:1;
-        grid-row-end:2;
+
+    @include phoneDown {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
         justify-self: start;
     }
+
     @include tabletUp {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -772,14 +868,16 @@
 
     }
 }
+
 .company_block {
-    @include phoneOnly {
-        grid-column-start:1;
-        grid-column-end:2;
-        grid-row-start:2;
-        grid-row-end:3;
+    @include phoneDown {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
         justify-self: start;
     }
+
     @include tabletUp {
         margin: 0 0 0 0;
         grid-column-start: 1;
@@ -788,14 +886,16 @@
         grid-row-end: 4;
     }
 }
+
 .programs_block {
-    @include phoneOnly {
-        grid-column-start:2;
-        grid-column-end:3;
-        grid-row-start:2;
-        grid-row-end:3;
+    @include phoneDown {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
         justify-self: start;
     }
+
     @include tabletUp {
         margin: 0 0 0 0;
         grid-column-start: 2;
@@ -804,14 +904,16 @@
         grid-row-end: 4;
     }
 }
+
 .learn_more_block {
-    @include phoneOnly {
+    @include phoneDown {
         grid-column-start: 2;
-        grid-column-end:3;
-        grid-row-start:3;
-        grid-row-end:4;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
         justify-self: start;
     }
+
     @include tabletUp {
         margin: 0 0 0 0;
         grid-column-start: 2;
@@ -820,30 +922,34 @@
         grid-row-end: 4;
     }
 }
+
 .legal_block {
-    @include phoneOnly {
+    @include phoneDown {
         grid-column-start: 1;
-        grid-column-end:2;
-        grid-row-start:4;
-        grid-row-end:5;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
         justify-self: start;
     }
+
     @include tabletUp {
         grid-column-start: 3;
-        grid-column-end:4;
-        grid-row-start:2;
-        grid-row-end:3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
         justify-self: start;
     }
 }
+
 .about_block {
-    @include phoneOnly {
+    @include phoneDown {
         grid-column-start: 1;
-        grid-column-end:3;
-        grid-row-start:6;
-        grid-row-end:7;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
         justify-self: start;
     }
+
     @include tabletUp {
         margin: 0 0 0 0;
         grid-column-start: 4;
@@ -852,20 +958,24 @@
         grid-row-end: 3;
     }
 }
+
 .desktop_li {
     display: block;
 }
+
 .mobi_li {
     display: none;
 }
+
 .social_block {
-    @include phoneOnly {
-        grid-column-start:2;
-        grid-column-end:3;
-        grid-row-start:4;
-        grid-row-end:5;
+    @include phoneDown {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
         justify-self: start;
     }
+
     @include tabletUp {
         margin: 0 0 0 0;
         grid-column-start: 4;
@@ -874,6 +984,7 @@
         grid-row-end: 5;
     }
 }
+
 .map_data {
     font-family: 'Roboto';
     font-style: normal;
@@ -881,13 +992,15 @@
     font-size: 12px;
     line-height: 16px;
     color: #889099;
-    @include phoneOnly {
-        grid-column-start:1;
-        grid-column-end:3;
-        grid-row-start:7;
-        grid-row-end:8;
+
+    @include phoneDown {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 8;
         justify-self: start;
     }
+
     @include tabletUp {
         margin: -14px 0 0 0;
         grid-column-start: 4;
@@ -896,12 +1009,14 @@
         grid-row-end: 4;
     }
 }
+
 .social_icon-wrapper {
     margin: 23px 0 0px 0;
     display: grid;
     grid-template: 55px 40px/45px 45px 45px;
     width: 151px;
     justify-content: space-between;
+
     @include tabletUp {
         display: flex;
         flex-direction: row;
@@ -909,6 +1024,7 @@
         width: 333px;
     }
 }
+
 .br2 {
     display: none;
 }
@@ -916,8 +1032,3 @@
 // About_company_block end
 
 // Footer end
-
-
-
-
-

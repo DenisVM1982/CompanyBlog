@@ -7,6 +7,7 @@
     flex: 1 0 auto;
 
 }
+
 .content {
     width: 100%;
     position: relative;
@@ -16,12 +17,15 @@
     justify-content: center;
     flex-grow: 1;
 }
+
 .wrapper {
     margin: 0 auto;
-    @include phoneOnly {
+
+    @include phoneDown {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     @include desktop {
         max-width: 1200px;
     }
@@ -39,8 +43,10 @@ section {
     width: 100%;
     margin: 0 auto;
 }
+
 .featured_article {
     display: flex;
+    flex-direction: column;
     background: #FFFFFF;
     border: 1px solid #D7D8D9;
     border-radius: 6px;
@@ -48,51 +54,78 @@ section {
     -webkit-filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
     filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
     margin: 0 auto;
-    height: 597px;
     width: 97%;
+    @include desktop {
+        flex-direction: row;
+        height: 400px;
+    }
+
+
 }
-.featured_article-img {
+
+.featured_article-img_wrapper {
+    flex-shrink: 1;
     width: 100%;
+}
+
+.featured_article-img {
+    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
+    @include desktop {
+    }
+   
+
     @include tabletUp {
-        width: 50%;
     }
 }
+
 .feature_article-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include phoneOnly {
+
+    @include phoneDown {
         padding: 27px 30px 17px;
     }
-    @include tablet {
+
+    @include tabletOnly {
         padding: 59px 60px 45px;
     }
+
     @include desktop {
         padding: 20px 18px 17px;
-        height: 597px;
     }
 }
+
 .feature_article-post {
     @include roboto-light-shark-24px;
     line-height: 34px;
-    @include phoneOnly {
+
+    @include phoneDown {
         margin: 35px 0 0 0;
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 0px 0 0 0;
     }
 }
+
 .feature_article-data_author-wrapper {
     display: flex;
     flex-direction: row;
+
     @include desktop {
         margin: 41px 0 -46px 0;
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 19px 0 0px 0;
     }
 
 }
+
 .feature_article-author {
     @include roboto-medium-tuna-14px;
     margin: 0 10px 0 0;
@@ -101,76 +134,94 @@ section {
 .feature_article-data {
     @include roboto-normal-oslo-gray-14px;
 }
+
 .feature_article-title {
     @include roboto-normal-apple-12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    @include tablet {
+
+    @include tabletOnly {
         margin: 17px 0 0px 0;
     }
+
     @include desktop {
         margin: 15px 0 -11px 0;
     }
 }
+
 .feature_artile-comment_counter-wrapper {
     display: flex;
+
     @include desktop {
         margin: -20px 0px 19px 5px;
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 13px 0px 0px 5px;
     }
 }
+
 .feature_article-comment {
     background-image: url(../img/icons/comment.svg);
     display: block;
+
     @include desktop {
         width: 12px;
         height: 12px;
     }
-    @include tablet {
+
+    @include tabletOnly {
         width: 16px;
         height: 16px;
         margin: 0 4px 0 -4px;
     }
-    @include phoneOnly {
+
+    @include phoneDown {
         width: 16px;
         height: 16px;
         margin: 0 4px 0 -4px;
     }
 }
+
 .feature_article-counter_comments {
     @include roboto-normal-oslo-gray-14px;
     margin: 0px 0px 0px 7px;
 }
+
 .feature_article-post {
     @include roboto-light-shark-24px;
     line-height: 34px;
     margin: 0px 0 0 0;
 }
+
 .feature_article-data_author-wrapper {
     display: flex;
     flex-direction: row;
     margin: 19px 0 0px 0;
 }
+
 .feature_article-author {
     @include roboto-medium-tuna-14px;
     margin: 0 10px 0 0;
 }
+
 .feature_article-data {
     @include roboto-normal-oslo-gray-14px;
 }
+
 .feature_article-title {
     @include roboto-normal-apple-12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 17px 0 0px 0;
 }
+
 .feature_artile-comment_counter-wrapper {
     margin: 13px 0px 0px 5px;
     display: flex;
 
 }
+
 .feature_article-comment {
     background-image: url(../img/icons/comment.svg);
     display: block;
@@ -178,6 +229,7 @@ section {
     height: 12px;
     margin: 0 4px 0 -4px;
 }
+
 .feature_article-counter_comments {
     @include roboto-normal-oslo-gray-14px;
     margin: 0px 0px 0px 7px;
@@ -204,7 +256,8 @@ section {
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    @include phoneOnly {
+
+    @include phoneDown {
         display: none;
     }
 }
@@ -322,15 +375,18 @@ section {
     height: 100%;
     margin: 0;
 }
+
 .recent_posts-title {
     margin: 0px 0 25px 0;
 }
+
 .recent_post-wrapper1 {
     height: 100%;
     width: 100%;
     margin: 0 auto;
     flex-direction: column;
 }
+
 .recent_post-wrapper2 {
     margin: 0 auto;
     width: 100%;
@@ -344,26 +400,31 @@ section {
     margin: 0px 0 0 0;
     padding: 12px 0 16px 0;
 }
+
 .recent_posts-block {
     display: flex;
     flex-direction: column;
     border-right: 1px solid #EBECED;
     border-right: none;
     order: 2;
-    width: 84%;
-    @include phoneOnly {
+    width: 100%;
+
+    @include phoneDown {
         padding: 0;
         margin: 0 auto;
+        order: 2;
     }
-    @include tablet {
-        width: 66.5%;
-        order:1;
+
+    @include tabletOnly {
+        order: 2;
     }
+
     @include desktop {
         padding-left: 10px;
-        order:1;
+        order: 1;
     }
 }
+
 .search_recent_posts-wrapper {
     display: flex;
     flex-direction: column;
@@ -372,46 +433,57 @@ section {
     height: 1820px;
     padding: 8px 0 0 0;
     box-sizing: border-box;
-    @include phoneOnly {
+
+    @include phoneDown {
         flex-wrap: nowrap;
     }
-    @include tablet {
+
+    @include tabletOnly {
         flex-wrap: nowrap;
         padding: 0 10px 0px 10px;
     }
+
     @include desktop {
         flex-wrap: wrap;
     }
 }
+
 .recent_post-image {
-    @include phoneOnly {
-        
-    }
-    @include tablet {
+    @include phoneDown {}
+
+    @include tabletOnly {
         width: auto;
         height: auto;
     }
+
     @include desktop {
         width: 280px;
         height: 180px
     }
 }
+
 .recent_post-post {
     margin: -8px 0 18px 0;
 }
+
 .recent_post-dat_author-wrapper {
     margin: 0 0 15px 0;
 }
+
 .recent_post-title {
     margin: 0 0 7px 0;
 }
+
 .older_posts-button {
     margin: 27px auto;
     width: 100%;
 }
-.recent_post-wrapper4, .recent_post-wrapper5, .recent_post-wrapper6 {
+
+.recent_post-wrapper4,
+.recent_post-wrapper5,
+.recent_post-wrapper6 {
     display: none;
-}  
+}
 
 
 
@@ -429,6 +501,7 @@ section {
     margin: 0 0 0 20px;
 
 }
+
 .search_input {
     outline: 0 !important;
     border: none;
@@ -441,6 +514,7 @@ section {
     font-style: normal;
     margin: 2px 0px 0 17px;
 }
+
 .search_block {
     background: #FFFFFF;
     border: 1px solid #D7D8D9;
@@ -449,29 +523,33 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    order:2;
-    @include phoneOnly {
+    order: 1;
+
+    @include phoneDown {
         width: 90%;
         margin: 32px auto 45px auto;
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 30px auto;
         width: 50%;
-        order:1;
     }
+
     @include desktop {
         margin: 0px 0 0 5%;
         width: 28%;
-        order:1;
+        order: 2;
     }
 
 }
+
 .search_icon {
     width: 19px;
     height: 19px;
     margin: 0 0 0 20px;
 
 }
+
 .search_input {
     outline: 0 !important;
     border: none;
@@ -495,19 +573,22 @@ section {
     @include roboto-light-shark-32px;
     margin: 7px 0 15px 0;
 }
+
 .recent_post-wrapper {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #EBECED;
     border-width: 80%;
-    padding-top:30px;
+    padding-top: 30px;
     margin-right: 60px;
     padding-bottom: 60px;
 }
+
 .recent_post-wrapper1 {
     display: flex;
     flex-direction: row;
 }
+
 .recent_post-wrapper2 {
     display: flex;
     flex-direction: column;
@@ -517,41 +598,50 @@ section {
     justify-content: start;
     height: 100%;
 }
+
 .recent_post-image {
     width: 280px;
     height: 180px;
 }
+
 .recent_post-post {
     @include roboto-light-shark-24px;
     line-height: 34px;
     margin: 0px 0 12px 0;
 }
+
 .recent_post-data_author-wrapper {
     display: flex;
     flex-direction: row;
     margin: 0 0 13px 0;
 }
+
 .recent_post-author {
     @include roboto-medium-tuna-14px;
 }
+
 .recent_post-data {
     @include roboto-normal-oslo-gray-14px;
 }
+
 .recent_post-title {
     @include roboto-normal-apple-12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 0 0 18px 0;
 }
+
 .recent_post-comment_counter-wrapper {
     display: flex;
 }
+
 .recent_post-comment {
     background-image: url(../img/icons/comment.svg);
     display: block;
     width: 12px;
     height: 12px;
 }
+
 .recent_post-counter_comments {
     @include roboto-normal-oslo-gray-14px;
     margin: 0px 0px 0px 7px;
@@ -573,6 +663,7 @@ section {
     width: 260px;
     letter-spacing: 0.8px;
 }
+
 .older_posts-button:hover,
 .older_posts-button:focus {
     background: $apple;
@@ -592,49 +683,60 @@ section {
     padding: 40px 0 30px 0;
     width: 50%;
 }
+
 .side_nav_blog-block {
     display: flex;
     width: 100%;
     display: column;
     justify-content: space-between;
     order: 3;
-    @include phoneOnly {
+
+    @include phoneDown {
         margin: 0 auto;
     }
-    @include tablet {
+
+    @include tabletOnly {
         flex-flow: wrap;
         margin: 0 auto;
         padding: 30px;
-        
+
     }
+
     @include tabletUp {
         margin: -8px 0 0 5.1%;
     }
 }
+
 .side_nav_announcements {
     display: flex;
-    border-bottom: 1px solid  #EBECED;
-    @include phoneOnly {
+    border-bottom: 1px solid #EBECED;
+
+    @include phoneDown {
         flex-direction: column;
         padding: 30px;
     }
+
     @include tabletUp {
         padding: 40px 0 27px 0;
     }
 }
+
 .side_nav_popular_post {
     margin: 70px 0 0 7px;
 }
+
 .side_nav-header_announcements-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
 
 }
+
 .announcements-side_nav_header {
     @include roboto-light-shark-24px;
     margin: -4px 0 0 20px;
 }
+
 .announcements-ul {
     @include roboto-normal-tuna-14px;
     display: flex;
@@ -644,12 +746,15 @@ section {
     flex-direction: column;
     height: 195px;
     margin: 21px 0px 0 6px;
-    @include phoneOnly {
+
+    @include phoneDown {
         width: 100%;
     }
-    @include tabletUp {        
-    width: 307px;
+
+    @include tabletUp {
+        width: 307px;
     }
+
     li {
         display: flex;
         flex-direction: row;
@@ -666,41 +771,50 @@ section {
         margin: 0 5px 0 -6px;
     }
 }
+
 .popular_post-side_nav_header {
     margin: 0 0 0 0;
     margin: -2px 0 0 30px;
 }
+
 .popular_post-ul {
     margin: 31px 0 0 -1px;
     height: 263px;
-    @include phoneOnly {
+
+    @include phoneDown {
         width: 100%;
     }
+
     @include tabletUp {
         width: 326px;
     }
 }
+
 .popular_post-line {
     margin: 9px 0 0 0;
 }
+
 .add_sidebar {
-    @include phoneOnly {
+    @include phoneDown {
         display: flex;
         margin: 30px auto;
         width: 80%;
         height: 80%;
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 40px 0 0 0;
         width: 96%;
         height: 85%;
     }
+
     @include desktop {
         margin: 35px 0 0 0;
         width: 340px;
         height: 453px;
     }
 }
+
 .tag_cloud-wrapper {
     display: flex;
     flex-direction: column;
@@ -708,34 +822,43 @@ section {
     width: 80%;
     height: 80%;
     margin: 0 auto;
-    @include tablet {
+
+    @include tabletOnly {
         width: 50%;
         margin: 40px 0 0 0;
     }
 }
+
 .tag_cloud {
     @include roboto-light-shark-24px;
-    @include phoneOnly {
+
+    @include phoneDown {
         margin: 0;
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 0;
     }
+
     @include desktop {
         margin: 57px 0 0 0;
     }
 }
+
 .tag_cloud-img {
     display: flex;
-    @include phoneOnly {
+
+    @include phoneDown {
         width: 80%;
         height: 80%;
     }
-    @include tablet {
+
+    @include tabletOnly {
         margin: 4px 0 0 -15px;
         width: 90%;
         height: 85%;
     }
+
     @include desktop {
         margin: 18px 39px 0px -12px;
         height: 309px;
@@ -744,4 +867,3 @@ section {
 }
 
 // Side_nav_blog end
-

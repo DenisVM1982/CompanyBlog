@@ -17,8 +17,12 @@ body {
 body {
     width: 100%;
     position: relative;
+    font-family: "Roboto";
 }
 
+*{
+    box-sizing: border-box;
+}
 
 a:active,
 a:hover,
@@ -28,6 +32,10 @@ a {
     color: $tuna;
 }
 
+li {
+    text-decoration: none;
+    list-style: none;
+}
 
 
 
